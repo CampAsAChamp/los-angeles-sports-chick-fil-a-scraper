@@ -24,16 +24,20 @@ def check_angels_score():
     soup = BeautifulSoup(response.text, 'html.parser')
     # soup = BeautifulSoup(open('sample_pages/angels_scores.html'), features="html.parser")
 
-    # The scores are duplicated on the page so in order to prevent duplicated work we have to narrow our search down to just the main content, not the banner
+    # The scores are duplicated on the page (once in the banner and once on the main page)
+    # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
     table = soup.find(id='team_schedule').tbody
     rows = table.find_all('tr')
 
+    # Search for the last played game by checking each row to see if that row/game has been played or not
+    # If it hasn't it will say preview in the main box and that is our trigger to know we need to stop
     game_num = 0
     for row in rows:
-        # Skip the header rows
+        # Skip the header rows which have the class='thead'
         if row.get('class') and 'thead' in row['class']:
             continue
 
+        # Keep track of the previous game because once we find a game that hasn't been played yet we know the previous one we just checked is the last played game
         if game_num > 0:
             previous_game = {
                 'game_num': game_num,
@@ -43,6 +47,11 @@ def check_angels_score():
 
         game_num += 1
 
+        # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
+        # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
+        #     - Played Yet?
+        #     - Home or Away
+        #     - Runs Scored
         fields = row.find_all('td')
         for field in fields:
             if field['data-stat'] == 'boxscore':
@@ -64,6 +73,7 @@ def check_angels_score():
 
         if not gameHappened:
             print(previous_game)
+
             if previous_game['home_or_away'] == 'home' and previous_game['runs_scored'] >= 7:
                 return True
             else:
