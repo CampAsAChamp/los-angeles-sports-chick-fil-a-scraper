@@ -68,6 +68,7 @@ def check_angels_score():
 def main():
     """ Main entry point of the app """
 
+    # TODO: Update to send an email/SMS/notification if this is true
     print("Is Free Chick Fil A Sandwich?:", check_angels_score())
 
 
