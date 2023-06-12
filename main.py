@@ -7,6 +7,7 @@ __author__ = "Nick Schneider"
 __version__ = "0.1.0"
 __license__ = "Apache"
 
+import datetime
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -19,7 +20,8 @@ PASSWORD = os.environ['PASSWORD']
 
 
 def check_angels_score():
-    url = 'https://www.baseball-reference.com/teams/LAA/2023-schedule-scores.shtml#all_results'
+    current_year = datetime.datetime.now().year
+    url = f'https://www.baseball-reference.com/teams/LAA/{current_year}-schedule-scores.shtml#all_results'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     # soup = BeautifulSoup(open('sample_pages/angels_scores.html'), features="html.parser")
@@ -94,7 +96,7 @@ def send_email():
 
 def main():
     """ Main entry point of the app """
-
+    # TODO: Don't run in the offseason and check what happens when the table gets full
     if check_angels_score():
         send_email()
 
