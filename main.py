@@ -11,8 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# Improvements: Instead of starting from the first game and going down,
-# skip all the way to the bottom and just use the previous game using prev selectors from BS4
 def check_angels_score():
     # url = 'https://www.baseball-reference.com/teams/LAA/2023-schedule-scores.shtml#all_results'
     # response = requests.get(url)
