@@ -10,6 +10,7 @@ __license__ = "Apache"
 import os
 import requests
 from bs4 import BeautifulSoup
+from PyMessenger import Email, SMS, Messenger
 
 # Global Variables
 FROM_EMAIL = os.environ['FROM_EMAIL']
@@ -69,11 +70,23 @@ def check_angels_score():
                 return False
 
 
+def send_email():
+    messenger = Messenger(FROM_EMAIL, PASSWORD)
+
+    # Build the message
+    subject = 'Angels Chick Fil A Reminder'
+    body = 'Angels won by 7 or more runs!'
+    msg = Email(TO_EMAIL, subject, body, is_HTML=False)
+
+    # Send the message
+    messenger.send_email(msg, one_time=True)
+
+
 def main():
     """ Main entry point of the app """
 
-    # TODO: Update to send an email/SMS/notification if this is true
-    print("Is Free Chick Fil A Sandwich?:", check_angels_score())
+    if check_angels_score():
+        send_email()
 
 
 if __name__ == "__main__":
