@@ -1,2 +1,2 @@
 # los-angeles-angels-sandwich-scraper
-Checks each day if the Angels scored at least 7 runs the previous day and alerts so you can know to claim your Chick Fil A sandwich
+Checks each day using Github Actions if the Angels scored at least 7 runs the previous day and sends me an email so I can claim my free Chick Fil A sandwich
