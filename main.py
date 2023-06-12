@@ -96,9 +96,13 @@ def send_email():
 
 def main():
     """ Main entry point of the app """
-    # TODO: Don't run in the offseason and check what happens when the table gets full
-    if check_angels_score():
-        send_email()
+    # If the season is over and every game has been played this will scan through all the games but ultimately won't do anything because there are no future games
+
+    # Only run from March - October
+    current_month = datetime.datetime.now().month
+    if 3 <= current_month <= 10:
+        if check_angels_score():
+            send_email()
 
 
 if __name__ == "__main__":
