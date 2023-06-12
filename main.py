@@ -11,34 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_all_scores():
-    # url = 'https://www.baseball-reference.com/boxes/'
-    # response = requests.get(url)
-    # soup = BeautifulSoup(response.text, 'html.parser')
-    soup = BeautifulSoup(open('all_scores.html'), features="html.parser")
-
-    # The scores are duplicated on the page so in order to prevent duplicated work we have to narrow our search down to just the main content, not the banner
-    main = soup.find('div', id='content')
-
-    winners = main.find_all('tr', class_='winner')
-    losers = main.find_all('tr', class_='loser')
-    all_teams = winners + losers
-
-    return check_all_scores(all_teams)
-
-
-def check_all_scores(results_set):
-    for r in results_set:
-        tds = r.find_all('td')
-        team_name = tds[0].string
-        score = int(tds[1].string)
-        # Need to add Home vs Away check
-        if team_name == 'Los Angeles Angels' and score >= 7:
-            return True
-
-    return False
-
-
 # Improvements: Instead of starting from the first game and going down,
 # skip all the way to the bottom and just use the previous game using prev selectors from BS4
 def check_angels_score():
@@ -97,7 +69,6 @@ def main():
     """ Main entry point of the app """
 
     is_free_chick_fil_a = check_angels_score()
-    # is_free_chick_fil_a = get_all_scores()
     print("Is Free Chick Fil A:", is_free_chick_fil_a)
 
 
