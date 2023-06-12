@@ -73,7 +73,6 @@
     Verizon                      smtp.verizon.net (port 465)
 '''
 import smtplib
-import sys
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from dataclasses import dataclass
@@ -81,6 +80,8 @@ from dataclasses import dataclass
 '''
     Message Types
 '''
+
+
 @dataclass
 class Email:
     to: str
@@ -88,12 +89,14 @@ class Email:
     body: str
     is_HTML: bool = False
 
+
 @dataclass
 class SMS:
     number: str
     gateway: str
     subject: str
     body: str
+
     @property
     def recipient(self) -> str:
         return self.number + self.gateway
@@ -102,15 +105,17 @@ class SMS:
 '''
     Messager
 '''
+
+
 @dataclass
 class Messenger:
-    username: str # ALSO THE FROM ADDRESS
+    username: str  # ALSO THE FROM ADDRESS
     password: str
     conn: smtplib.SMTP = None
 
     def open_conn(self):
         # CREATE CONNECTION TO SMTP SERVICE
-        self.conn = smtplib.SMTP("smtp.gmail.com",587)
+        self.conn = smtplib.SMTP("smtp.gmail.com", 587)
         self.conn.ehlo()
         self.conn.starttls()
         self.conn.ehlo
@@ -127,7 +132,7 @@ class Messenger:
         # CREATE MESSAGE
         message = MIMEMultipart("alternative")
         message["From"] = self.username
-        message["To"] =  msg.recipient
+        message["To"] = msg.recipient
         message["Subject"] = msg.subject
         message.attach(MIMEText(msg.body, "plain"))
         # SEND MESSAGE
