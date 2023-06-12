@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     
 env:
-  email: ${{ secrets.EMAIL }}
-  password: ${{ secrets.PASSWORD }}
+  FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+  TO_EMAIL: ${{ secrets.TO_EMAIL }}
+  PASSWORD: ${{ secrets.PASSWORD }}
 
 jobs:
   run-python:

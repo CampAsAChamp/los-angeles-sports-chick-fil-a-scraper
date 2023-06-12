@@ -7,8 +7,14 @@ __author__ = "Nick Schneider"
 __version__ = "0.1.0"
 __license__ = "Apache"
 
+import os
 import requests
 from bs4 import BeautifulSoup
+
+# Global Variables
+FROM_EMAIL = os.environ['FROM_EMAIL']
+TO_EMAIL = os.environ['TO_EMAIL']
+PASSWORD = os.environ['PASSWORD']
 
 
 def check_angels_score():
