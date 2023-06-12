@@ -68,7 +68,7 @@ def check_angels_score():
 def main():
     """ Main entry point of the app """
 
-    print("Is Free Chick Fil A:", check_angels_score())
+    print("Is Free Chick Fil A Sandwich?:", check_angels_score())
 
 
 if __name__ == "__main__":
