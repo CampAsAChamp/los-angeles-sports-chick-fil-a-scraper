@@ -19,10 +19,10 @@ PASSWORD = os.environ['PASSWORD']
 
 
 def check_angels_score():
-    # url = 'https://www.baseball-reference.com/teams/LAA/2023-schedule-scores.shtml#all_results'
-    # response = requests.get(url)
-    # soup = BeautifulSoup(response.text, 'html.parser')
-    soup = BeautifulSoup(open('angels_scores.html'), features="html.parser")
+    url = 'https://www.baseball-reference.com/teams/LAA/2023-schedule-scores.shtml#all_results'
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    # soup = BeautifulSoup(open('angels_scores.html'), features="html.parser")
 
     # The scores are duplicated on the page so in order to prevent duplicated work we have to narrow our search down to just the main content, not the banner
     table = soup.find(id='team_schedule').tbody
