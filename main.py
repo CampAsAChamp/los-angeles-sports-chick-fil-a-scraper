@@ -33,21 +33,19 @@ def check_angels_score():
 
     # Search for the last played game by checking each row to see if that row/game has been played or not
     # If it hasn't it will say preview in the main box and that is our trigger to know we need to stop
-    game_num = 0
+    game_num = 1
     for row in rows:
         # Skip the header rows which have the class='thead'
         if row.get('class') and 'thead' in row['class']:
             continue
 
         # Keep track of the previous game because once we find a game that hasn't been played yet we know the previous one we just checked is the last played game
-        if game_num > 0:
+        if game_num > 1:
             previous_game = {
                 'game_num': game_num,
                 'home_or_away': home_or_away,
                 'runs_scored': runs_scored
             }
-
-        game_num += 1
 
         # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
         # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
@@ -72,6 +70,8 @@ def check_angels_score():
 
             if (field['data-stat'] == 'R'):
                 runs_scored = int(field.string)
+
+        game_num += 1
 
         if not gameHappened:
             print(previous_game)
