@@ -37,7 +37,7 @@ def check_angels_score():
         if game_num > 0:
             previous_game = {
                 'game_num': game_num,
-                'home_or_visitor': home_or_visitor,
+                'home_or_away': home_or_away,
                 'runs_scored': runs_scored
             }
 
@@ -55,16 +55,16 @@ def check_angels_score():
             if (field['data-stat'] == 'homeORvis'):
                 val = field.string
                 if val == '@':
-                    home_or_visitor = 'away'
+                    home_or_away = 'away'
                 else:
-                    home_or_visitor = 'home'
+                    home_or_away = 'home'
 
             if (field['data-stat'] == 'R'):
                 runs_scored = int(field.string)
 
         if not gameHappened:
             print(previous_game)
-            if previous_game['home_or_visitor'] == 'home' and previous_game['runs_scored'] >= 7:
+            if previous_game['home_or_away'] == 'home' and previous_game['runs_scored'] >= 7:
                 return True
             else:
                 return False
