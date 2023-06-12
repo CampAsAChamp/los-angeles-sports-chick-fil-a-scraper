@@ -24,7 +24,7 @@ def check_angels_score():
     game_num = 0
     for row in rows:
         # Skip the header rows
-        if row.get('class'):
+        if row.get('class') and 'thead' in row['class']:
             continue
 
         if game_num > 0:
