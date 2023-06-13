@@ -16,4 +16,5 @@ If you want to set up for yourself to get email alerts here are the steps you ne
     3. Add a separate one for each of the three keys listed above and paste the actual value that belong
     4. For name use the key list above (`FROM_EMAIL`, `TO_EMAIL`, `PASSWORD`)
     5. For the value use the actual value of your email addresses or app password
-5. It will now run every day from March - October at 8 AM PST
+5. It will now run every day from March - October at 8 AM PST, you can check the runs in the `Actions` tab in Github
+    6. If the criteria for a free Chick Fil A sandwich is met you will receive an email
