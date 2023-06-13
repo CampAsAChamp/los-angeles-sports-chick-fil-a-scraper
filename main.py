@@ -103,6 +103,9 @@ def main():
     if 3 <= current_month <= 10:
         if check_angels_score():
             send_email()
+            print("Email successfully sent!")
+        else:
+            print("Angels score didn't meet the criteria for free Chick Fil A :^(")
 
 
 if __name__ == "__main__":
