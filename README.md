@@ -1,4 +1,4 @@
-# los-angeles-angels-sandwich-scraper
+# Los Angeles Angels Chick Fil A Sandwich Scraper
 Checks each day at 8 AM PST (3 PM UTC) using Github Actions if the Angels scored at least 7 runs while playing at home (Anaheim) the previous day and sends me an email as a reminder to check my Chick Fil A app so I can claim my free Chick Fil A sandwich
 
 # Set up for yourself
