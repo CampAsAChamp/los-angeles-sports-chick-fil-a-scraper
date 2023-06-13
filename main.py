@@ -15,6 +15,7 @@ from PyMessenger import Email, SMS, Messenger
 
 # Global Variables
 FROM_EMAIL = os.environ['FROM_EMAIL']
+# TODO: Change to a comma separated list of emails
 TO_EMAIL = os.environ['TO_EMAIL']
 PASSWORD = os.environ['PASSWORD']
 
