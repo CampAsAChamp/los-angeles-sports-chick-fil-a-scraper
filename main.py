@@ -11,7 +11,7 @@ import datetime
 import os
 import requests
 from bs4 import BeautifulSoup
-from PyMessenger import Email, SMS, Messenger
+from PyMessenger import Email, Messenger
 
 # Global Variables
 FROM_EMAIL = os.environ['FROM_EMAIL']
