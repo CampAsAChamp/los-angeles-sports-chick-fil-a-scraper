@@ -3,7 +3,7 @@ name: Run Python Script
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 15 * * *" # 8 AM PST/PDT, 3 PM UTC
+    - cron: "0 15 * * *" # 8 AM PST/PDT, 3 PM UTC == 15:00 UTC
     
 env:
   FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
