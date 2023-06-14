@@ -15,7 +15,6 @@ from PyMessenger import Email, Messenger
 
 # Global Variables
 FROM_EMAIL = os.environ['FROM_EMAIL']
-# TODO: Change to a comma separated list of emails
 TO_EMAIL = os.environ['TO_EMAIL']
 PASSWORD = os.environ['PASSWORD']
 
@@ -85,18 +84,21 @@ def check_angels_score():
 
 def send_email():
     messenger = Messenger(FROM_EMAIL, PASSWORD)
+    messenger.open_conn()
 
-    # Build the message
     subject = 'Angels Chick Fil A Reminder'
     body = 'Angels won by 7 or more runs!'
-    msg = Email(TO_EMAIL, subject, body, is_HTML=False)
+    emails = TO_EMAIL.split(',')
+    for email in emails:
+        msg = Email(email, subject, body)
+        messenger.send_email(msg)
 
-    # Send the message
-    messenger.send_email(msg, one_time=True)
+    messenger.close_conn()
 
 
 def main():
     """ Main entry point of the app """
+
     # If the season is over and every game has been played this will scan through all the games but ultimately won't do anything because there are no future games
 
     # Only run from March - October
