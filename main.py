@@ -21,6 +21,8 @@ PASSWORD = os.environ['PASSWORD']
 
 
 def check_angels_score():
+    """ At any home game, if the Angels score 7 or more runs, you can claim a chicken sandwich """
+
     current_year = datetime.datetime.now().year
     url = f'https://www.baseball-reference.com/teams/LAA/{current_year}-schedule-scores.shtml#all_results'
     response = requests.get(url)
@@ -81,6 +83,16 @@ def check_angels_score():
                 return True
             else:
                 return False
+
+
+def check_lafc_score():
+    """ At any home game, if LAFC wins, you can claim a chicken sandwich """
+    pass
+
+
+def check_ducks_score():
+    """ At any home game, if the Ducks score 5 or more goals, you can claim a chicken sandwich """
+    pass
 
 
 def send_email():
