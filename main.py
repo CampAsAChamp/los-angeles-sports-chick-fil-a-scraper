@@ -12,6 +12,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from PyMessenger import Email, Messenger
+from . import constants
 
 # Global Variables
 FROM_EMAIL = os.environ['FROM_EMAIL']
@@ -103,7 +104,7 @@ def main():
 
     # Only run from March - October
     current_month = datetime.datetime.now().month
-    if 3 <= current_month <= 10:
+    if constants.M_MARCH <= current_month <= constants.M_OCTOBER:
         if check_angels_score():
             send_email()
             print("Email successfully sent!")
