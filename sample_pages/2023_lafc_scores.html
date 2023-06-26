@@ -1,0 +1,2684 @@
+∑    
+      
+<!DOCTYPE html>
+<html data-version="klecko-" data-root="/home/fb/deploy/www/base" lang="en" class="no-js" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+    <link rel="dns-prefetch" href="https://cdn.ssref.net/req/202306191" />
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+    (function() {
+	var host = window.location.hostname;
+	var element = document.createElement('script');
+	var firstScript = document.getElementsByTagName('script')[0];
+	var url = 'https://cmp.quantcast.com'
+	    .concat('/choice/', 'XwNYEpNeFfhfr', '/', host, 
+		    '/choice.js?tag_version=V2');
+	var uspTries = 0;
+	var uspTriesLimit = 3;
+	element.async = true;
+	element.type = 'text/javascript';
+	element.src = url;
+	
+	firstScript.parentNode.insertBefore(element, firstScript);
+	
+	function makeStub() {
+	    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+	    var queue = [];
+	    var win = window;
+	    var cmpFrame;
+	    
+	    function addFrame() {
+		var doc = win.document;
+		var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+		
+		if (!otherCMP) {
+		    if (doc.body) {
+			var iframe = doc.createElement('iframe');
+			
+			iframe.style.cssText = 'display:none';
+			iframe.name = TCF_LOCATOR_NAME;
+			doc.body.appendChild(iframe);
+		    } else {
+			setTimeout(addFrame, 5);
+		    }
+		}
+		return !otherCMP;
+	    }
+	    
+	    function tcfAPIHandler() {
+		var gdprApplies;
+		var args = arguments;
+		
+		if (!args.length) {
+		    return queue;
+		} else if (args[0] === 'setGdprApplies') {
+		    if (
+			args.length > 3 &&
+			    args[2] === 2 &&
+			    typeof args[3] === 'boolean'
+		    ) {
+			gdprApplies = args[3];
+			if (typeof args[2] === 'function') {
+			    args[2]('set', true);
+			}
+		    }
+		} else if (args[0] === 'ping') {
+		    var retr = {
+			gdprApplies: gdprApplies,
+			cmpLoaded: false,
+			cmpStatus: 'stub'
+		    };
+		    
+		    if (typeof args[2] === 'function') {
+			args[2](retr);
+		    }
+		} else {
+		    if(args[0] === 'init' && typeof args[3] === 'object') {
+			args[3] = Object.assign(args[3], { tag_version: 'V2' });
+		    }
+		    queue.push(args);
+		}
+	    }
+	    
+	    function postMessageEventHandler(event) {
+		var msgIsString = typeof event.data === 'string';
+		var json = {};
+		
+		try {
+		    if (msgIsString) {
+			json = JSON.parse(event.data);
+		    } else {
+			json = event.data;
+		    }
+		} catch (ignore) {}
+		
+		var payload = json.__tcfapiCall;
+		
+		if (payload) {
+		    window.__tcfapi(
+			payload.command,
+			payload.version,
+			function(retValue, success) {
+			    var returnMsg = {
+				__tcfapiReturn: {
+				    returnValue: retValue,
+				    success: success,
+				    callId: payload.callId
+				}
+			    };
+			    if (msgIsString) {
+				returnMsg = JSON.stringify(returnMsg);
+			    }
+			    if (event && event.source && event.source.postMessage) {
+				event.source.postMessage(returnMsg, '*');
+			    }
+			},
+			payload.parameter
+		    );
+		}
+	    }
+	    
+	    while (win) {
+		try {
+		    if (win.frames[TCF_LOCATOR_NAME]) {
+			cmpFrame = win;
+			break;
+		    }
+		} catch (ignore) {}
+		
+		if (win === window.top) {
+		    break;
+		}
+		win = win.parent;
+	    }
+	    if (!cmpFrame) {
+		addFrame();
+		win.__tcfapi = tcfAPIHandler;
+		win.addEventListener('message', postMessageEventHandler, false);
+	    }
+	};
+	
+	makeStub();
+	
+	var uspStubFunction = function() {
+	    var arg = arguments;
+	    if (typeof window.__uspapi !== uspStubFunction) {
+		setTimeout(function() {
+		    if (typeof window.__uspapi !== 'undefined') {
+			window.__uspapi.apply(window.__uspapi, arg);
+		    }
+		}, 500);
+	    }
+	};
+	
+	var checkIfUspIsReady = function() {
+	    uspTries++;
+	    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+		console.warn('USP is not accessible');
+	    } else {
+		clearInterval(uspInterval);
+	    }
+	};
+	
+	if (typeof window.__uspapi === 'undefined') {
+	    window.__uspapi = uspStubFunction;
+	    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+	}
+    })();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+
+    <title>Los Angeles FC Scores and Fixtures, All Competitions | FBref.com</title>
+
+    
+    
+    <meta name="Description" content="Check out Los Angeles FC's latest scores, goals, shooting, passing, defense, possession stats and more for the 2023 Major League Soccer.">
+    <link rel="canonical" href="https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer" />
+        
+	<link rel="alternate" href="https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer" hreflang="x-default" />
+	<link rel="alternate" href="https://fbref.com/pt/equipes/81d817a3/2023/partidas/c22/schedule/Los-Angeles-FC-Resultados-e-Calendarios-Major-League-Soccer" hreflang="pt-br" />
+	<link rel="alternate" href="https://fbref.com/pt/equipes/81d817a3/2023/partidas/c22/schedule/Los-Angeles-FC-Resultados-e-Calendarios-Major-League-Soccer" hreflang="pt-pt" />
+	<link rel="alternate" href="https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer" hreflang="en" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-fr" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-cd" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-ca" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-cm" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-ci" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-be" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-ma" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-gn" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-dz" />
+	<link rel="alternate" href="https://fbref.com/fr/equipes/81d817a3/2023/matchs/c22/schedule/Scores-et-tableaux-Los-Angeles-FC-Major-League-Soccer" hreflang="fr-ht" />
+	<link rel="alternate" href="https://fbref.com/it/squadre/81d817a3/2023/partite/c22/schedule/Risultati-e-partite-Los-Angeles-FC-Major-League-Soccer" hreflang="it-it" />
+	<link rel="alternate" href="https://fbref.com/de/mannschaften/81d817a3/2023/spielprotokolle/c22/schedule/Los-Angeles-FC-Punkte-und-Eckdaten-Major-League-Soccer" hreflang="de-de" />
+	<link rel="alternate" href="https://fbref.com/de/mannschaften/81d817a3/2023/spielprotokolle/c22/schedule/Los-Angeles-FC-Punkte-und-Eckdaten-Major-League-Soccer" hreflang="de-at" />
+	<link rel="alternate" href="https://fbref.com/de/mannschaften/81d817a3/2023/spielprotokolle/c22/schedule/Los-Angeles-FC-Punkte-und-Eckdaten-Major-League-Soccer" hreflang="de-ch" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-es" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-mx" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-co" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-ar" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-cl" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-pe" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-us" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-py" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-ec" />
+	<link rel="alternate" href="https://fbref.com/es/equipos/81d817a3/2023/partidos/c22/schedule/Resultados-y-partidos-de-Los-Angeles-FC-Major-League-Soccer" hreflang="es-uy" />
+    
+
+<!-- include:start  ="/inc/klecko_header_full_fb.html_f" -->
+<!-- yes:cookie regular load the cached css -->
+<script>function gup(n) {n = n.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]'); var r = new RegExp('[\\?&]'+n+'=([^&#]*)'); var re = r.exec(location.search);   return re === null?'':decodeURIComponent(re[1].replace(/\+/g,' '));}; document.srdev = gup('srdev')</script>
+<link rel="preconnect" href="https://cdn.ssref.net" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202306191/icons/sr_icons-min.svg?fb" as="fetch" crossorigin>
+<link rel="preload"    href="https://fbref.com/short/inc/main_nav_menu.json" as="fetch" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/201604190/images/chosen-sprite.png" as="image" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202306191/css/fb/sr-min.css" as="style"    crossorigin>
+
+<!-- CSS start -->
+<link rel="stylesheet" href="https://cdn.ssref.net/req/202306191/css/fb/sr-min.css" type="text/css"
+      onload="if (document.srdev) { this.href = 'https://cdn.ssref.net/nocdn/dev/'.concat(document.srdev.substr(0,2),'/css/fb/sr.css'); }" />
+<!-- CSS END -->
+
+<!-- JS START -->
+<script class="allowed">var sr_is_production = true;
+function vjs_getUrlParameter(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");e=new RegExp("[\\?&]"+e+"=([^&#]*)").exec(location.search);return null===e?"":decodeURIComponent(e[1].replace(/\+/g," "))}document.lang="","/es/"===window.location.pathname.substr(0,4)?document.lang="es":"/pt/"===window.location.pathname.substr(0,4)?document.lang="pt":"/fr/"===window.location.pathname.substr(0,4)?document.lang="fr":"/it/"===window.location.pathname.substr(0,4)?document.lang="it":"/de/"===window.location.pathname.substr(0,4)?document.lang="de":(window.location.pathname.substr(0,4),document.lang="en"),vjs_getUrlParameter("lang")&&(document.lang=vjs_getUrlParameter("lang")),document.srdev=null,vjs_getUrlParameter("srdev")&&(document.srdev=vjs_getUrlParameter("srdev"));var el,log_performance=!0,is_new_jscss_version=!1,sr_detect_operaMini=-1<navigator.userAgent.indexOf("Opera Mini"),sr_detect_firefox=(sr_detect_operaMini&&((el=document.querySelector("html")).className=el.className.concat(" operamini")),-1<navigator.userAgent.indexOf("Firefox")),sr_detect_firefoxMobile=(sr_detect_firefox&&((el=document.querySelector("html")).className=el.className.concat(" firefox")),-1<navigator.userAgent.indexOf("Firefox")&&(-1<navigator.userAgent.indexOf("Mobile")||-1<navigator.userAgent.indexOf("Tablet"))),sr_detect_ie=(sr_detect_firefoxMobile&&((el=document.querySelector("html")).className=el.className.concat(" firefox-mobile")),function(){var e=window.navigator.userAgent;if(0<e.indexOf("Trident/7.0"))return 11;if(0<e.indexOf("Trident/6.0"))return 10;if(0<e.indexOf("Trident/5.0"))return 9;for(var t=3,n=document.createElement("div"),r=n.getElementsByTagName("i");n.innerHTML="\x3c!--[if gt IE "+ ++t+"]><i></i><![endif]--\x3e",r[0];);return 4<t&&t}()),sr_detect_edge=!sr_detect_ie&&!!window.StyleMedia,sr_detect_safari=/Safari/.test(navigator.userAgent)&&/Apple Computer/.test(navigator.vendor),className="no-js",patt=((el=document.querySelector("html")).classList?el.classList.remove(className):el.className=el.className.replace(new RegExp("(^|\\b)"+className.split(" ").join("|")+"(\\b|$)","gi")," "),el.className=el.className.concat(" js"),!function(a,d,S){function E(e,t){return typeof e===t}function T(e){return"function"!=typeof d.createElement?d.createElement(e):m?d.createElementNS.call(d,"http://www.w3.org/2000/svg",e):d.createElement.apply(d,arguments)}function R(e,t,n,r){var o,i,a,s,l="modernizr",c=T("div");(s=d.body)||((s=T(m?"svg":"body")).fake=!0);if(parseInt(n,10))for(;n--;)(i=T("div")).id=r?r[n]:l+(n+1),c.appendChild(i);return(o=T("style")).type="text/css",o.id="s"+l,(s.fake?s:c).appendChild(o),s.appendChild(c),o.styleSheet?o.styleSheet.cssText=e:o.appendChild(d.createTextNode(e)),c.id=l,s.fake&&(s.style.background="",s.style.overflow="hidden",a=u.style.overflow,u.style.overflow="hidden",u.appendChild(s)),o=t(c,e),s.fake?(s.parentNode.removeChild(s),u.style.overflow=a,u.offsetHeight):c.parentNode.removeChild(c),!!o}function U(e){return e.replace(/([a-z])-([a-z])/g,function(e,t,n){return t+n.toUpperCase()}).replace(/^-/,"")}function D(e){return e.replace(/([A-Z])/g,function(e,t){return"-"+t.toLowerCase()}).replace(/^ms-/,"-ms-")}function q(e,t){var n=e.length;if("CSS"in a&&"supports"in a.CSS){for(;n--;)if(a.CSS.supports(D(e[n]),t))return!0;return!1}if("CSSSupportsRule"in a){for(var r=[];n--;)r.push("("+D(e[n])+":"+t+")");return R("@supports ("+(r=r.join(" or "))+") { #modernizr { position: absolute; } }",function(e){return"absolute"==(e=e,t=null,n="position","getComputedStyle"in a?(r=getComputedStyle.call(a,e,t),o=a.console,null!==r?n&&(r=r.getPropertyValue(n)):o&&o[o.error?"error":"log"].call(o,"getComputedStyle returning null, its possible modernizr test results are inaccurate")):r=!t&&e.currentStyle&&e.currentStyle[n],r);var t,n,r,o})}return S}function r(e,t,n,r,o){var i,a,s=e.charAt(0).toUpperCase()+e.slice(1),l=(e+" "+re.join(s+" ")+s).split(" ");if(E(t,"string")||void 0===t){var c=l,d=t,u=r,m=o;function f(){p&&(delete L.style,delete L.modElem)}if(m=void 0!==m&&m,void 0!==u){l=q(c,u);if(void 0!==l)return l}for(var p,h,g,v,_,y=["modernizr","tspan","samp"];!L.style&&y.length;)p=!0,L.modElem=T(y.shift()),L.style=L.modElem.style;for(g=c.length,h=0;h<g;h++)if(v=c[h],_=L.style[v],~(""+v).indexOf("-")&&(v=U(v)),L.style[v]!==S){if(m||void 0===u)return f(),"pfx"!=d||v;try{L.style[v]=u}catch(e){}if(L.style[v]!=_)return f(),"pfx"!=d||v}f()}else{var w=(e+" "+P.join(s+" ")+s).split(" "),b=t,x=n;for(a in w)if(w[a]in b)if(!1===x)return w[a];else{i=b[w[a]];if(E(i,"function")){var M=i;var z=x||b;return function(){return M.apply(z,arguments)};return}else return i}}return!1}function F(e,t,n){return r(e,S,S,t,n)}var $=[],o=[],e={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout(function(){t(n[e])},0)},addTest:function(e,t,n){o.push({name:e,fn:t,options:n})},addAsyncTest:function(e){o.push({name:null,fn:e})}},n=function(){},s=(n.prototype=e,(n=new n).addTest("cookies",function(){try{d.cookie="cookietest=1";var e=-1!=d.cookie.indexOf("cookietest=");return d.cookie="cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT",e}catch(e){return!1}}),n.addTest("localstorage",function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}}),n.addTest("sessionstorage",function(){var e="modernizr";try{return sessionStorage.setItem(e,e),sessionStorage.removeItem(e),!0}catch(e){return!1}}),n.addTest("cors","XMLHttpRequest"in a&&"withCredentials"in new XMLHttpRequest),n.addTest("history",function(){var e=navigator.userAgent;return(-1===e.indexOf("Android 2.")&&-1===e.indexOf("Android 4.0")||-1===e.indexOf("Mobile Safari")||-1!==e.indexOf("Chrome")||-1!==e.indexOf("Windows Phone")||"file:"===location.protocol)&&a.history&&"pushState"in a.history}),e._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""]),u=(e._prefixes=s,d.documentElement),m="svg"===u.nodeName.toLowerCase();if(!m){var t=void 0!==a?a:this,l=d;function I(e,t){var n=e.createElement("p"),e=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",e.insertBefore(n.lastChild,e.firstChild)}function f(){var e=y.elements;return"string"==typeof e?e.split(" "):e}function p(e){var t=X[e[G]];return t||(t={},v++,e[G]=v,X[v]=t),t}function W(e,t,n){return t=t||l,h?t.createElement(e):!(t=(n=n||p(t)).cache[e]?n.cache[e].cloneNode():V.test(e)?(n.cache[e]=n.createElem(e)).cloneNode():n.createElem(e)).canHaveChildren||J.test(e)||t.tagUrn?t:n.frag.appendChild(t)}function i(e){var t,n,r=p(e=e||l);return!y.shivCSS||c||r.hasCSS||(r.hasCSS=!!I(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),h||(t=e,(n=r).cache||(n.cache={},n.createElem=t.createElement,n.createFrag=t.createDocumentFragment,n.frag=n.createFrag()),t.createElement=function(e){return y.shivMethods?W(e,t,n):n.createElem(e)},t.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+f().join().replace(/[\w\-:]+/g,function(e){return n.createElem(e),n.frag.createElement(e),'c("'+e+'")'})+");return n}")(y,n.frag)),e}function H(e){for(var t,n=e.getElementsByTagName("*"),r=n.length,o=RegExp("^(?:"+f().join("|")+")$","i"),i=[];r--;)t=n[r],o.test(t.nodeName)&&i.push(t.applyElement(function(e){for(var t,n=e.attributes,r=n.length,o=e.ownerDocument.createElement(w+":"+e.nodeName);r--;)(t=n[r]).specified&&o.setAttribute(t.nodeName,t.nodeValue);return o.style.cssText=e.style.cssText,o}(t)));return i}function B(s){function l(){clearTimeout(n._removeSheetTimer),c&&c.removeNode(!0),c=null}var c,d,n=p(s),e=s.namespaces,t=s.parentWindow;return!K||s.printShived||(void 0===e[w]&&e.add(w),t.attachEvent("onbeforeprint",function(){l();for(var e,t,n,r=s.styleSheets,o=[],i=r.length,a=Array(i);i--;)a[i]=r[i];for(;n=a.pop();)if(!n.disabled&&Z.test(n.media)){try{t=(e=n.imports).length}catch(e){t=0}for(i=0;i<t;i++)a.push(e[i]);try{o.push(n.cssText)}catch(e){}}o=function(e){for(var t,n=e.split("{"),r=n.length,o=RegExp("(^|[\\s,>+~])("+f().join("|")+")(?=[[\\s,>+~#.:]|$)","gi"),i="$1"+w+"\\:$2";r--;)(t=n[r]=n[r].split("}"))[t.length-1]=t[t.length-1].replace(o,i),n[r]=t.join("}");return n.join("{")}(o.reverse().join("")),d=H(s),c=I(s,o)}),t.attachEvent("onafterprint",function(){for(var e=d,t=e.length;t--;)e[t].removeNode();clearTimeout(n._removeSheetTimer),n._removeSheetTimer=setTimeout(l,500)}),s.printShived=!0),s}var c,h,g=t.html5||{},J=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,V=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,G="_html5shiv",v=0,X={};try{var _=l.createElement("a");_.innerHTML="<xyz></xyz>",c="hidden"in _,h=1==_.childNodes.length||(l.createElement("a"),void 0===(O=l.createDocumentFragment()).cloneNode)||void 0===O.createDocumentFragment||void 0===O.createElement}catch(e){h=c=!0}var y={elements:g.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:"3.7.3",shivCSS:!1!==g.shivCSS,supportsUnknownElements:h,shivMethods:!1!==g.shivMethods,type:"default",shivDocument:i,createElement:W,createDocumentFragment:function(e,t){if(e=e||l,h)return e.createDocumentFragment();for(var n=(t=t||p(e)).frag.cloneNode(),r=0,o=f(),i=o.length;r<i;r++)n.createElement(o[r]);return n},addElements:function(e,t){var n=y.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),y.elements=n+" "+e,i(t)}},Z=(t.html5=y,i(l),/^$|\b(?:all|print)\b/),w="html5shiv",K=!(h||(_=l.documentElement,void 0===l.namespaces)||void 0===l.parentWindow||void 0===_.applyElement||void 0===_.removeNode||void 0===t.attachEvent);y.type+=" print",(y.shivPrint=B)(l),"object"==typeof module&&module.exports&&(module.exports=y)}n.addTest("csspositionsticky",function(){var e="position:",t=T("a").style;return t.cssText=e+s.join("sticky;"+e).slice(0,-e.length),-1!==t.position.indexOf("sticky")});function Q(e){var t,n=s.length,r=a.CSSRule;if(void 0===r)return S;if(e){if((t=(e=e.replace(/^@/,"")).replace(/-/g,"_").toUpperCase()+"_RULE")in r)return"@"+e;for(var o=0;o<n;o++){var i=s[o];if(i.toUpperCase()+"_"+t in r)return"@-"+i.toLowerCase()+"-"+e}}return!1}Y=!("onblur"in d.documentElement);var Y,b,x,M,z,C,N,j,ee,k,A,te=function(e,t){var n;return!!e&&(!(n=(e="on"+e)in(t=t&&"string"!=typeof t?t:T(t||"div")))&&Y&&((t=t.setAttribute?t:T("div")).setAttribute(e,""),n="function"==typeof t[e],t[e]!==S&&(t[e]=S),t.removeAttribute(e)),n)},ne=(e.hasEvent=te,e.testStyles=R),O=(n.addTest("touchevents",function(){var t,e;return"ontouchstart"in a||a.DocumentTouch&&d instanceof DocumentTouch?t=!0:(e=["@media (",s.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join(""),ne(e,function(e){t=9===e.offsetTop})),t}),"Moz O ms Webkit"),P=e._config.usePrefixes?O.toLowerCase().split(" "):[],re=(e._domPrefixes=P,n.addTest("pointerevents",function(){for(var e=!1,t=P.length,e=n.hasEvent("pointerdown");t--&&!e;)te(P[t]+"pointerdown")&&(e=!0);return e}),e._config.usePrefixes?O.split(" "):[]),oe=(e._cssomPrefixes=re,e.atRule=Q,{elem:T("modernizr")}),L=(n._q.push(function(){delete oe.elem}),{style:oe.elem.style}),g=(n._q.unshift(function(){delete L.style}),e.testAllProps=r,e.prefixed=function(e,t,n){return 0===e.indexOf("@")?Q(e):(-1!=e.indexOf("-")&&(e=U(e)),t?r(e,t,n):r(e,"pfx"))});for(j in n.addTest("matchmedia",!!g("matchMedia",a)),e.testAllProps=F,n.addTest("flexwrap",F("flexWrap","wrap",!0)),o)if(o.hasOwnProperty(j)){if(b=[],(x=o[j]).name&&(b.push(x.name.toLowerCase()),x.options)&&x.options.aliases&&x.options.aliases.length)for(M=0;M<x.options.aliases.length;M++)b.push(x.options.aliases[M].toLowerCase());for(z=E(x.fn,"function")?x.fn():x.fn,C=0;C<b.length;C++)1===(N=b[C].split(".")).length?n[N[0]]=z:(!n[N[0]]||n[N[0]]instanceof Boolean||(n[N[0]]=new Boolean(n[N[0]])),n[N[0]][N[1]]=z),$.push((z?"":"no-")+N.join("-"))}t=$,k=u.className,A=n._config.classPrefix||"",m&&(k=k.baseVal),n._config.enableJSClass&&(ee=new RegExp("(^|\\s)"+A+"no-js(\\s|$)"),k=k.replace(ee,"$1"+A+"js$2")),n._config.enableClasses&&(k+=" "+A+t.join(" "+A),m?u.className.baseVal=k:u.className=k),delete e.addTest,delete e.addAsyncTest;for(var ie=0;ie<n._q.length;ie++)n._q[ie]();a.Modernizr=n}(window,document),Modernizr.viewport_width=Math.max(document.documentElement.clientWidth,window.innerWidth||0),Modernizr.viewport_height=Math.max(document.documentElement.clientHeight,window.innerHeight||0),Modernizr.narrow=Modernizr.viewport_width<=704,Modernizr.constrained=Modernizr.viewport_width<=1200,Modernizr.site_menu=Modernizr.viewport_width<=1020?"button":"nav_bar",Modernizr.touch=Modernizr.touchevents||Modernizr.pointerevents&&(0<navigator.MaxTouchPoints||0<navigator.msMaxTouchPoints),Modernizr.phone=Modernizr.narrow&&Modernizr.touch,Modernizr.tablet=Modernizr.viewport_width<1075&&Modernizr.touch,Modernizr.desktop=!Modernizr.constrained&&!Modernizr.touch,Modernizr.laptop=!(Modernizr.desktop||Modernizr.tablet||Modernizr.phone),new RegExp("hideallads")),sr_html=(Modernizr.adfree=patt.test(window.location.href),document.querySelector("html")),cn=sr_html.className,sr_host_parts=(Modernizr.phone?sr_html.className=cn.concat(" phone"):Modernizr.tablet?sr_html.className=cn.concat(" tablet"):(Modernizr.desktop||Modernizr.laptop)&&(sr_html.className=cn.concat(" desktop")),window.location.hostname.split(".")),cn=sr_html.className,sr_logger=(Modernizr.is_build=Modernizr.is_live=Modernizr.is_dev=!1,"www"===sr_host_parts[0]||"fbref"===sr_host_parts[0]?(Modernizr.is_live=!0,sr_html.className=cn.concat(" is_live")):sr_host_parts[0].startsWith("b")?(Modernizr.is_build=!0,sr_html.className=cn.concat(" is_build")):(sr_host_parts[0].startsWith("d")||sr_host_parts[0].startsWith("r"))&&(Modernizr.is_dev=!0,sr_html.className=cn.concat(" is_dev")),Modernizr.is_stathead=!1,("stathead"===sr_host_parts[1]&&"srdevel"===sr_host_parts[2]||"stathead"===sr_host_parts[0]||"www"===sr_host_parts[0]&&"stathead"===sr_host_parts[1])&&(cn=sr_html.className,sr_html.className=cn.concat(" is_stathead"),Modernizr.is_stathead=!0),function(){var e=null,t={enableLogger:function(){null!=e&&(window.console.log=e)},disableLogger:function(){e=console.log,window.console.log=function(){}}};return t}()),sr_utilities_js_loader=(!document.srdev&&sr_is_production&&sr_logger.disableLogger(),Modernizr.is_modern=1,Modernizr.lang=document.lang||"",Modernizr.srdev=document.srdev,[]);function vjs_readCookie(e){for(var t=e+"=",n=document.cookie.split(";"),r=0;r<n.length;r++){for(var o=n[r];" "===o.charAt(0);)o=o.substring(1,o.length);if(0===o.indexOf(t))return decodeURIComponent(o.substring(t.length,o.length))}return null}function vjs_createCookie(e,t,n){var r,o="",o=n?((r=new Date).setTime(r.getTime()+24*n*60*60*1e3),"; expires="+r.toGMTString()):"",n=encodeURIComponent(e)+"="+encodeURIComponent(t)+o+"; path=/";document.cookie=n}!function(o){function e(e,t){"use strict";var n=o.document.getElementsByTagName("script")[0],r=o.document.createElement("script");return r.src=e,r.async=!0,n.parentNode.insertBefore(r,n),t&&"function"==typeof t&&(r.onload=t),r}"undefined"!=typeof module?module.exports=e:o.loadJS=e}("undefined"!=typeof global?global:this),String.prototype.vjs_isMatch=function(e){return null!==this.match(e)};var sr_time_begin=new Date,sr_perf_startTime=new Date,sr_perf_log="<strong>Performance:</strong>",sr_perf_lastTime=new Date;function vjs_ready(e){"loading"!=document.readyState?e():document.addEventListener("DOMContentLoaded",e)}
+</script>
+<script>
+var _sr_modern_url = ''.concat(document.srdev?'https://cdn.ssref.net/nocdn/dev/'.concat(document.srdev.substring(0, 2)):"https://cdn.ssref.net/req/202306191",
+                               "/js/fb", "/sr",document.srdev?"":"-min",Modernizr.lang?'-'.concat(Modernizr.lang):'',   			       ".js");
+loadJS( _sr_modern_url, function() { vjs_ready(sr_fire_js); });
+</script>
+<!-- JS END -->
+
+
+<!-- include:end  ="/inc/klecko_header_full_fb.html_f" -->
+
+
+
+    <meta name="revised" content="12:43:50 26-Jun-2023" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="generated-by"     content="/home/fb/deploy/www/base_en/teams/team_season.fcgi" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="4d383b" />
+    <meta name="msapplication-navbutton-color" content="4d383b" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="4d383b" />
+    
+
+
+<!-- HeaderSportsTeamSchema -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SportsTeam",
+    "name": "Los Angeles FC",
+    "sport": "Association Football",
+    "url": "https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer",
+    "logo": "https://cdn.ssref.net/req/202306191/tlogo/fb/81d817a3.png",
+    "memberOf": [
+        
+            {
+                "@type": "SportsOrganization",
+                "name": "Major League Soccer"
+            }
+        
+    ],
+    "coach": {
+        "@type": "Person",
+        "name": "Steve Cherundolo"
+    },
+    "athlete": [
+        
+            {
+                "@type": "Person",
+                "name": "Carlos Vela"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Eldin Jakupović"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Giorgio Chiellini"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Aaron Long"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Kellyn Acosta"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Ryan Hollingshead"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Ilie Sánchez"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "John McCarthy"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Sergi Palencia"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Jesús David Murillo Largacha"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Denis Bouanga"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Timothy Tillman"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Abraham Romero"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Diego Palacios"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Denil Maldonado"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "José Cifuentes"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Kwadwo Opoku"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Julian Gaines"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Mateusz Bogusz"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Stipe Biuk"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Daniel Crisostomo"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Antonio Leone"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Christian Torres"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Erik Duenas"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Christopher Jaime"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Diego Rosales"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Yekeson Subah"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Nathan Ordaz"
+            },
+        
+            {
+                "@type": "Person",
+                "name": "Noah Dollenmayer"
+            }
+        
+    ]}</script>
+<!-- HeaderSportsTeamSchema:END -->
+<!-- HeaderSportsEventSchema -->
+<script type="application/ld+json">
+[
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Portland Timbers"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Portland Timbers on March 4th, 2023",
+		"endDate": "",
+		"name": "Portland Timbers @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "March 4th, 2023",
+			"url": "https://fbref.com/en/matches/43976b80/Los-Angeles-FC-Portland-Timbers-March-4-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Field"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "New England"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs New England on March 12th, 2023",
+		"endDate": "",
+		"name": "New England @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "March 12th, 2023",
+			"url": "https://fbref.com/en/matches/1550552e/Los-Angeles-FC-New-England-Revolution-March-12-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Field"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Seattle"
+			}
+		],
+		"description": "Seattle vs Los Angeles FC on March 18th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Seattle",
+			"sport": "Association Football",
+		"startDate": "March 18th, 2023",
+			"url": "https://fbref.com/en/matches/33dbf8b4/Seattle-Sounders-FC-Los-Angeles-FC-March-18-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Lumen Field"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "FC Dallas"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs FC Dallas on March 25th, 2023",
+		"endDate": "",
+		"name": "FC Dallas @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "March 25th, 2023",
+			"url": "https://fbref.com/en/matches/3220374f/Los-Angeles-FC-FC-Dallas-March-25-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Field"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Colorado Rapids"
+			}
+		],
+		"description": "Colorado Rapids vs Los Angeles FC on April 1st, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Colorado Rapids",
+			"sport": "Association Football",
+		"startDate": "April 1st, 2023",
+			"url": "https://fbref.com/en/matches/2449a630/Colorado-Rapids-Los-Angeles-FC-April-1-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Dick's Sporting Goods Park"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Austin"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Austin on April 8th, 2023",
+		"endDate": "",
+		"name": "Austin @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "April 8th, 2023",
+			"url": "https://fbref.com/en/matches/1d295003/Los-Angeles-FC-Austin-FC-April-8-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "LA Galaxy"
+			}
+		],
+		"description": "LA Galaxy vs Los Angeles FC on April 16th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ LA Galaxy",
+			"sport": "Association Football",
+		"startDate": "April 16th, 2023",
+			"url": "https://fbref.com/en/matches/83b93fda/El-Trafico-LA-Galaxy-Los-Angeles-FC-April-16-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Dignity Health Sports Park"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Nashville"
+			}
+		],
+		"description": "Nashville vs Los Angeles FC on April 22nd, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Nashville",
+			"sport": "Association Football",
+		"startDate": "April 22nd, 2023",
+			"url": "https://fbref.com/en/matches/2a72bd3c/Nashville-SC-Los-Angeles-FC-April-22-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Geodis Park"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "San Jose"
+			}
+		],
+		"description": "San Jose vs Los Angeles FC on May 6th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ San Jose",
+			"sport": "Association Football",
+		"startDate": "May 6th, 2023",
+			"url": "https://fbref.com/en/matches/48ec16d4/San-Jose-Earthquakes-Los-Angeles-FC-May-6-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Levi's Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Real Salt Lake"
+			}
+		],
+		"description": "Real Salt Lake vs Los Angeles FC on May 13th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Real Salt Lake",
+			"sport": "Association Football",
+		"startDate": "May 13th, 2023",
+			"url": "https://fbref.com/en/matches/2ee9a3e5/Real-Salt-Lake-Los-Angeles-FC-May-13-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "America First Field"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Sporting KC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Sporting KC on May 17th, 2023",
+		"endDate": "",
+		"name": "Sporting KC @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "May 17th, 2023",
+			"url": "https://fbref.com/en/matches/03cb2246/Los-Angeles-FC-Sporting-KC-May-17-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "San Jose"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs San Jose on May 20th, 2023",
+		"endDate": "",
+		"name": "San Jose @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "May 20th, 2023",
+			"url": "https://fbref.com/en/matches/6f4782e7/Los-Angeles-FC-San-Jose-Earthquakes-May-20-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Atlanta Utd"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Atlanta Utd on June 7th, 2023",
+		"endDate": "",
+		"name": "Atlanta Utd @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "June 7th, 2023",
+			"url": "https://fbref.com/en/matches/c879a2d2/Los-Angeles-FC-Atlanta-United-June-7-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Dynamo FC"
+			}
+		],
+		"description": "Dynamo FC vs Los Angeles FC on June 10th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Dynamo FC",
+			"sport": "Association Football",
+		"startDate": "June 10th, 2023",
+			"url": "https://fbref.com/en/matches/3458934b/Houston-Dynamo-Los-Angeles-FC-June-10-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Shell Energy Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Dynamo FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Dynamo FC on June 14th, 2023",
+		"endDate": "",
+		"name": "Dynamo FC @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "June 14th, 2023",
+			"url": "https://fbref.com/en/matches/72222e8e/Los-Angeles-FC-Houston-Dynamo-June-14-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Sporting KC"
+			}
+		],
+		"description": "Sporting KC vs Los Angeles FC on June 17th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Sporting KC",
+			"sport": "Association Football",
+		"startDate": "June 17th, 2023",
+			"url": "https://fbref.com/en/matches/d51e1b82/Sporting-KC-Los-Angeles-FC-June-17-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Children's Mercy Park"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Seattle"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Seattle on June 21st, 2023",
+		"endDate": "",
+		"name": "Seattle @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "June 21st, 2023",
+			"url": "https://fbref.com/en/matches/78997dca/Los-Angeles-FC-Seattle-Sounders-FC-June-21-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Vancouver"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Vancouver on June 24th, 2023",
+		"endDate": "",
+		"name": "Vancouver @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "June 24th, 2023",
+			"url": "https://fbref.com/en/matches/7f5e0893/Los-Angeles-FC-Vancouver-Whitecaps-FC-June-24-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "FC Dallas"
+			}
+		],
+		"description": "FC Dallas vs Los Angeles FC on July 1st, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ FC Dallas",
+			"sport": "Association Football",
+		"startDate": "July 1st, 2023",
+			"url": "https://fbref.com/en/matches/d223bc25/FC-Dallas-Los-Angeles-FC-July-1-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Toyota Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "LA Galaxy"
+			}
+		],
+		"description": "LA Galaxy vs Los Angeles FC on July 4th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ LA Galaxy",
+			"sport": "Association Football",
+		"startDate": "July 4th, 2023",
+			"url": "https://fbref.com/en/matches/ab228f71/El-Trafico-LA-Galaxy-Los-Angeles-FC-July-4-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Rose Bowl"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "San Jose"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs San Jose on July 8th, 2023",
+		"endDate": "",
+		"name": "San Jose @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "July 8th, 2023",
+			"url": "https://fbref.com/en/matches/2a1ad8a2/Los-Angeles-FC-San-Jose-Earthquakes-July-8-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "St. Louis"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs St. Louis on July 12th, 2023",
+		"endDate": "",
+		"name": "St. Louis @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "July 12th, 2023",
+			"url": "https://fbref.com/en/matches/d8f947d4/Los-Angeles-FC-St-Louis-City-July-12-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Minnesota Utd"
+			}
+		],
+		"description": "Minnesota Utd vs Los Angeles FC on July 15th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Minnesota Utd",
+			"sport": "Association Football",
+		"startDate": "July 15th, 2023",
+			"url": "https://fbref.com/en/matches/79affcec/Minnesota-United-Los-Angeles-FC-July-15-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Allianz Field"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Colorado Rapids"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Colorado Rapids on August 20th, 2023",
+		"endDate": "",
+		"name": "Colorado Rapids @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "August 20th, 2023",
+			"url": "https://fbref.com/en/matches/d35e41ea/Los-Angeles-FC-Colorado-Rapids-August-20-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Charlotte"
+			}
+		],
+		"description": "Charlotte vs Los Angeles FC on August 26th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Charlotte",
+			"sport": "Association Football",
+		"startDate": "August 26th, 2023",
+			"url": "https://fbref.com/en/matches/9add44a3/Charlotte-FC-Los-Angeles-FC-August-26-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Bank of America Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Inter Miami"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Inter Miami on September 3rd, 2023",
+		"endDate": "",
+		"name": "Inter Miami @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "September 3rd, 2023",
+			"url": "https://fbref.com/en/matches/f8e04db6/Los-Angeles-FC-Inter-Miami-September-3-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Portland Timbers"
+			}
+		],
+		"description": "Portland Timbers vs Los Angeles FC on September 9th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Portland Timbers",
+			"sport": "Association Football",
+		"startDate": "September 9th, 2023",
+			"url": "https://fbref.com/en/matches/13963e6e/Portland-Timbers-Los-Angeles-FC-September-9-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Providence Park"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "LA Galaxy"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs LA Galaxy on September 16th, 2023",
+		"endDate": "",
+		"name": "LA Galaxy @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "September 16th, 2023",
+			"url": "https://fbref.com/en/matches/889d28b7/El-Trafico-Los-Angeles-FC-LA-Galaxy-September-16-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "St. Louis"
+			}
+		],
+		"description": "St. Louis vs Los Angeles FC on September 20th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ St. Louis",
+			"sport": "Association Football",
+		"startDate": "September 20th, 2023",
+			"url": "https://fbref.com/en/matches/c4c1788e/St-Louis-City-Los-Angeles-FC-September-20-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Citypark"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Philadelphia"
+			}
+		],
+		"description": "Philadelphia vs Los Angeles FC on September 23rd, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Philadelphia",
+			"sport": "Association Football",
+		"startDate": "September 23rd, 2023",
+			"url": "https://fbref.com/en/matches/af71cc25/Philadelphia-Union-Los-Angeles-FC-September-23-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Subaru Park"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Real Salt Lake"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Real Salt Lake on October 1st, 2023",
+		"endDate": "",
+		"name": "Real Salt Lake @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "October 1st, 2023",
+			"url": "https://fbref.com/en/matches/b2266d6a/Los-Angeles-FC-Real-Salt-Lake-October-1-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Minnesota Utd"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			}
+		],
+		"description": "Los Angeles FC vs Minnesota Utd on October 4th, 2023",
+		"endDate": "",
+		"name": "Minnesota Utd @ Los Angeles FC",
+			"sport": "Association Football",
+		"startDate": "October 4th, 2023",
+			"url": "https://fbref.com/en/matches/a8808de1/Los-Angeles-FC-Minnesota-United-October-4-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BMO Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Austin"
+			}
+		],
+		"description": "Austin vs Los Angeles FC on October 7th, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Austin",
+			"sport": "Association Football",
+		"startDate": "October 7th, 2023",
+			"url": "https://fbref.com/en/matches/63f68192/Austin-FC-Los-Angeles-FC-October-7-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "Q2 Stadium"
+		}
+	},
+    
+	{
+		"@context": "http://www.schema.org",
+		"@type": "SportsEvent",
+		"competitor": [
+			{
+			"@type": "SportsTeam",
+			"name": "Los Angeles FC"
+			},
+			{
+			"@type": "SportsTeam",
+			"name": "Vancouver"
+			}
+		],
+		"description": "Vancouver vs Los Angeles FC on October 21st, 2023",
+		"endDate": "",
+		"name": "Los Angeles FC @ Vancouver",
+			"sport": "Association Football",
+		"startDate": "October 21st, 2023",
+			"url": "https://fbref.com/en/matches/fa555149/Vancouver-Whitecaps-FC-Los-Angeles-FC-October-21-2023-Major-League-Soccer",
+		"eventStatus": "https://schema.org/EventScheduled",
+		"location": {
+			"@type": "Place",
+			"name": "BC Place Stadium"
+		}
+	}
+    
+]</script>
+<!-- HeaderSportsEventSchema:END -->
+
+    <!-- HeaderSeoSocial -->
+    <meta name="keywords" content="">
+    <meta itemprop="url"           content="https://fbref.com">
+    <meta itemprop="name"          content="FBref">
+    <meta itemprop="alternateName" content="">
+    <meta property="fb:app_id"     content="">
+    <meta property="og:url"          content="https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">
+    <meta property="og:title"        content="Los Angeles FC Scores and Fixtures, All Competitions | FBref.com">
+    <meta property="og:site_name"    content="FBref.com">
+    <meta property="og:type"         content="    Organization" />
+    <meta property="og:description"  content="Check out Los Angeles FC's latest scores, goals, shooting, passing, defense, possession stats and more for the 2023 Major League Soccer.">
+    <meta property="og:image"        content="http://cdn.ssref.net/scripts/image_resize.cgi?min=200&url=https://cdn.ssref.net/req/202306191/tlogo/fb/81d817a3.png">
+    <meta name="twitter:card"         content="summary">
+    <meta name="twitter:site"         content="@FBref">
+    <meta name="twitter:creator"      content="@FBref">
+    <meta property="twitter:image"    content="http://cdn.ssref.net/scripts/image_resize.cgi?min=200&url=https://cdn.ssref.net/req/202306191/tlogo/fb/81d817a3.png">
+    <meta name="twitter:domain"       content="FBref.com">
+    <meta name="referrer" content="unsafe-url">
+    <!-- HeaderSeoSocial:END -->
+
+    <!-- tiles, touch, favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-180x180-precomposed.png">
+    <link rel="icon"                         sizes="48x48"   href="https://cdn.ssref.net/req/202306191/favicons/fb/favicon-48.png">
+    <link rel="shortcut icon"                sizes="228x228" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-228x228-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="228x228" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-228x228-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="195x195" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-195x195-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="180x180" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-180x180-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="152x152" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="144x144" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="128x128" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-128x128-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="120x120" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="114x114" href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="76x76"   href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="72x72"   href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="57x57"   href="https://cdn.ssref.net/req/202306191/favicons/fb/apple-touch-icon-57x57-precomposed.png">
+    <link rel="icon"                         sizes="32x32"   href="https://cdn.ssref.net/req/202306191/favicons/fb/favicon-32.png">
+    <!--[if IE]>
+    <link rel="shortcut icon"                                href="https://cdn.ssref.net/req/202306191/favicons/fb/favicon.ico"><![endif]-->
+    <meta name="msapplication-TileColor" content="#04376c" />
+    <meta name="msapplication-TileImage" content="https://cdn.ssref.net/req/202306191/favicons/fb/ms-tile-144.png" />
+    <link rel=search        type="application/opensearchdescription+xml" href="https://cdn.ssref.net/req/202306191/opensearch/opensearch-fb.xml" title=" Player and Team Search">
+    <!-- tiles, touch, favicons:end -->
+
+<!-- ad code: begin -->
+
+
+    <link rel="preconnect" href="https://a.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://b.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://c.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://d.pub.network/" crossorigin />
+    <link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+    <link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+    <link rel="preconnect" href="https://btloader.com/" crossorigin />
+    <link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+    <link rel="preconnect" href="https://confiant-integrations.global.ssl.fastly.net" crossorigin />
+<script data-ad-client="ca-pub-5319453360923253" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<link rel="stylesheet" href="https://a.pub.network/sports-reference/cls.css" type="text/css">
+<script>
+    var freestar = freestar || {};
+    freestar.config = freestar.config || {};
+    freestar.config.enabled_slots = [ "div-gpt-ad-300x250-ATF","div-gpt-ad-728x90-ATF","div-gpt-ad-728x90-GeneralHeader","div-gpt-ad-728x90-Footer" ];
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree || document.getElementById('sr_suppress_ads') || Modernizr.viewport_width < 1810) {
+    // do not include the rails
+    }
+    else {
+         freestar.config.enabled_slots.push('div-gpt-ad-160x600-1');
+         freestar.config.enabled_slots.push('div-gpt-ad-160x600-2');
+    } 
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+    var fs_debug = window.location.search.indexOf('fsdebug') == -1 ? false : true;
+    freestar.hitTime = Date.now();
+    freestar.queue = freestar.queue || [];
+    freestar.config = freestar.config || {};
+    freestar.queue.push(function() {
+      // Include the line reflecting the area/section of the site you are on
+      googletag.pubads().setTargeting('sr_site_id', 'fb');
+    });
+!function(a,b){
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+        return;
+    }  
+    var c=b.getElementsByTagName("script")[0],
+    d=b.createElement("script"),
+    e="https://a.pub.network/fbref-com";
+    e+=fs_debug?"/qa/pubfig.min.js":"/pubfig.min.js",
+    d.async=!0,
+    d.src=e,
+    c.parentNode.insertBefore(d,c)
+}(window,document);
+</script>
+
+
+<!-- ad code:end -->
+
+
+</head>
+<body class="fb">
+<div id="wrap">
+  
+  <div id="translations" role="navigation">
+   <div class="links">
+    <div class="welcome">Welcome, football fans from around the world!</div>
+    <div><span class="use">Use FBref in: </span>
+    <div class="langs">
+                       <a class="pt" onclick="sr_set_trans_choice('pt');" href="https://fbref.com/pt/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Português</a>
+         &#183;                        <a class="en" onclick="sr_set_trans_choice('en');" href="https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">English</a>
+         &#183;                        <a class="fr" onclick="sr_set_trans_choice('fr');" href="https://fbref.com/fr/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Français</a>
+         &#183;                        <a class="it" onclick="sr_set_trans_choice('it');" href="https://fbref.com/it/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Italiano</a>
+         &#183;                        <a class="de" onclick="sr_set_trans_choice('de');" href="https://fbref.com/de/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Deutsch</a>
+         &#183;                        <a class="es" onclick="sr_set_trans_choice('es');" href="https://fbref.com/es/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Español</a>
+                    </div>
+    </div>
+  </div>
+<div class="closer" onclick="sr_set_trans_choice('en',true, true)"></div>
+</div>
+
+<script>
+
+
+
+var sr_lang_curr   = 'en';
+var sr_lang_cookie = 'sr_lang';
+var sr_lang_confirmed_cookie = 'sr_lang_confirmed';
+var sr_lang_views_cookie = 'sr_lang_views-'.concat(sr_lang_curr);
+var sr_lang_choice = vjs_readCookie(sr_lang_cookie);
+var sr_lang_confirmed = vjs_readCookie(sr_lang_confirmed_cookie);
+var sr_lang_views = vjs_readCookie(sr_lang_views_cookie);
+// set sr_lang_views cookie to a value if null.
+if (sr_lang_views === null) {
+    sr_lang_views = 3.5; // this corresponds to 4 views of the links
+    vjs_createCookie(sr_lang_views_cookie,sr_lang_views,3650);
+}
+var sr_trans_el = document.getElementById('translations');
+var sr_lang_choice_url;
+if (sr_lang_choice) {
+         if ("pt" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/pt/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("en" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("fr" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/fr/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("it" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/it/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("de" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/de/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("es" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/es/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+}
+
+var sr_trans_closer_el = document.querySelector('#translations .closer');
+var sr_trans_welcome_el = document.querySelector('#translations .welcome');
+var sr_trans_use_el = document.querySelector('#translations .use');
+var sr_trans_langs_el = document.querySelector('#translations .langs');
+
+/* *********************************************************************
+   # Usage       :   sr_check_translation();
+   # Purpose     :   the kickoff script for the translation paths users can follow
+   # Returns     :   nothing
+   # Parameters  :   none
+   # Throws      :
+   # See Also    :
+   # Comments    :   called by default in the page, and then we call again later
+                     if that did not work.
+   ********************************************************************** */
+function sr_check_translation() {
+
+   // do not run if we are on the live server.
+   if (!sr_trans_el || sr_lang_views < 0) {
+      console.log('Modernizr.is_live or no sr_trans_el or sr_lang_views < 0 is true, so skipping.');
+      return false;
+   }
+
+   // this is called multiple times, so we do the following to keep us from running it 2x.
+   if (Modernizr.translation_run) {
+      console.log('Modernizr.translation_run is already true, so skipping sr_check_translation');
+      return false;
+   }
+   else {
+      console.log('Modernizr.translation_run is false, so running sr_check_translation');
+      Modernizr.translation_run = true;
+   }
+
+   // no cookies? just return false and they have to use the nav options.
+   if (!Modernizr.cookies) {
+       return false;
+   }
+
+   // if blog page, do not show the translation div
+   if(window.location.pathname.includes('-blog')){
+      sr_trans_el.className = '';
+      return;
+   }
+ 
+   // our current language does not equal the language choice and we always forward
+   if (sr_lang_choice && (sr_lang_choice !== sr_lang_curr)  && (sr_lang_confirmed === 'always_forward')) {
+         window.location.href = sr_lang_choice_url;
+         return true;
+   }
+   // our current language does not equal the language choice, or no choice has been made
+   else if (! sr_lang_choice && sr_lang_confirmed === 'always_forward') {
+         // this should be impossible, so remove the cookies.
+	 vjs_createCookie(sr_lang_confirmed_cookie,"",-1);
+	 vjs_createCookie(sr_lang_cookie,"",-1);
+         return true;
+   }
+   // user told us not to ask them in the future.
+   else if (sr_lang_confirmed === 'never_question') {
+         return 'false';
+   }
+   else if (sr_lang_curr !== sr_lang_choice) {
+         // lang is chosen and confirmed, so we auto-forward them. 
+         if ("pt" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/pt/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("en" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("fr" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/fr/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("it" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/it/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("de" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/de/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if ("es" === sr_lang_choice) {                sr_lang_choice_url = 'https://fbref.com/es/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer';
+         }
+         if (sr_lang_choice && sr_lang_confirmed === 'always_forward') {
+              window.location.href = sr_lang_choice_url;
+              return true;
+         }
+
+         // if a choice has been made then we remove the welcome.
+         if (sr_lang_choice) {
+             if (sr_trans_welcome_el)  sr_trans_welcome_el.parentNode.removeChild(sr_trans_welcome_el);   
+
+             if ("pt" === sr_lang_choice) {
+                sr_trans_use_el.innerHTML = "Vá para esta página em português?";
+                var langs_el = ''.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'pt', ","'yes', ", "sr_lang_confirmed || false",
+                	                 ')">', 'SIM', '</a>&nbsp;&nbsp; ');
+                langs_el = langs_el.concat('ou ');
+                langs_el = langs_el.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'pt', ","'no', ", "sr_lang_confirmed || false",
+                	                 ')">', 'NÃO', '</a>&nbsp;&nbsp; ');
+                sr_trans_langs_el.innerHTML = langs_el;
+             }
+
+             if ("en" === sr_lang_choice) {
+                sr_trans_use_el.innerHTML = "Go to this page in English?";
+                var langs_el = ''.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'en', ","'yes', ", "sr_lang_confirmed || false",
+                	                 ')">', 'YES', '</a>&nbsp;&nbsp; ');
+                langs_el = langs_el.concat('or ');
+                langs_el = langs_el.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'en', ","'no', ", "sr_lang_confirmed || false",
+                	                 ')">', 'NO', '</a>&nbsp;&nbsp; ');
+                sr_trans_langs_el.innerHTML = langs_el;
+             }
+
+             if ("fr" === sr_lang_choice) {
+                sr_trans_use_el.innerHTML = "Aller à cette page en anglais?";
+                var langs_el = ''.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'fr', ","'yes', ", "sr_lang_confirmed || false",
+                	                 ')">', 'OUI', '</a>&nbsp;&nbsp; ');
+                langs_el = langs_el.concat('ou ');
+                langs_el = langs_el.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'fr', ","'no', ", "sr_lang_confirmed || false",
+                	                 ')">', 'NON', '</a>&nbsp;&nbsp; ');
+                sr_trans_langs_el.innerHTML = langs_el;
+             }
+
+             if ("it" === sr_lang_choice) {
+                sr_trans_use_el.innerHTML = "Vai a questa pagina in italiano?";
+                var langs_el = ''.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'it', ","'yes', ", "sr_lang_confirmed || false",
+                	                 ')">', 'SÌ', '</a>&nbsp;&nbsp; ');
+                langs_el = langs_el.concat('o ');
+                langs_el = langs_el.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'it', ","'no', ", "sr_lang_confirmed || false",
+                	                 ')">', 'NO', '</a>&nbsp;&nbsp; ');
+                sr_trans_langs_el.innerHTML = langs_el;
+             }
+
+             if ("de" === sr_lang_choice) {
+                sr_trans_use_el.innerHTML = "Gehe zu dieser Seite auf Deutsch?";
+                var langs_el = ''.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'de', ","'yes', ", "sr_lang_confirmed || false",
+                	                 ')">', 'JA', '</a>&nbsp;&nbsp; ');
+                langs_el = langs_el.concat('oder ');
+                langs_el = langs_el.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'de', ","'no', ", "sr_lang_confirmed || false",
+                	                 ')">', 'NEIN', '</a>&nbsp;&nbsp; ');
+                sr_trans_langs_el.innerHTML = langs_el;
+             }
+
+             if ("es" === sr_lang_choice) {
+                sr_trans_use_el.innerHTML = "¿Ir a esta página en español?";
+                var langs_el = ''.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'es', ","'yes', ", "sr_lang_confirmed || false",
+                	                 ')">', 'SI', '</a>&nbsp;&nbsp; ');
+                langs_el = langs_el.concat('o ');
+                langs_el = langs_el.concat('&nbsp;&nbsp;<a href="javascript:void(0)" onclick="sr_confirm_trans_choice(',
+		                         "'es', ","'no', ", "sr_lang_confirmed || false",
+                	                 ')">', 'NO', '</a>&nbsp;&nbsp; ');
+                sr_trans_langs_el.innerHTML = langs_el;
+             }
+
+        }
+        sr_trans_el.className = 'show';
+        vjs_createCookie(sr_lang_views_cookie, sr_lang_views - 1, 3650);
+    }
+}
+sr_check_translation();
+</script>
+
+  <div id="header" role="banner">
+  
+<ul id="subnav" class="notranslate">
+	<li><a href="https://www.sports-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav"><svg height="15px" width="20px"><use xlink:href="#ic-sr-pennant"></use></svg> Sports&nbsp;Reference&#8239;&reg;</a></li>
+	<li><a href="https://www.baseball-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Baseball</a></li>
+	<li><a href="https://www.pro-football-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Football</a> <a href="https://www.sports-reference.com/cfb/">(college)</a></li>
+	<li><a href="https://www.basketball-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Basketball</a> <a href="https://www.sports-reference.com/cbb/">(college)</a></li>
+	<li><a href="https://www.hockey-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Hockey</a></li>
+
+
+	<li class="current"><a href="https://fbref.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Soccer</a></li>
+
+	<li><a href="https://www.sports-reference.com/blog/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Blog</a></li>
+
+    <li><a href="https://stathead.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Stathead&#8239;&reg;</a></li>
+
+	<li><a href="https://www.sports-reference.com/feedback/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav">Questions or Comments?</a></li>
+	<li class="user logged_in">Welcome <span class="username"></span>&nbsp;&#183;&nbsp;<a href="https://stathead.com/profile/?utm_source=fb&amp;utm_medium=sr_xsite&amp;utm_campaign=2023_01_srnav_account">Your Account</a></li>
+<li class="user logged_in"><a class="logout" onclick="sr_auth_logout_page_elements();if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/profile/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" onclick="if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/users/login.cgi?token=1">Login</a></li>
+<li class="user not_logged_in"><a href="https://stathead.com/users/signup.cgi">Create Account</a></li>
+
+</ul>
+
+  <a href="/en/"><img src="https://cdn.ssref.net/req/202306191/logos/fb-logo.svg" onerror="this.src='https://cdn.ssref.net/req/202306191/logos/fb-logo.png'; this.onerror = null;" alt="FBref.com Logo &amp; Link to home page" /></a>
+<div id="nav_trigger" role="button"><a href="#site_menu_link">MENU</a></div>
+<div id="nav" role="navigation" aria-label="FBref.com sections">
+	<ul id="main_nav" class="hoversmooth nohover"><li id="header_players" ><a href="/en/players/">Players</a></li>
+<li id="header_clubs" class="current"><a href="/en/squads/">Clubs</a></li>
+<li id="header_comps" ><a href="/en/comps/">Competitions</a></li>
+<li id="header_countries" ><a href="/en/countries/">Countries</a></li>
+<li id="header_scores" ><a href="/en/matches/">Matches</a></li>
+
+<li id="header_lang"><a>Languages</a>
+  <div class="mobile_list">
+    <div class="list"><strong class="desc">Alternate Languages:</strong>
+      
+                   <a href="https://fbref.com/pt/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Português</a>
+         &#183; 
+      
+                   <a href="https://fbref.com/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">English</a>
+         &#183; 
+      
+                   <a href="https://fbref.com/fr/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Français</a>
+         &#183; 
+      
+                   <a href="https://fbref.com/it/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Italiano</a>
+         &#183; 
+      
+                   <a href="https://fbref.com/de/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Deutsch</a>
+         &#183; 
+      
+                   <a href="https://fbref.com/es/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Español</a>
+        
+      
+    </div>
+    <div class="list">
+          <a onclick="sr_reset_trans_choice();" href="javascript:void(0)">Reset Language Choice</a>
+	  
+    </div>
+  </div>
+</li>
+
+
+  <li id="header_newsletter" ><a href="/en/email/">Mailing List</a></li>
+
+<!--
+<li id="header_email" ><a href="/en/about/email">Newsletter</a></li>
+<li id="header_scores" ><a>Scores/Fixtures</a></li>
+<li id="header_cups" ><a>Cups</a></li>	
+<li id="header_managers" ><a>Managers</a></li>	
+<li id="header_stathead" ><a href="https://stathead.com/">Stathead</a></li>	
+-->
+<li><a data-scroll href="#site_menu_link" class="opener">Full Site Menu Below</a></li>
+	</ul>
+	<div class="breadcrumbs">You are here: <div itemscope itemtype="https://schema.org/BreadcrumbList" class="crumbs"><span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/en/"><span itemprop="name">FB Home Page</span></a> <meta itemprop="position" content="1" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/en/squads/"><span itemprop="name">Squads</span></a> <meta itemprop="position" content="2" /></span> &gt; <strong>Los Angeles FC Scores and Fixtures, All Competitions</strong></div></div>
+	<ul class="usertools bullets-inline"><li class="user logged_in">Welcome <span class="username"></span>&nbsp;&#183;&nbsp;<a href="https://stathead.com/profile/?utm_source=fb&amp;utm_medium=sr_xsite&amp;utm_campaign=2023_01_srnav_account">Your Account</a></li>
+<li class="user logged_in"><a class="logout" onclick="sr_auth_logout_page_elements();if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/profile/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" onclick="if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/users/login.cgi?token=1">Login</a></li>
+<li class="user not_logged_in"><a href="https://stathead.com/users/signup.cgi">Create Account</a></li>
+	</ul><!-- ul.user -->
+</div><!-- div#nav -->
+<script>
+function sr_menus_setupMainNav_button_inline () {
+    if (sr_detect_operaMini || !("classList" in document.createElement("_"))) {
+	return false;
+    }
+    var nav_trigger = document.getElementById('nav_trigger');
+    if(!nav_trigger || nav_trigger.triggered) {
+	return false;
+    }
+    nav_trigger.triggered = true;
+    var nav = document.getElementById('nav');
+    var nav_trigger_a = nav_trigger.querySelector('a');
+    if (nav_trigger_a) {
+	nav_trigger_a.setAttribute('href','javascript:void(0)');
+	nav_trigger.onclick = function (event) {
+	    nav.classList.toggle('open');
+	    var is_open = nav.classList.contains('open');
+	    if (is_open) {
+		nav_trigger.classList.add('open');
+	    }
+	    else {
+		nav_trigger.classList.remove('open');
+	    }
+	    event.preventDefault();
+	    try { sr_record_analytics_event('MainNavButtonClick_inline',sr_record_directory(),sr_record_page());}
+	    catch(err) {}
+	};
+    }
+    return true;
+}
+sr_menus_setupMainNav_button_inline();
+</script><div class="search" role="search" aria-label="Site Search for players, teams and sections">
+<form method="get" name="f_big"  action="/en/search/search.fcgi">
+<div class="ac-outline">
+  <div class="ac-wrapper"><input type="search" tabindex="-1" class="ac-hint" name="hint" placeholder="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" dir="auto" aria-label="Search suggestions based on user search input">
+
+<input tabindex="1" type="search" class="ac-input completely" name="search" placeholder="Enter Person, Team, Section, etc" aria-label="Enter a player, team or section name" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" dir="auto" />
+    <div class="ac-dropdown"></div>
+  </div>
+</div>
+
+<input type="submit" value="Search" tabindex="2" />
+<input type="hidden" name="pid" value="" data-search-id>
+<input type="hidden" name="idx" value="" data-search-idx>
+
+</form>
+</div><!-- div.search -->
+
+</div><!-- div#header -->
+
+  <style>
+  .site_announcement {
+    background-color: #fffea6;
+    text-align: center;
+    padding: .4em 0;
+    width: 100%;
+  }
+  .site_announcement div {
+    margin: 0 .3em;
+  }
+  .site_announcement span {
+    white-space: nowrap;
+  }
+  @media only screen and (max-width: 1000px) {
+    .site_annoucement_extra {
+      display: none;
+    }
+  }
+  </style>
+<div class="site_announcement"><div>Get ready for the 2023 Women's World Cup with our free email newsletter. Sign up <a href="https://fbref.com/en/email/">here</a>.</div></div>
+
+
+
+<div id="info" class="clubs">
+	
+	  <div id="meta">
+	
+
+
+
+	<div class="media-item logo loader">
+		<img class="teamlogo"				src="https://cdn.ssref.net/req/202306191/tlogo/fb/81d817a3.png"			alt="Los Angeles FC Club Crest">
+		 
+	</div>
+
+
+
+<div data-template="Partials/Teams/Summary">
+  <h1>
+    
+			<span>2023 Los Angeles FC Scores and Fixtures</span>
+    
+    <span class="header_end"></span>
+  </h1>
+  
+<div class="prevnext">
+    <a href="/en/squads/81d817a3/2022/Los-Angeles-FC-Stats"><div class="button2 prev">Previous Season</div></a>
+    
+</div>
+
+
+
+    <p>
+    <strong>Record:</strong>
+    9-5-4, 
+    32 points
+    (1.78 per game),
+    6th
+    in <a href="/en/comps/22/Major-League-Soccer-Stats">Major League Soccer</a>
+    
+        (1st Tier)
+    
+    </p>
+
+    
+
+    <p>
+    <strong>Home Record:</strong> 
+    6-2-2, 
+    20 points
+    
+    <strong>Away Record:</strong>
+    3-3-2, 
+    12 points
+    </p>
+    
+    
+    
+        <p><a href="/en/squads/81d817a3/2023/goallogs/all_comps/Los-Angeles-FC-Goal-Logs-All-Competitions"><strong>Goals</strong></a>: 28 (1.56 per game), 
+        <a href="/en/squads/81d817a3/2023/goallogs/all_comps/Los-Angeles-FC-Goal-Logs-All-Competitions"><strong>Goals Against</strong></a>: 19 (1.06 per game),
+        <strong>Diff:</strong> 9</p>
+    
+
+    
+        <p><strong>xG:</strong> 28.8, 
+        <strong>xGA:</strong> 19.8,
+        <strong>Diff:</strong> 9.0</p>
+    
+
+
+
+    <p><strong>Last Match:</strong> Loss 2&ndash;3 <a href="/en/matches/7f5e0893/Los-Angeles-FC-Vancouver-Whitecaps-FC-June-24-2023-Major-League-Soccer">vs Vancouver Whitecaps FC</a></p>
+
+
+    <p><strong>Next Match:</strong> Saturday, Jul 1 <a href="/en/stathead/matchup/teams/81d817a3/15cf8f40/Los-Angeles-FC-vs-FC-Dallas-History">at FC Dallas</a></p>
+
+
+
+    <p><strong>Manager:</strong> Steve Cherundolo</p>
+
+
+
+    <p><strong>Governing Country:</strong>
+    <a href="/en/country/USA/United-States-Football">United States</a>
+    
+    <span class="f-i f-us" style="">us</span></p>
+
+
+    <p><strong>Gender</strong>: Male</p>
+
+
+
+
+<button id="meta_more_button" class="opener" data-type="hide_after" data-class="open" data-id="info">More Club Info</button>
+<script>
+// see sr.menus.js:sr_menus_checkInfoCookie to explain
+function sr_menus_checkInfoCookie_inline(browserType) {
+    var el_info = document.getElementById('info');
+    var el_button = document.getElementById('meta_more_button');
+    var bling_len = 0;    
+    if (!el_button || !el_info || !el_info.classList) { console.log('no meta_button'); return; }
+    var el = el_button;
+    var siblingsHidden = 0;
+    while (el = el.previousSibling) { if ((el.nodeType === 1) && (el.offsetWidth <= 0 || el.offsetHeight <= 0)) { siblingsHidden++; } }
+    var button_cookie = false;
+    if (browserType === 'desktop') {  button_cookie = vjs_readCookie('meta_more_button');   }
+    // We allow up to four of bling lines or additional player bio data entries in mobile.
+    if (el_info && el_button && (button_cookie || (siblingsHidden + bling_len <= 4))) {el_button.parentNode.removeChild(el_button);	el_info.classList.add('open');  }
+    else { el_button.classList.add('show');  }
+}
+if (Modernizr.desktop || Modernizr.laptop) { sr_menus_checkInfoCookie_inline('desktop'); } else { sr_menus_checkInfoCookie_inline('mobile'); }
+var sr_menus_checkInfoCookie_run_inline = true;
+</script>
+
+</div>
+</div><!-- div#meta -->
+
+
+	
+		
+	
+<div class="adblock ad300">
+
+<!-- div#fs_fs_300_atf  -->
+<div align="center" id="div-gpt-ad-300x250-ATF"  data-freestar-ad="__336x280">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-300x250-ATF');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-300x250-ATF'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_300_atf -->
+
+
+</div>
+
+
+</div>
+<div id="srcom">
+<div class="adblock ad728">
+
+<!-- div#fs_fs_728_atf  -->
+<!-- sf:blank by design for send to news ad -->
+<!-- /div.#fs_fs_728_atf -->
+
+
+</div>
+
+
+
+
+</div><!-- div#srcom -->
+
+<div id="inner_nav" role="navigation" aria-label="Sections on this page and/or other pages related to this page" class=" inactive">
+	<ul class="hoversmooth">
+		<li			class="index "><a href="/en/squads/81d817a3/history/Los-Angeles-FC-Stats-and-History">Los Angeles FC Stats & History</a>		</li>
+		<li data-fade-selector="#inpage_nav"			class="condensed hasmore "><span>More Los Angeles FC Pages</span>
+			<div>
+
+					<section>
+						<p><a href="/en/squads/81d817a3/Los-Angeles-FC-Stats">Season Stats</a></p>
+						
+						<p><a href="/en/squads/81d817a3/2023/roster/Los-Angeles-FC-Roster-Details">Player Career Details</a></p>
+						
+						<p><a href="/en/squads/81d817a3/2023/wages/Los-Angeles-FC-Wage-Details">Wages</a></p>
+						
+						<p><a href="/en/squads/81d817a3/history/draft/Los-Angeles-FC-Draft-History">Draft History</a></p>
+						
+					</section>
+
+
+<p class="listhead">Match Logs (Major League Soccer)</p>
+					<ul class="">
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer" >Scores & Fixtures</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/shooting/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Shooting</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/keeper/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Goalkeeping</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/passing/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Passing</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/passing_types/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Pass Types</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/gca/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Goal and Shot Creation</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/defense/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Defensive Actions</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/possession/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Possession</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/misc/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Miscellaneous Stats</a></li>
+					</ul>
+
+			</div>		</li>
+		<li			class="full "><a href="/en/squads/81d817a3/Los-Angeles-FC-Stats">Season Stats</a>		</li>
+		<li			class="full "><a href="/en/squads/81d817a3/2023/roster/Los-Angeles-FC-Roster-Details">Player Career Details</a>		</li>
+		<li data-fade-selector="#inpage_nav"			class="full current hasmore "><span>Match Logs</span>
+			<div>
+<p class="listhead">Match Logs (Major League Soccer)</p>
+					<ul class="">
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer" >Scores & Fixtures</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/shooting/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Shooting</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/keeper/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Goalkeeping</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/passing/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Passing</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/passing_types/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Pass Types</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/gca/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Goal and Shot Creation</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/defense/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Defensive Actions</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/possession/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Possession</a></li>
+						<li><a href="/en/squads/81d817a3/2023/matchlogs/c22/misc/Los-Angeles-FC-Match-Logs-Major-League-Soccer" >Miscellaneous Stats</a></li>
+					</ul>
+
+			</div>		</li>
+		<li			class=""><a href="/en/squads/81d817a3/2023/goallogs/c22/Los-Angeles-FC-Goal-Logs-Major-League-Soccer">Goal Logs</a>		</li>
+		<li			class="full "><a href="/en/squads/81d817a3/2023/wages/Los-Angeles-FC-Wage-Details">Wages</a>		</li>
+		<li			class="full "><a href="/en/squads/81d817a3/history/draft/Los-Angeles-FC-Draft-History">Draft History</a>		</li>
+	</ul>
+	    
+    
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+    
+    
+    
+    
+    
+    
+    
+</div><!-- div#inner_nav -->
+
+<div id="content" role="main">
+
+
+
+          
+      
+      
+      
+      
+
+<!-- fs_general_header -->
+<div class="adblock">
+
+
+<!-- div#fs_fs_general_header  -->
+<style>
+    #srcom .adblock.stn,
+    #content .adblock.stn { height: auto; width: 728px; max-width:100%; aspect-ratio: 1.677419;  margin: auto; }
+.fb #content .adblock.stn { max-width: 400px; }
+</style>
+<script>
+function apiFunction(ApiHandshake)  {
+    const playerDiv = document.querySelector('[data-stn-api="apiFunction"]');
+    const api = ApiHandshake(playerDiv);
+    new IntersectionObserver ( moes => { const bcr = moes.pop().boundingClientRect; api.float = bcr.y <= 0; },
+                                       { threshold: [0.9] }).observe(document.querySelector('[data-stn-api="apiFunction"]'));
+ }
+</script>
+<div class="adblock stn">
+  <div class='s2nPlayer k-nJxlaRgx' data-type='float' data-stn-api="apiFunction"></div>
+  <script type='text/javascript' src='//embed.sendtonews.com/player3/embedcode.js?fk=nJxlaRgx&cid=13695&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right' data-type='s2nScript'></script>
+</div>
+<!-- /div.#fs_fs_general_header -->
+
+
+</div>
+
+
+      
+         
+            
+<div class="filter">
+<h4>2023 Match Log Types</h4>
+<div class=" current">
+	<a>Scores & Fixtures</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/shooting/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Shooting</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/keeper/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Goalkeeping</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/passing/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Passing</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/passing_types/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Pass Types</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/gca/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Goal and Shot Creation</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/defense/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Defensive Actions</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/possession/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Possession</a>
+</div><div class="">
+	<a href="/en/squads/81d817a3/2023/matchlogs/c22/misc/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Miscellaneous Stats</a>
+</div></div>
+
+<div id="all_matchlogs" class="table_wrapper tabbed">
+	
+		<span class="section_anchor" id="matchlogs_link" data-label="Scores & Fixtures"></span>
+	
+
+<div class="section_heading assoc_matchlogs_for" id="matchlogs_for_sh">
+  <span class="section_anchor" id="matchlogs_for_link" data-label="Scores & Fixtures" data-no-inpage="1"></span><h2>Scores & Fixtures <span style="color: #666; font-size:smaller">2023 Los Angeles FC: Major League Soccer</span></h2>    <div class="section_heading_text">
+      <ul>
+      </ul>
+    </div>
+    		
+</div>
+
+
+	<div class="table_container tabbed current" id="div_matchlogs_for">
+		
+		<table class="stats_table sortable min_width" id="matchlogs_for" data-cols-to-freeze=",1"> <caption>Scores & Fixtures <span style="color: #666; font-size:smaller">2023 Los Angeles FC: Major League Soccer</span> Table</caption> <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup> <thead> <tr> <th aria-label="Date" data-stat="date" scope="col" class=" poptip sort_default_asc center" data-tip="Date listed is local to the match" >Date</th> <th aria-label="Time" data-stat="start_time" scope="col" class=" poptip sort_default_asc center" data-tip="Time listed is local to the match venue<br>Time is written in the 24-hour notation<br>Your local time is in (&#183;) " >Time</th> <th aria-label="Round" data-stat="round" scope="col" class=" poptip center" data-tip="Round or Phase of Competition" >Round</th> <th aria-label="Day" data-stat="dayofweek" scope="col" class=" poptip sort_default_asc center" data-tip="Day of week" >Day</th> <th aria-label="Venue" data-stat="venue" scope="col" class=" poptip sort_default_asc center" >Venue</th> <th aria-label="Result" data-stat="result" scope="col" class=" poptip center" >Result</th> <th aria-label="Goals For" data-stat="goals_for" scope="col" class=" poptip center" data-tip="<strong>Goals For</strong><br>Goals For" >GF</th> <th aria-label="Goals Against" data-stat="goals_against" scope="col" class=" poptip center" data-tip="<strong>Goals Against</strong><br>Goals Against" >GA</th> <th aria-label="Opponent" data-stat="opponent" scope="col" class=" poptip sort_default_asc center" >Opponent</th> <th aria-label="xG" data-stat="xg_for" scope="col" class=" poptip center" data-tip="<strong>Expected Goals</strong><br>xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).<br>Provided by Opta.<br>An underline indicates there is a match that is missing data, but will be updated when available." data-filter="1" data-name="xG" >xG</th> <th aria-label="xG Allowed" data-stat="xg_against" scope="col" class=" poptip sort_default_asc center" data-tip="<strong>xG Allowed</strong><br><strong>Expected Goals Allowed</strong><br>xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted).<br>Provided by Opta.<br>An underline indicates there is a match that is missing data, but will be updated when available." >xGA</th> <th aria-label="Possession" data-stat="possession" scope="col" class=" poptip center" data-tip="<strong>Possession</strong><br><strong>Possession</strong><br>Calculated as the percentage of passes attempted" >Poss</th> <th aria-label="Attendance" data-stat="attendance" scope="col" class=" poptip center" >Attendance</th> <th aria-label="Captain" data-stat="captain" scope="col" class=" poptip sort_default_asc center" >Captain</th> <th aria-label="Formation" data-stat="formation" scope="col" class=" poptip sort_default_asc center" data-tip="Number of players in each row from defenders to forwards, not including the goalkeeper.<br>Formations provided by Data Sports Group and Opta." >Formation</th> <th aria-label="Referee" data-stat="referee" scope="col" class=" poptip sort_default_asc center" >Referee</th> <th aria-label="Match Report" data-stat="match_report" scope="col" class=" poptip center group_start" >Match Report</th> <th aria-label="Notes" data-stat="notes" scope="col" class=" poptip center" >Notes</th> </tr> </thead> <tbody> <tr ><th scope="row" class="left " data-stat="date" csk="20230304" ><a href="/en/matches/43976b80/Los-Angeles-FC-Portland-Timbers-March-4-2023-Major-League-Soccer">2023-03-04</a></th><td class="right " data-stat="start_time" csk="13:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1677965400" data-venue-time="13:30">13:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="3" >3</td><td class="right " data-stat="goals_against" csk="2" >2</td><td class="left " data-stat="opponent" ><a href="/en/squads/d076914e/Portland-Timbers-Stats">Portland Timbers</a></td><td class="right " data-stat="xg_for" >1.7</td><td class="right " data-stat="xg_against" >1.1</td><td class="center " data-stat="possession" >46</td><td class="right " data-stat="attendance" csk="22202" >22,202</td><td class="left " data-stat="captain" csk="Carlos Vela2023-03-04" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Joe Dickerson2023-03-04" >Joe Dickerson</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/43976b80/Los-Angeles-FC-Portland-Timbers-March-4-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230312" ><a href="/en/matches/1550552e/Los-Angeles-FC-New-England-Revolution-March-12-2023-Major-League-Soccer">2023-03-12</a></th><td class="right " data-stat="start_time" csk="22:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1678674600" data-venue-time="22:30">22:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="1" >Sun</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="4" >4</td><td class="right iz" data-stat="goals_against" csk="0" >0</td><td class="left " data-stat="opponent" ><a href="/en/squads/3c079def/New-England-Revolution-Stats">New England</a></td><td class="right " data-stat="xg_for" >2.9</td><td class="right " data-stat="xg_against" >0.4</td><td class="center " data-stat="possession" >45</td><td class="right " data-stat="attendance" csk="22007" >22,007</td><td class="left " data-stat="captain" csk="Ilie Sánchez2023-03-12" ><a href="/en/players/72979f65/Ilie-Sanchez">Ilie Sánchez</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Allen Chapman2023-03-12" >Allen Chapman</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/1550552e/Los-Angeles-FC-New-England-Revolution-March-12-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230318" ><a href="/en/matches/33dbf8b4/Seattle-Sounders-FC-Los-Angeles-FC-March-18-2023-Major-League-Soccer">2023-03-18</a></th><td class="right " data-stat="start_time" csk="13:00:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1679169600" data-venue-time="13:00">13:00</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:blue; font-weight: bold;" data-stat="result" csk="1" >D</td><td class="right iz" data-stat="goals_for" csk="0" >0</td><td class="right iz" data-stat="goals_against" csk="0" >0</td><td class="left " data-stat="opponent" ><a href="/en/squads/6218ebd4/Seattle-Sounders-FC-Stats">Seattle</a></td><td class="right " data-stat="xg_for" >1.2</td><td class="right " data-stat="xg_against" >1.3</td><td class="center " data-stat="possession" >43</td><td class="right " data-stat="attendance" csk="32515" >32,515</td><td class="left " data-stat="captain" csk="Carlos Vela2023-03-18" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Ismail Elfath2023-03-18" >Ismail Elfath</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/33dbf8b4/Seattle-Sounders-FC-Los-Angeles-FC-March-18-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230325" ><a href="/en/matches/3220374f/Los-Angeles-FC-FC-Dallas-March-25-2023-Major-League-Soccer">2023-03-25</a></th><td class="right " data-stat="start_time" csk="22:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1679797800" data-venue-time="22:30">22:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="2" >2</td><td class="right " data-stat="goals_against" csk="1" >1</td><td class="left " data-stat="opponent" ><a href="/en/squads/15cf8f40/FC-Dallas-Stats">FC Dallas</a></td><td class="right " data-stat="xg_for" >2.3</td><td class="right " data-stat="xg_against" >0.5</td><td class="center " data-stat="possession" >58</td><td class="right " data-stat="attendance" csk="22163" >22,163</td><td class="left " data-stat="captain" csk="Carlos Vela2023-03-25" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Lukasz Szpala2023-03-25" >Lukasz Szpala</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/3220374f/Los-Angeles-FC-FC-Dallas-March-25-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230401" ><a href="/en/matches/2449a630/Colorado-Rapids-Los-Angeles-FC-April-1-2023-Major-League-Soccer">2023-04-01</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1680399000" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:blue; font-weight: bold;" data-stat="result" csk="1" >D</td><td class="right iz" data-stat="goals_for" csk="0" >0</td><td class="right iz" data-stat="goals_against" csk="0" >0</td><td class="left " data-stat="opponent" ><a href="/en/squads/415b4465/Colorado-Rapids-Stats">Colorado Rapids</a></td><td class="right " data-stat="xg_for" >0.6</td><td class="right " data-stat="xg_against" >1.0</td><td class="center " data-stat="possession" >49</td><td class="right " data-stat="attendance" csk="16298" >16,298</td><td class="left " data-stat="captain" csk="Carlos Vela2023-04-01" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Drew Fischer2023-04-01" >Drew Fischer</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/2449a630/Colorado-Rapids-Los-Angeles-FC-April-1-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230408" ><a href="/en/matches/1d295003/Los-Angeles-FC-Austin-FC-April-8-2023-Major-League-Soccer">2023-04-08</a></th><td class="right " data-stat="start_time" csk="16:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1680996600" data-venue-time="16:30">16:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="3" >3</td><td class="right iz" data-stat="goals_against" csk="0" >0</td><td class="left " data-stat="opponent" ><a href="/en/squads/b918956d/Austin-FC-Stats">Austin</a></td><td class="right " data-stat="xg_for" >1.4</td><td class="right " data-stat="xg_against" >0.4</td><td class="center " data-stat="possession" >49</td><td class="right " data-stat="attendance" csk="22199" >22,199</td><td class="left " data-stat="captain" csk="Giorgio Chiellini2023-04-08" ><a href="/en/players/e85fb9b8/Giorgio-Chiellini">Giorgio Chiellini</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Víctor Rivas2023-04-08" >Víctor Rivas</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/1d295003/Los-Angeles-FC-Austin-FC-April-8-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230416" ><a href="/en/matches/83b93fda/El-Trafico-LA-Galaxy-Los-Angeles-FC-April-16-2023-Major-League-Soccer">2023-04-16</a></th><td class="right " data-stat="start_time" csk="13:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1681677000" data-venue-time="13:30">13:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="1" >Sun</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="3" >3</td><td class="right " data-stat="goals_against" csk="2" >2</td><td class="left " data-stat="opponent" ><a href="/en/squads/d8b46897/LA-Galaxy-Stats">LA Galaxy</a></td><td class="right " data-stat="xg_for" >2.2</td><td class="right " data-stat="xg_against" >1.8</td><td class="center " data-stat="possession" >35</td><td class="right " data-stat="attendance" csk="27154" >27,154</td><td class="left " data-stat="captain" csk="Carlos Vela2023-04-16" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Armando Villarreal2023-04-16" >Armando Villarreal</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/83b93fda/El-Trafico-LA-Galaxy-Los-Angeles-FC-April-16-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230422" ><a href="/en/matches/2a72bd3c/Nashville-SC-Los-Angeles-FC-April-22-2023-Major-League-Soccer">2023-04-22</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1682209800" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:blue; font-weight: bold;" data-stat="result" csk="1" >D</td><td class="right " data-stat="goals_for" csk="1" >1</td><td class="right " data-stat="goals_against" csk="1" >1</td><td class="left " data-stat="opponent" ><a href="/en/squads/35f1b818/Nashville-SC-Stats">Nashville</a></td><td class="right " data-stat="xg_for" >1.7</td><td class="right " data-stat="xg_against" >1.1</td><td class="center " data-stat="possession" >45</td><td class="right " data-stat="attendance" csk="30109" >30,109</td><td class="left " data-stat="captain" csk="Ilie Sánchez2023-04-22" ><a href="/en/players/72979f65/Ilie-Sanchez">Ilie Sánchez</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Ted Unkel2023-04-22" >Ted Unkel</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/2a72bd3c/Nashville-SC-Los-Angeles-FC-April-22-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230506" ><a href="/en/matches/48ec16d4/San-Jose-Earthquakes-Los-Angeles-FC-May-6-2023-Major-League-Soccer">2023-05-06</a></th><td class="right " data-stat="start_time" csk="16:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1683415800" data-venue-time="16:30">16:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:red; font-weight: bold;" data-stat="result" csk="0" >L</td><td class="right " data-stat="goals_for" csk="1" >1</td><td class="right " data-stat="goals_against" csk="2" >2</td><td class="left " data-stat="opponent" ><a href="/en/squads/ca460650/San-Jose-Earthquakes-Stats">San Jose</a></td><td class="right " data-stat="xg_for" >1.2</td><td class="right " data-stat="xg_against" >2.3</td><td class="center " data-stat="possession" >59</td><td class="right " data-stat="attendance" csk="45112" >45,112</td><td class="left " data-stat="captain" csk="Carlos Vela2023-05-06" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Rubiel Vázquez2023-05-06" >Rubiel Vázquez</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/48ec16d4/San-Jose-Earthquakes-Los-Angeles-FC-May-6-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230513" ><a href="/en/matches/2ee9a3e5/Real-Salt-Lake-Los-Angeles-FC-May-13-2023-Major-League-Soccer">2023-05-13</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1684027800" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="3" >3</td><td class="right iz" data-stat="goals_against" csk="0" >0</td><td class="left " data-stat="opponent" ><a href="/en/squads/f7d86a43/Real-Salt-Lake-Stats">Real Salt Lake</a></td><td class="right " data-stat="xg_for" >2.4</td><td class="right " data-stat="xg_against" >1.4</td><td class="center " data-stat="possession" >50</td><td class="right " data-stat="attendance" csk="19407" >19,407</td><td class="left " data-stat="captain" csk="Carlos Vela2023-05-13" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Pierre-Luc Lauzière2023-05-13" >Pierre-Luc Lauzière</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/2ee9a3e5/Real-Salt-Lake-Los-Angeles-FC-May-13-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230517" ><a href="/en/matches/03cb2246/Los-Angeles-FC-Sporting-KC-May-17-2023-Major-League-Soccer">2023-05-17</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1684377000" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="4" >Wed</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:blue; font-weight: bold;" data-stat="result" csk="1" >D</td><td class="right " data-stat="goals_for" csk="1" >1</td><td class="right " data-stat="goals_against" csk="1" >1</td><td class="left " data-stat="opponent" ><a href="/en/squads/4acb0537/Sporting-KC-Stats">Sporting KC</a></td><td class="right " data-stat="xg_for" >1.2</td><td class="right " data-stat="xg_against" >0.4</td><td class="center " data-stat="possession" >55</td><td class="right " data-stat="attendance" csk="22222" >22,222</td><td class="left " data-stat="captain" csk="Carlos Vela2023-05-17" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Armando Villarreal2023-05-17" >Armando Villarreal</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/03cb2246/Los-Angeles-FC-Sporting-KC-May-17-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230520" ><a href="/en/matches/6f4782e7/Los-Angeles-FC-San-Jose-Earthquakes-May-20-2023-Major-League-Soccer">2023-05-20</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1684636200" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="2" >2</td><td class="right " data-stat="goals_against" csk="1" >1</td><td class="left " data-stat="opponent" ><a href="/en/squads/ca460650/San-Jose-Earthquakes-Stats">San Jose</a></td><td class="right " data-stat="xg_for" >1.7</td><td class="right " data-stat="xg_against" >0.7</td><td class="center " data-stat="possession" >56</td><td class="right " data-stat="attendance" csk="22030" >22,030</td><td class="left " data-stat="captain" csk="Ilie Sánchez2023-05-20" ><a href="/en/players/72979f65/Ilie-Sanchez">Ilie Sánchez</a></td><td class="left " data-stat="formation" >4-2-3-1</td><td class="left " data-stat="referee" csk="Ismail Elfath2023-05-20" >Ismail Elfath</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/6f4782e7/Los-Angeles-FC-San-Jose-Earthquakes-May-20-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230607" ><a href="/en/matches/c879a2d2/Los-Angeles-FC-Atlanta-United-June-7-2023-Major-League-Soccer">2023-06-07</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1686191400" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="4" >Wed</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:blue; font-weight: bold;" data-stat="result" csk="1" >D</td><td class="right iz" data-stat="goals_for" csk="0" >0</td><td class="right iz" data-stat="goals_against" csk="0" >0</td><td class="left " data-stat="opponent" ><a href="/en/squads/1ebc1a5b/Atlanta-United-Stats">Atlanta Utd</a></td><td class="right " data-stat="xg_for" >2.3</td><td class="right " data-stat="xg_against" >0.8</td><td class="center " data-stat="possession" >50</td><td class="right " data-stat="attendance" csk="22010" >22,010</td><td class="left " data-stat="captain" csk="Ilie Sánchez2023-06-07" ><a href="/en/players/72979f65/Ilie-Sanchez">Ilie Sánchez</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Joe Dickerson2023-06-07" >Joe Dickerson</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/c879a2d2/Los-Angeles-FC-Atlanta-United-June-7-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230610" ><a href="/en/matches/3458934b/Houston-Dynamo-Los-Angeles-FC-June-10-2023-Major-League-Soccer">2023-06-10</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1686443400" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:red; font-weight: bold;" data-stat="result" csk="0" >L</td><td class="right iz" data-stat="goals_for" csk="0" >0</td><td class="right " data-stat="goals_against" csk="4" >4</td><td class="left " data-stat="opponent" ><a href="/en/squads/0d885416/Houston-Dynamo-Stats">Dynamo FC</a></td><td class="right " data-stat="xg_for" >0.7</td><td class="right " data-stat="xg_against" >2.1</td><td class="center " data-stat="possession" >57</td><td class="right " data-stat="attendance" csk="15366" >15,366</td><td class="left " data-stat="captain" csk="Carlos Vela2023-06-10" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Alex Chilowicz2023-06-10" >Alex Chilowicz</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/3458934b/Houston-Dynamo-Los-Angeles-FC-June-10-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230614" ><a href="/en/matches/72222e8e/Los-Angeles-FC-Houston-Dynamo-June-14-2023-Major-League-Soccer">2023-06-14</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1686796200" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="4" >Wed</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:red; font-weight: bold;" data-stat="result" csk="0" >L</td><td class="right iz" data-stat="goals_for" csk="0" >0</td><td class="right " data-stat="goals_against" csk="1" >1</td><td class="left " data-stat="opponent" ><a href="/en/squads/0d885416/Houston-Dynamo-Stats">Dynamo FC</a></td><td class="right " data-stat="xg_for" >0.7</td><td class="right " data-stat="xg_against" >0.6</td><td class="center " data-stat="possession" >71</td><td class="right " data-stat="attendance" csk="22177" >22,177</td><td class="left " data-stat="captain" csk="Carlos Vela2023-06-14" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Guido Gonzalez2023-06-14" >Guido Gonzalez</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/72222e8e/Los-Angeles-FC-Houston-Dynamo-June-14-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230617" ><a href="/en/matches/d51e1b82/Sporting-KC-Los-Angeles-FC-June-17-2023-Major-League-Soccer">2023-06-17</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1687048200" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="2" >2</td><td class="right " data-stat="goals_against" csk="1" >1</td><td class="left " data-stat="opponent" ><a href="/en/squads/4acb0537/Sporting-KC-Stats">Sporting KC</a></td><td class="right " data-stat="xg_for" >1.1</td><td class="right " data-stat="xg_against" >2.0</td><td class="center " data-stat="possession" >37</td><td class="right " data-stat="attendance" csk="19410" >19,410</td><td class="left " data-stat="captain" csk="Ilie Sánchez2023-06-17" ><a href="/en/players/72979f65/Ilie-Sanchez">Ilie Sánchez</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="R. Mendoza2023-06-17" >R. Mendoza</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/d51e1b82/Sporting-KC-Los-Angeles-FC-June-17-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230621" ><a href="/en/matches/78997dca/Los-Angeles-FC-Seattle-Sounders-FC-June-21-2023-Major-League-Soccer">2023-06-21</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1687401000" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="4" >Wed</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:green; font-weight: bold;" data-stat="result" csk="3" >W</td><td class="right " data-stat="goals_for" csk="1" >1</td><td class="right iz" data-stat="goals_against" csk="0" >0</td><td class="left " data-stat="opponent" ><a href="/en/squads/6218ebd4/Seattle-Sounders-FC-Stats">Seattle</a></td><td class="right " data-stat="xg_for" >1.1</td><td class="right " data-stat="xg_against" >0.5</td><td class="center " data-stat="possession" >49</td><td class="right " data-stat="attendance" csk="22125" >22,125</td><td class="left " data-stat="captain" csk="Carlos Vela2023-06-21" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Ted Unkel2023-06-21" >Ted Unkel</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/78997dca/Los-Angeles-FC-Seattle-Sounders-FC-June-21-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230624" ><a href="/en/matches/7f5e0893/Los-Angeles-FC-Vancouver-Whitecaps-FC-June-24-2023-Major-League-Soccer">2023-06-24</a></th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1687660200" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Home</td><td class="center " style="color:red; font-weight: bold;" data-stat="result" csk="0" >L</td><td class="right " data-stat="goals_for" csk="2" >2</td><td class="right " data-stat="goals_against" csk="3" >3</td><td class="left " data-stat="opponent" ><a href="/en/squads/ab41cb90/Vancouver-Whitecaps-FC-Stats">Vancouver</a></td><td class="right " data-stat="xg_for" >2.3</td><td class="right " data-stat="xg_against" >1.5</td><td class="center " data-stat="possession" >62</td><td class="right " data-stat="attendance" csk="22133" >22,133</td><td class="left " data-stat="captain" csk="Carlos Vela2023-06-24" ><a href="/en/players/e0cd04e0/Carlos-Vela">Carlos Vela</a></td><td class="left " data-stat="formation" >4-3-3</td><td class="left " data-stat="referee" csk="Jon Freemon2023-06-24" >Jon Freemon</td><td class="left group_start" data-stat="match_report" ><a href="/en/matches/7f5e0893/Los-Angeles-FC-Vancouver-Whitecaps-FC-June-24-2023-Major-League-Soccer">Match Report</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230701" >2023-07-01</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1688257800" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/15cf8f40/FC-Dallas-Stats">FC Dallas</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/81d817a3/15cf8f40/Los-Angeles-FC-vs-FC-Dallas-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230704" >2023-07-04</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1688524200" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="3" >Tue</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/d8b46897/LA-Galaxy-Stats">LA Galaxy</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/d8b46897/81d817a3/El-Trafico-LA-Galaxy-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230708" >2023-07-08</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1688869800" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Home</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/ca460650/San-Jose-Earthquakes-Stats">San Jose</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/ca460650/81d817a3/San-Jose-Earthquakes-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230712" >2023-07-12</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1689215400" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="4" >Wed</td><td class="left " data-stat="venue" >Home</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/bd97ac1f/St-Louis-City-Stats">St. Louis</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/bd97ac1f/81d817a3/St-Louis-City-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230715" >2023-07-15</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1689467400" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/99ea75a6/Minnesota-United-Stats">Minnesota Utd</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/99ea75a6/81d817a3/Minnesota-United-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230820" >2023-08-20</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1692585000" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="1" >Sun</td><td class="left " data-stat="venue" >Home</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/415b4465/Colorado-Rapids-Stats">Colorado Rapids</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/81d817a3/415b4465/Los-Angeles-FC-vs-Colorado-Rapids-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230826" >2023-08-26</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1693092600" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/eb57545a/Charlotte-FC-Stats">Charlotte</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/eb57545a/81d817a3/Charlotte-FC-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230903" >2023-09-03</th><td class="right " data-stat="start_time" csk="16:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1693783800" data-venue-time="16:30">16:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="1" >Sun</td><td class="left " data-stat="venue" >Home</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/cb8b86a2/Inter-Miami-Stats">Inter Miami</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/cb8b86a2/81d817a3/Inter-Miami-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230909" >2023-09-09</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1694313000" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/d076914e/Portland-Timbers-Stats">Portland Timbers</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/d076914e/81d817a3/Portland-Timbers-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230916" >2023-09-16</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1694917800" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Home</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/d8b46897/LA-Galaxy-Stats">LA Galaxy</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/d8b46897/81d817a3/El-Trafico-LA-Galaxy-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230920" >2023-09-20</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1695256200" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="4" >Wed</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/bd97ac1f/St-Louis-City-Stats">St. Louis</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/bd97ac1f/81d817a3/St-Louis-City-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20230923" >2023-09-23</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1695511800" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/46024eeb/Philadelphia-Union-Stats">Philadelphia</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/81d817a3/46024eeb/Los-Angeles-FC-vs-Philadelphia-Union-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20231001" >2023-10-01</th><td class="right " data-stat="start_time" csk="17:00:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1696204800" data-venue-time="17:00">17:00</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="1" >Sun</td><td class="left " data-stat="venue" >Home</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/f7d86a43/Real-Salt-Lake-Stats">Real Salt Lake</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/f7d86a43/81d817a3/Real-Salt-Lake-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20231004" >2023-10-04</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1696473000" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="4" >Wed</td><td class="left " data-stat="venue" >Home</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/99ea75a6/Minnesota-United-Stats">Minnesota Utd</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/99ea75a6/81d817a3/Minnesota-United-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20231007" >2023-10-07</th><td class="right " data-stat="start_time" csk="19:30:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1696725000" data-venue-time="19:30">19:30</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/b918956d/Austin-FC-Stats">Austin</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/b918956d/81d817a3/Austin-FC-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> <tr ><th scope="row" class="left " data-stat="date" csk="20231021" >2023-10-21</th><td class="right " data-stat="start_time" csk="18:00:00" ><span class="venuetime" data-venue-time-only="1" data-venue-epoch="1697936400" data-venue-time="18:00">18:00</span> <span class="localtime" data-label="your time"></span></td><td class="left " data-stat="round" >Regular Season</td><td class="left " data-stat="dayofweek" csk="7" >Sat</td><td class="left " data-stat="venue" >Away</td><td class="center iz" data-stat="result" ></td><td class="right iz" data-stat="goals_for" ></td><td class="right iz" data-stat="goals_against" ></td><td class="left " data-stat="opponent" ><a href="/en/squads/ab41cb90/Vancouver-Whitecaps-FC-Stats">Vancouver</a></td><td class="right iz" data-stat="xg_for" ></td><td class="right iz" data-stat="xg_against" ></td><td class="center iz" data-stat="possession" ></td><td class="right iz" data-stat="attendance" ></td><td class="left iz" data-stat="captain" ></td><td class="left iz" data-stat="formation" ></td><td class="left iz" data-stat="referee" ></td><td class="left group_start" data-stat="match_report" ><a href="/en/stathead/matchup/teams/ab41cb90/81d817a3/Vancouver-Whitecaps-FC-vs-Los-Angeles-FC-History">Head-to-Head</a></td><td class="left iz" data-stat="notes" ></td></tr> </tbody> </table>
+		
+
+ 
+	</div>
+
+</div>
+
+            
+            
+            
+         
+      
+
+<!-- global.nonempty_tables_num: 1, table_count: 1 -->
+   <div id="coverage" style="margin-bottom:60px" data-comment="style is for the inner nav frozen to top of page"></div>
+<div class="callout light" >
+    <h3>About FBref.com</h3>
+    
+    
+    
+
+    
+    
+    <p>
+    FBref.com launched (June 13, 2018) with domestic league coverage for England, France, Germany, Italy, Spain, and United States. Since then we have been steadily expanding our coverage to include domestic leagues from over 40 countries as well as domestic cup, super cup and youth leagues from top European countries. We have also added coverage for major international cups such as the <a href="/en/comps/8/UEFA-Champions-League-Stats">UEFA Champions League</a> and <a href="/en/comps/14/Copa-Libertadores-Stats">Copa Libertadores</a>.
+    </p>
+
+    
+    <p>
+    FBref is the most complete sources for women's football data on the internet. This includes the entire history of the <a href="/en/comps/106/history/Womens-World-Cup-Seasons">FIFA Women's World Cup</a> as well as recent domestic league seasons from nine countries, including advanced stats like xG for most of those nine.
+    </p>
+
+    
+    
+    <p>
+    In collaboration with <a href="https://www.statsperform.com/opta/">Opta</a>, we are including advanced analytical data such as xG, xA, progressive passing, duels and more for over twenty competitions. For more information on the expected goals model and which competitions have advanced data, see our <a href="/en/expected-goals-model-explained/">xG explainer</a>.
+    </p>
+
+    
+
+    <button class="tooltip opener" data-selector="#coverage_additional" data-type="hide_after">View Additional Information</button>
+
+    <div id="coverage_additional" class="toggleable">
+        <p>
+        Note that player records are likely not complete for their careers. Players may come from or move to leagues we don't currently cover. This issue will go down over time, as we add new leagues and seasons. We will never in the future have less data than we do today.
+        </p>
+
+        <p>You can sign up to <a href="/en/email">receive an e-mail</a> when new countries and features launch.</p>
+
+        <p>For more information, see our <a href="https://www.sports-reference.com/blog/2018/06/fbref-com-launches-today">Launch Blog Post</a>, the overall <a href="/en/comps/">leagues/competition page</a> with details on leagues and seasons we include, or our <a href="/en/about/">About Page</a>.  <a href="/feedback/">Let us know if you find an issue or have a suggestion</a>.</p>
+
+        <p>FBref is one of seven <a href="https://www.sports-reference.com/">Sports-Reference.com</a> sites.</p>
+    </div>
+</div>
+
+<div id="bottom_nav" class="section_wrapper">
+<div class="section_heading"><span data-no-inpage="1" class="section_anchor" id="inner_nav_bottom_link" data-label="More Los Angeles FC Pages"></span><h2>More Los Angeles FC Pages</h2></div>
+<div class="section_content" id="bottom_nav_container">
+
+  <p><a href="/en/squads/81d817a3/history/Los-Angeles-FC-Stats-and-History">Los Angeles FC Stats & History</a></p>
+  
+        <section>
+          <p><a href="/en/squads/81d817a3/Los-Angeles-FC-Stats">Season Stats</a></p>
+          <p><a href="/en/squads/81d817a3/2023/roster/Los-Angeles-FC-Roster-Details">Player Career Details</a></p>
+          <p><a href="/en/squads/81d817a3/2023/wages/Los-Angeles-FC-Wage-Details">Wages</a></p>
+          <p><a href="/en/squads/81d817a3/history/draft/Los-Angeles-FC-Draft-History">Draft History</a></p>        </section><p class="listhead">Match Logs (Major League Soccer)</p>
+        <ul class="">
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer">Scores & Fixtures</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/shooting/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Shooting</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/keeper/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Goalkeeping</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/passing/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Passing</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/passing_types/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Pass Types</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/gca/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Goal and Shot Creation</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/defense/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Defensive Actions</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/possession/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Possession</a></li>
+          <li><a href="/en/squads/81d817a3/2023/matchlogs/c22/misc/Los-Angeles-FC-Match-Logs-Major-League-Soccer">Miscellaneous Stats</a></li>
+        </ul></div></div>
+
+   
+
+
+<!-- fs_footer -->
+<div class="adblock">
+<!-- div#fs_fs_footer  -->
+<div align="center" id="div-gpt-ad-728x90-Footer"  data-freestar-ad="__300x250 __970x90">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-728x90-Footer');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-728x90-Footer'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_footer -->
+
+</div>
+
+
+
+
+
+</div><!-- div#content -->
+
+
+<div id="footer" role="contentinfo">
+	<div id="footer_header">
+		 <ul class="bullets-inline"><li class="user logged_in">Welcome <span class="username"></span>&nbsp;&#183;&nbsp;<a href="https://stathead.com/profile/?utm_source=fb&amp;utm_medium=sr_xsite&amp;utm_campaign=2023_01_srnav_account">Your Account</a></li>
+<li class="user logged_in"><a class="logout" onclick="sr_auth_logout_page_elements();if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/profile/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" onclick="if(!this.href.match('redirect_uri')){this.href += '&redirect_uri='+escape(document.location.href)}" href="https://stathead.com/users/login.cgi?token=1">Login</a></li>
+<li class="user not_logged_in"><a href="https://stathead.com/users/signup.cgi">Create Account</a></li>
+</ul>
+		 <div class="breadcrumbs">You are here: <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/en/"><span itemprop="name">FB Home Page</span></a> <meta itemprop="position" content="1" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/en/squads/"><span itemprop="name">Squads</span></a> <meta itemprop="position" content="2" /></span> &gt; <strong>Los Angeles FC Scores and Fixtures, All Competitions</strong></div>
+	</div><!-- div#footer_header -->
+
+	<div id="footer_general">
+		<div id="site_menu" role="navigation" aria-label="complete site index">
+			
+			
+<div class="section_heading assoc_site_menu" id="site_menu_sh">
+  <span class="section_anchor" id="site_menu_link" data-label="Full Site Menu"></span><h2>Full Site Menu</h2>    <div class="section_heading_text">
+      <ul><li><a data-scroll href="#header">Return to Top</a></li>
+      </ul>
+    </div>
+    		
+</div>
+			
+				
+				<ul>    <li>
+        <a href="/en/players/">Players</a>
+        <div>
+<a href="/en/players/f1e8372d/Jermain-Defoe">Jermain Defoe</a>, 
+<a href="/en/players/e342ad68/Mohamed-Salah">Mohamed Salah</a>, 
+<a href="/en/players/ed75b6c7/Francesco-Totti">Francesco Totti</a>, 
+<a href="/en/players/e2e9c250/Santi-Cazorla">Santi Cazorla</a>, 
+<a href="/en/players/b2ad4c4d/Katie-Duncan">Katie Duncan</a>, 
+<a href="/en/players/3bb7f478/Edin-Dzeko">Edin Džeko</a>, 
+<a href="/en/players/16380240/Mesut-Ozil">Mesut Özil</a>, 
+<a href="/en/players/8d7667f4/Christine-Sinclair">Christine Sinclair</a>, 
+<a href="/en/players/4c370d81/Roberto-Firmino">Roberto Firmino</a>, 
+<a href="/en/players/9425cd71/Linda-Sembrant">Linda Sembrant</a>, 
+<a href="/en/players/1ed0b2c4/Shannon-Boxx">Shannon Boxx</a>, 
+<a href="/en/players/cda50d6b/Mana-Iwabuchi">Mana Iwabuchi</a>, 
+<a href="/en/players/c419e035/Stefan-Kiessling">Stefan Kießling</a>, 
+<a href="/en/players/6a1b832a/Wendie-Renard">Wendie Renard</a>, 
+<a href="/en/players/9d66fbe3/Roberto-Soldado">Roberto Soldado</a>, 
+<a href="/en/players/">...</a>        </div>
+    </li>
+    <li>
+        <a href="/en/squads/">Clubs</a>
+        <div>
+<a href="/en/squads/b8fd03ef/Manchester-City-Stats">Manchester City (M)</a>, 
+<a href="/en/squads/a6a4e67d/Chelsea-Women-Stats">Chelsea (F)</a>, 
+<a href="/en/squads/53a2f082/Real-Madrid-Stats">Real Madrid (M)</a>, 
+<a href="/en/squads/15f49df1/Barcelona-Women-Stats">Barcelona (F)</a>, 
+<a href="/en/squads/e2d8892c/Paris-Saint-Germain-Stats">Paris Saint-Germain (M)</a>, 
+<a href="/en/squads/7f2012ad/Lyon-Women-Stats">Lyon (F)</a>, 
+<a href="/en/squads/054efa67/Bayern-Munich-Stats">Bayern Munich (M)</a>, 
+<a href="/en/squads/a1393014/Wolfsburg-Women-Stats">Wolfsburg (F)</a>, 
+<a href="/en/squads/d48ad4ff/Napoli-Stats">Napoli (M)</a>, 
+<a href="/en/squads/02f8d026/AS-Roma-Stats">AS Roma (F)</a>, 
+<a href="/en/squads/ef99c78c/River-Plate-Stats">River Plate (M)</a>, 
+<a href="/en/squads/31553c94/Melbourne-City-Stats">Melbourne City (M)</a>, 
+<a href="/en/squads/5903e501/Sydney-FC-Women-Stats">Sydney FC (F)</a>, 
+<a href="/en/squads/50f2a074/Red-Bull-Salzburg-Stats">Red Bull Salzburg (M)</a>, 
+<a href="/en/squads/3d377a8c/St-Polten-Women-Stats">St. Pölten (F)</a>, 
+<a href="/en/squads/f1e6c5f1/Club-Brugge-Stats">Club Brugge (M)</a>, 
+<a href="/en/squads/231a3620/Anderlecht-Women-Stats">Anderlecht (F)</a>, 
+<a href="/en/squads/6dcc14bf/The-Strongest-Stats">The Strongest (M)</a>, 
+<a href="/en/squads/abdce579/Palmeiras-Stats">Palmeiras (M)</a>, 
+<a href="/en/squads/9cdc3b24/Corinthians-Women-Stats">Corinthians (F)</a>, 
+<a href="/en/squads/488c6ba1/Ludogorets-Razgrad-Stats">Ludogorets Razgrad (M)</a>, 
+<a href="/en/squads/8514c671/Forge-FC-Stats">Forge FC (M)</a>, 
+<a href="/en/squads/3e3fbf36/Univ-Catolica-Stats">Universidad Católica (M)</a>, 
+<a href="/en/squads/c48512d3/Shanghai-SIPG-Stats">Shanghai SIPG (M)</a>, 
+<a href="/en/squads/4c319052/Millonarios-Stats">Millonarios (M)</a>, 
+<a href="/en/squads/edd0d381/Dinamo-Zagreb-Stats">Dinamo Zagreb (M)</a>, 
+<a href="/en/squads/111cbfb1/Slavia-Prague-Stats">Slavia Prague (M)</a>, 
+<a href="/en/squads/18050b20/FC-Copenhagen-Stats">FC Copenhagen (M)</a>, 
+<a href="/en/squads/b00041f6/HB-Koge-Stats">HB Køge (F)</a>, 
+<a href="/en/squads/990519b8/Independiente-Stats">Independiente del Valle (M)</a>, 
+<a href="/en/squads/e6f63673/KuPS-Stats">KuPS (M)</a>, 
+<a href="/en/squads/2fdb4aef/Olympiacos-Stats">Olympiacos (M)</a>, 
+<a href="/en/squads/6611f992/Ferencvaros-Stats">Ferencváros (M)</a>, 
+<a href="/en/squads/1ae5d154/Mumbai-City-Stats">Mumbai City (M)</a>, 
+<a href="/en/squads/95f42e44/Persepolis-Stats">Persepolis (M)</a>, 
+<a href="/en/squads/858d58b2/Kawasaki-Frontale-Stats">Kawasaki Frontale (M)</a>, 
+<a href="/en/squads/c673cb9f/Urawa-Reds-Ladies-Stats">Urawa Reds (F)</a>, 
+<a href="/en/squads/4372a20b/Ulsan-Hyundai-Stats">Ulsan Hyundai FC (M)</a>, 
+<a href="/en/squads/972e2539/Al-Hilal-Stats">Al-Hilal (M)</a>, 
+<a href="/en/squads/18d3c3a3/America-Stats">América (M)</a>, 
+<a href="/en/squads/19c3f8c4/Ajax-Stats">Ajax (M)</a>, 
+<a href="/en/squads/e04b1b89/Twente-Women-Stats">Twente (F)</a>, 
+<a href="/en/squads/d86248bd/BodoGlimt-Stats">Bodø/Glimt (M)</a>, 
+<a href="/en/squads/c1c51bdf/Valerenga-Women-Stats">Vålerenga (F)</a>, 
+<a href="/en/squads/ae107695/Libertad-Stats">Libertad (M)</a>, 
+<a href="/en/squads/8917b8a9/Sporting-Cristal-Stats">Sporting Cristal (M)</a>, 
+<a href="/en/squads/e0b3aa47/RKS-Rakow-Stats">Raków Częstochowa (M)</a>, 
+<a href="/en/squads/5e876ee6/Porto-Stats">Porto (M)</a>, 
+<a href="/en/squads/ff04e205/CFR-Cluj-Stats">CFR Cluj (M)</a>, 
+<a href="/en/squads/97d80fef/Mamelodi-Sundowns-Stats">Mamelodi Sundowns (M)</a>, 
+<a href="/en/squads/98ce363d/Zenit-Stats">Zenit (M)</a>, 
+<a href="/en/squads/b81aa4fa/Celtic-Stats">Celtic (M)</a>, 
+<a href="/en/squads/0417d25a/Rangers-LFC-Stats">Rangers LFC (F)</a>, 
+<a href="/en/squads/099c6eb5/Red-Star-Belgrade-Stats">Red Star (M)</a>, 
+<a href="/en/squads/4b682260/Young-Boys-Stats">Young Boys (M)</a>, 
+<a href="/en/squads/e83b563b/Servette-Stats">Servette (F)</a>, 
+<a href="/en/squads/f3d8c8b9/Malmo-Stats">Malmö (M)</a>, 
+<a href="/en/squads/a2c4c17a/Rosengard-Stats">Rosengård (F)</a>, 
+<a href="/en/squads/ae1e2d7d/Fenerbahce-Stats">Fenerbahçe (M)</a>, 
+<a href="/en/squads/e89d5a28/Shakhtar-Donetsk-Stats">Shakhtar Donetsk (M)</a>, 
+<a href="/en/squads/26ebba72/Nacional-Stats">Nacional (M)</a>, 
+<a href="/en/squads/46024eeb/Philadelphia-Union-Stats">Philadelphia Union (M)</a>, 
+<a href="/en/squads/df9a10a1/Portland-Thorns-FC-Stats">Portland Thorns FC (F)</a>, 
+<a href="/en/squads/7701ed02/Deportivo-Tachira-Stats">Deportivo Táchira (M)</a>, 
+<a href="/en/squads/">...</a>        </div>
+    </li>
+    <li>
+        <a href="/en/comps/">Seasons</a>
+        <div>
+<a href="/en/comps/season/2021">2021</a>, 
+<a href="/en/comps/season/2021-2022">2021-2022</a>, 
+<a href="/en/comps/season/2022">2022</a>, 
+<a href="/en/comps/season/2022-2023">2022-2023</a>, 
+<a href="/en/comps/season/2023">2023</a>, 
+<a href="/en/comps/season/2024">2024</a>, 
+<a href="/en/comps/">...</a>        </div>
+    </li>
+    <li>
+        <a href="/en/comps/">Competitions</a>
+        <div>
+<a href="/en/comps/8/Champions-League-Stats">UEFA Champions League</a>, 
+<a href="/en/comps/1/World-Cup-Stats">FIFA World Cup</a>, 
+<a href="/en/comps/664/Asian-Cup-Stats">AFC Asian Cup</a>, 
+<a href="/en/comps/676/European-Championship-Stats">UEFA European Football Championship</a>, 
+<a href="/en/comps/677/UEFA-Nations-League-Stats">UEFA Nations League</a>, 
+<a href="/en/comps/685/Copa-America-Stats">CONMEBOL Copa América</a>, 
+<a href="/en/comps/681/Gold-Cup-Stats">CONCACAF Gold Cup</a>, 
+<a href="/en/comps/656/Africa-Cup-of-Nations-Stats">Africa Cup of Nations</a>, 
+<a href="/en/comps/181/Champions-League-Stats">UEFA Women's Champions League</a>, 
+<a href="/en/comps/106/Womens-World-Cup-Stats">FIFA Women's World Cup</a>, 
+<a href="/en/comps/180/Olympics-W-Stats">Olympics — Women's Tournament</a>, 
+<a href="/en/comps/161/AFC-Womens-Asian-Cup-Stats">AFC Women's Asian Cup</a>, 
+<a href="/en/comps/162/UEFA-Womens-Euro-Stats">UEFA Women's Championship</a>, 
+<a href="/en/comps/158/Copa-America-Femenina-Stats">Copa América Femenina</a>, 
+<a href="/en/comps/157/CONCACAF-W-Championship-Stats">CONCACAF W Championship</a>, 
+<a href="/en/comps/156/Africa-Women-Cup-of-Nations-Stats">Africa Women Cup of Nations</a>, 
+<a href="/en/comps/9/Premier-League-Stats">Premier League</a>, 
+<a href="/en/comps/514/FA-Cup-Stats">FA Cup</a>, 
+<a href="/en/comps/690/EFL-Cup-Stats">EFL Cup</a>, 
+<a href="/en/comps/189/Womens-Super-League-Stats">FA Women's Super League</a>, 
+<a href="/en/comps/12/La-Liga-Stats">La Liga</a>, 
+<a href="/en/comps/569/Copa-del-Rey-Stats">Copa del Rey</a>, 
+<a href="/en/comps/230/Liga-F-Stats">Liga F</a>, 
+<a href="/en/comps/13/Ligue-1-Stats">Ligue 1</a>, 
+<a href="/en/comps/518/Coupe-de-France-Stats">Coupe de France</a>, 
+<a href="/en/comps/693/Coupe-de-la-Ligue-Stats">Coupe de la Ligue</a>, 
+<a href="/en/comps/193/Division-1-Feminine-Stats">Championnat de France de Football Féminin</a>, 
+<a href="/en/comps/20/Bundesliga-Stats">Fußball-Bundesliga</a>, 
+<a href="/en/comps/521/DFB-Pokal-Stats">DFB-Pokal</a>, 
+<a href="/en/comps/183/Frauen-Bundesliga-Stats">Frauen-Bundesliga</a>, 
+<a href="/en/comps/520/DFB-Pokal-Frauen-Stats">DFB-Pokal Frauen</a>, 
+<a href="/en/comps/11/Serie-A-Stats">Serie A</a>, 
+<a href="/en/comps/529/Coppa-Italia-Stats">Coppa Italia</a>, 
+<a href="/en/comps/208/Serie-A-Stats">Serie A</a>, 
+<a href="/en/comps/21/Primera-Division-Stats">Argentine Primera División</a>, 
+<a href="/en/comps/65/A-League-Men-Stats">A-League Men</a>, 
+<a href="/en/comps/196/A-League-Women-Stats">A-League Women</a>, 
+<a href="/en/comps/56/Austrian-Bundesliga-Stats">Austrian Football Bundesliga</a>, 
+<a href="/en/comps/286/Frauenliga-Stats">ÖFB Frauen-Bundesliga</a>, 
+<a href="/en/comps/37/Belgian-First-Division-A-Stats">Belgian First Division A</a>, 
+<a href="/en/comps/296/Womens-Super-League-Stats">Belgian Women's Super League</a>, 
+<a href="/en/comps/74/Primera-Division-Stats">División de Fútbol Profesional</a>, 
+<a href="/en/comps/24/Serie-A-Stats">Campeonato Brasileiro Série A</a>, 
+<a href="/en/comps/206/Serie-A1-Stats">Brasileirão Feminino Série A1</a>, 
+<a href="/en/comps/67/Bulgarian-First-League-Stats">First Professional Football League</a>, 
+<a href="/en/comps/211/Canadian-Premier-League-Stats">Canadian Premier League</a>, 
+<a href="/en/comps/35/Primera-Division-Stats">Chilean Primera División</a>, 
+<a href="/en/comps/62/Chinese-Super-League-Stats">Chinese Football Association Super League</a>, 
+<a href="/en/comps/41/Primera-A-Stats">Categoría Primera A</a>, 
+<a href="/en/comps/63/1-HNL-Stats">Croatian First Football League</a>, 
+<a href="/en/comps/66/Czech-First-League-Stats">Czech First League</a>, 
+<a href="/en/comps/50/Superliga-Stats">Superliga</a>, 
+<a href="/en/comps/340/Kvindeligaen-Stats">Kvindeligaen</a>, 
+<a href="/en/comps/58/Serie-A-Stats">Liga Profesional Ecuador</a>, 
+<a href="/en/comps/43/Veikkausliiga-Stats">Veikkausliiga</a>, 
+<a href="/en/comps/27/Super-League-Greece-Stats">Super League Greece</a>, 
+<a href="/en/comps/46/NB-I-Stats">Nemzeti Bajnokság I</a>, 
+<a href="/en/comps/82/Indian-Super-League-Stats">Indian Super League</a>, 
+<a href="/en/comps/64/Persian-Gulf-Pro-League-Stats">Persian Gulf Pro League</a>, 
+<a href="/en/comps/25/J1-League-Stats">J1 League</a>, 
+<a href="/en/comps/893/WE-League-Stats">Women Empowerment League</a>, 
+<a href="/en/comps/55/K-League-1-Stats">K League 1</a>, 
+<a href="/en/comps/70/Saudi-Professional-League-Stats">Saudi Professional League</a>, 
+<a href="/en/comps/31/Liga-MX-Stats">Liga MX</a>, 
+<a href="/en/comps/23/Eredivisie-Stats">Eredivisie</a>, 
+<a href="/en/comps/195/Eredivisie-Vrouwen-Stats">Eredivisie Vrouwen</a>, 
+<a href="/en/comps/28/Eliteserien-Stats">Eliteserien</a>, 
+<a href="/en/comps/185/Toppserien-Stats">Toppserien</a>, 
+<a href="/en/comps/61/Primera-Division-Stats">Paraguayan Primera División</a>, 
+<a href="/en/comps/44/Liga-1-Stats">Liga 1 de Fútbol Profesional</a>, 
+<a href="/en/comps/36/Ekstraklasa-Stats">Ekstraklasa</a>, 
+<a href="/en/comps/32/Primeira-Liga-Stats">Primeira Liga</a>, 
+<a href="/en/comps/47/Liga-I-Stats">Liga I</a>, 
+<a href="/en/comps/52/Premier-Division-Stats">South African Premier Division</a>, 
+<a href="/en/comps/30/Russian-Premier-League-Stats">Russian Premier League</a>, 
+<a href="/en/comps/40/Scottish-Premiership-Stats">Scottish Premiership</a>, 
+<a href="/en/comps/54/Serbian-SuperLiga-Stats">Serbian SuperLiga</a>, 
+<a href="/en/comps/57/Swiss-Super-League-Stats">Swiss Super League</a>, 
+<a href="/en/comps/894/Womens-Super-League-Stats">Swiss Women's Super League</a>, 
+<a href="/en/comps/29/Allsvenskan-Stats">Allsvenskan</a>, 
+<a href="/en/comps/187/Damallsvenskan-Stats">Damallsvenskan</a>, 
+<a href="/en/comps/26/Super-Lig-Stats">Süper Lig</a>, 
+<a href="/en/comps/39/Ukrainian-Premier-League-Stats">Ukrainian Premier League</a>, 
+<a href="/en/comps/45/Primera-Division-Stats">Uruguayan Primera División</a>, 
+<a href="/en/comps/22/Major-League-Soccer-Stats">Major League Soccer</a>, 
+<a href="/en/comps/182/NWSL-Stats">National Women's Soccer League</a>, 
+<a href="/en/comps/881/NWSL-Challenge-Cup-Stats">NWSL Challenge Cup</a>, 
+<a href="/en/comps/884/NWSL-Fall-Series-Stats">NWSL Fall Series</a>, 
+<a href="/en/comps/105/Liga-FUTVE-Stats">Venezuelan Primera División</a>, 
+<a href="/en/comps/">...</a>        </div>
+    </li>
+    <li>
+        <a href="/en/matches/">Scores & Fixtures</a>
+        <div>
+<a href="/en/matches/2023-06-24">Saturday June 24, 2023</a>, 
+<a href="/en/matches/2023-06-25">Sunday June 25, 2023</a>, 
+<a href="/en/matches/2023-06-26">Monday June 26, 2023</a>, 
+<a href="/en/matches/2023-06-27">Tuesday June 27, 2023</a>, 
+<a href="/en/matches/2023-06-28">Wednesday June 28, 2023</a>        </div>
+    </li>
+    <li>
+        <a href="/en/countries/">Countries</a>
+        <div>
+<a href="/en/country/ENG/England-Football">England</a>, 
+<a href="/en/country/ESP/Spain-Football">Spain</a>, 
+<a href="/en/country/FRA/France-Football">France</a>, 
+<a href="/en/country/GER/Germany-Football">Germany</a>, 
+<a href="/en/country/ITA/Italy-Football">Italy</a>, 
+<a href="/en/country/ARG/Argentina-Football">Argentina</a>, 
+<a href="/en/country/AUS/Australia-Football">Australia</a>, 
+<a href="/en/country/AUT/Austria-Football">Austria</a>, 
+<a href="/en/country/BEL/Belgium-Football">Belgium</a>, 
+<a href="/en/country/BOL/Bolivia-Football">Bolivia</a>, 
+<a href="/en/country/BRA/Brazil-Football">Brazil</a>, 
+<a href="/en/country/BUL/Bulgaria-Football">Bulgaria</a>, 
+<a href="/en/country/CAN/Canada-Football">Canada</a>, 
+<a href="/en/country/CHI/Chile-Football">Chile</a>, 
+<a href="/en/country/CHN/China-PR-Football">China PR</a>, 
+<a href="/en/country/COL/Colombia-Football">Colombia</a>, 
+<a href="/en/country/CRO/Croatia-Football">Croatia</a>, 
+<a href="/en/country/CZE/Czech-Republic-Football">Czech Republic</a>, 
+<a href="/en/country/DEN/Denmark-Football">Denmark</a>, 
+<a href="/en/country/ECU/Ecuador-Football">Ecuador</a>, 
+<a href="/en/country/FIN/Finland-Football">Finland</a>, 
+<a href="/en/country/GRE/Greece-Football">Greece</a>, 
+<a href="/en/country/HUN/Hungary-Football">Hungary</a>, 
+<a href="/en/country/IND/India-Football">India</a>, 
+<a href="/en/country/IRN/Iran-Football">Iran</a>, 
+<a href="/en/country/JPN/Japan-Football">Japan</a>, 
+<a href="/en/country/KOR/Korea-Republic-Football">Korea Republic</a>, 
+<a href="/en/country/KSA/Saudi-Arabia-Football">Saudi Arabia</a>, 
+<a href="/en/country/MEX/Mexico-Football">Mexico</a>, 
+<a href="/en/country/NED/Netherlands-Football">Netherlands</a>, 
+<a href="/en/country/NOR/Norway-Football">Norway</a>, 
+<a href="/en/country/PAR/Paraguay-Football">Paraguay</a>, 
+<a href="/en/country/PER/Peru-Football">Peru</a>, 
+<a href="/en/country/POL/Poland-Football">Poland</a>, 
+<a href="/en/country/POR/Portugal-Football">Portugal</a>, 
+<a href="/en/country/ROU/Romania-Football">Romania</a>, 
+<a href="/en/country/RSA/South-Africa-Football">South Africa</a>, 
+<a href="/en/country/RUS/Russia-Football">Russia</a>, 
+<a href="/en/country/SCO/Scotland-Football">Scotland</a>, 
+<a href="/en/country/SRB/Serbia-Football">Serbia</a>, 
+<a href="/en/country/SUI/Switzerland-Football">Switzerland</a>, 
+<a href="/en/country/SWE/Sweden-Football">Sweden</a>, 
+<a href="/en/country/TUR/Turkey-Football">Turkey</a>, 
+<a href="/en/country/UKR/Ukraine-Football">Ukraine</a>, 
+<a href="/en/country/URU/Uruguay-Football">Uruguay</a>, 
+<a href="/en/country/USA/United-States-Football">United States</a>, 
+<a href="/en/country/VEN/Venezuela-Football">Venezuela</a>, 
+<a href="/en/countries/">...</a>        </div>
+    </li>
+    <li>
+        <a href="/en/draft/">Draft History</a>
+<div><strong><a href="/en/draft/">Major League Soccer</a></strong>: <a href="/en/draft/22/2023/2023-MLS-Draft">2023</a>, 
+<a href="/en/draft/22/2022/2022-MLS-Draft">2022</a>, 
+<a href="/en/draft/22/2021/2021-MLS-Draft">2021</a>, 
+<a href="/en/draft/22/2020/2020-MLS-Draft">2020</a>, 
+<a href="/en/draft/22/2019/2019-MLS-Draft">2019</a>, 
+<a href="/en/draft/">...</a></div><div><strong><a href="/en/draft/">NWSL</a></strong>: <a href="/en/draft/182/2023/2023-compabbrev-Draft">2023</a>, 
+<a href="/en/draft/182/2022/2022-compabbrev-Draft">2022</a>, 
+<a href="/en/draft/182/2021/2021-compabbrev-Draft">2021</a>, 
+<a href="/en/draft/182/2020/2020-compabbrev-Draft">2020</a>, 
+<a href="/en/draft/182/2019/2019-compabbrev-Draft">2019</a>, 
+<a href="/en/draft/">...</a></div>    </li>
+    <li>
+        <a href="/en/about/">About FBref</a>
+        <div>
+<a href="/en/expected-goals-model-explained/">Expected Goals Model Explained</a>, 
+<a href="/en/about/coverage">FBref Coverage</a>, 
+<a href="/en/about/errata">Positions &amp; Nationalities</a>, 
+<a href="https://www.sports-reference.com/data_use.html">Data Usage Terms</a>, 
+<a href="/en/about/faq">Frequently Asked Questions about Football</a>        </div>
+    </li>
+</ul>
+
+			
+   		        
+
+      <ul>
+       <li></li>      
+       <li><a href="https://fbref.com/fb-blog/">FBref.com Blog and Articles</a></li>
+
+	        </div><!-- div#site_menu -->
+		<div>
+			<div id="social" class="icon_group noload">
+	
+<div class="section_heading assoc_81d817a3" id="81d817a3_sh">
+  <span class="section_anchor" id="81d817a3_link" data-label="We're Social...for Statheads" data-no-inpage="1"></span><h2>We're Social...for Statheads</h2>		
+</div>
+	<a href="tel://888-512-8907" data-tip="Call us on Telephone" data-label="Telephone" aria-label="Telephone" class="poptip"><svg class="icon phone"><use xlink:href="#ic-phone"></use></svg></a>
+	<a href="//www.sports-reference.com/blog/" data-tip="The Sports Reference Blog" data-label="Our Blog" aria-label="Our Blog" class="poptip"><svg class="icon wordpress"><use xlink:href="#ic-wordpress"></use></svg></a>
+	<a href="https://www.sports-reference.com/blog/feed/" data-tip="Our Blog's RSS Feed" data-label="RSS Feed" aria-label="RSS Feed" class="poptip"><svg class="icon rss"><use xlink:href="#ic-rss"></use></svg></a>
+		<a href="https://www.facebook.com/@FutbolRef" data-tip="FBref.com at Facebook" data-label="Facebook" aria-label="Facebook" class="poptip"><svg class="icon facebook"><use xlink:href="#ic-facebook"></use></svg></a>
+		<a href="https://twitter.com/FBref" data-tip="FBref.com at Twitter" data-label="Twitter" aria-label="Twitter" class="poptip"><svg class="icon twitter"><use xlink:href="#ic-twitter"></use></svg></a>
+		<a href="https://instagram.com/FBref.stats" data-tip="FBref.com at Instagram" data-label="Instagram" aria-label="Instagram" class="poptip"><svg class="icon instagram"><use xlink:href="#ic-instagram"></use></svg></a>
+		<a href="https://www.tiktok.com/@fbref" data-tip="FBref.com at TikTok" data-label="TikTok" aria-label="TikTok" class="poptip"><svg class="icon tiktok"><use xlink:href="#ic-tiktok"></use></svg></a>
+	<a href="https://reddit.com/r/SportsReference" data-tip="Reddit/r/SportsReference" data-label="Reddit/r/SR" aria-label="Reddit/r/SR" class="poptip"><svg class="icon reddit"><use xlink:href="#ic-reddit"></use></svg></a>
+	<a href="https://www.youtube.com/user/sportsreference" data-tip="YouTube/SportsReference" data-label="YouTube" aria-label="YouTube" class="poptip"><svg class="icon youtube"><use xlink:href="#ic-youtube"></use></svg></a>
+	<a href="https://www.linkedin.com/company/sports-reference-llc" data-tip="Follow SR on LinkedIn" data-label="LinkedIn" aria-label="LinkedIn" class="poptip"><svg class="icon linkedin"><use xlink:href="#ic-linkedin"></use></svg></a>
+	<a href="https://www.paypal.me/sportsref" data-tip="Send us money via PayPal" data-label="PayPal" aria-label="PayPal" class="poptip"><svg class="icon paypal"><use xlink:href="#ic-paypal"></use></svg></a>
+
+<p>Every <a href="https://www.sports-reference.com/blog/sports-reference-social-media/">Sports Reference Social Media Account</a></p>
+<p><strong>Site Last Updated:</strong> Monday, June 26,  5:27AM
+</p>
+<p><a href="https://www.sports-reference.com/feedback/" class="button" style="display: block">Question, Comment, Feedback, or Correction?</a></p>
+
+<p><a style="display: block" href="https://fbref.com/en/email" class="button">Subscribe to our Free Email Newsletter</a></p>
+
+
+
+<p><a href="https://www.sports-reference.com/blog/ways-sports-reference-can-help-your-website/?utm_medium=sr&utm_source=fb&utm_campaign=site-footer-ways-help">Do you have a sports website? Or write about sports? We have tools and resources that can help you use sports data.  Find out more.</a></p>
+
+
+</div><!-- div#social -->
+
+			<div id="tips_tricks">
+   
+<div class="section_heading assoc_tips" id="tips_sh">
+  <span class="section_anchor" id="tips_link" data-label="FAQs, Tip &amp; Tricks" data-no-inpage="1"></span><h2>FAQs, Tip &amp; Tricks</h2>		
+</div>
+   <ul>
+<li><a href="https://www.sports-reference.com/blog/2018/06/fbref-com-launches-today">
+	FBref Launch Post: What we've done, what we have and what's next.
+</a></li>
+           <li><a href="//www.sports-reference.com/blog/category/tips-and-tricks/">Tips and Tricks from our Blog.</a></li>
+           <li><a href="/en/linker/">Do you have a blog? Join our linker program.</a></li>
+	   <li><a href="https://www.sports-reference.com/blog/category/stathead-tutorial-series/">Watch our How-To Videos to Become a Stathead</a></li>
+	   <li><a href="//stathead.com/?ref=fb">Subscribe to Stathead and get access to more data than you can imagine</a></li>
+   </ul>
+</div><!-- div#tips_tricks -->
+
+			<div id="credits">
+				<p>All logos are the trademark &amp; property of their owners and not Sports Reference LLC.  We present them here for purely educational purposes.
+				<a href="https://www.sports-reference.com/blog/2016/06/redesign-team-and-league-logos-courtesy-sportslogos-net/">Our reasoning for presenting offensive logos.</a></p>
+				<p>
+					
+					Logos were compiled by the amazing <a href="http://sportslogos.net/">SportsLogos.net.</a>
+				</p>
+				
+     <p>Copyright &copy; 2000-2023 <a href="//www.sports-reference.com/">Sports Reference LLC</a>. All rights reserved.</p>
+
+     <p>The SPORTS REFERENCE and STATHEAD trademarks are owned exclusively by Sports Reference LLC. Use without license or authorization is expressly prohibited.
+<div class="notice">Football data provided by  <a href='http://datasportsgroup.com/' rel='nofollow'><img alt='Data Sports Group' border=0 width=152 src='https://cdn.ssref.net/req/202306191/images/klecko/dsg.png'></a>	
+</div>
+
+<div class="notice">Advanced statistics provided by  <a href='https://www.statsperform.com/opta/' rel='nofollow'><img alt='Opta' border=0 width=150 src='https://cdn.ssref.net/req/202306191/images/klecko/opta.png'></a>	
+</div>
+			</div><!-- div#credits -->
+		</div>
+	</div>
+
+	
+<ul id="site_dirs" class="notranslate bullets-inline">
+	<li><a href="https://www.sports-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer"><svg height="15px" width="20px"><use xlink:href="#ic-sr-pennant"></use></svg> Sports&nbsp;Reference&#8239;&reg;</a></li>
+	<li><a href="https://www.baseball-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Baseball</a></li>
+	<li><a href="https://www.pro-football-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Football</a> <a href="https://www.sports-reference.com/cfb/">(college)</a></li>
+	<li><a href="https://www.basketball-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Basketball</a> <a href="https://www.sports-reference.com/cbb/">(college)</a></li>
+	<li><a href="https://www.hockey-reference.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Hockey</a></li>
+
+
+	<li class="current"><a href="https://fbref.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Soccer</a></li>
+
+	<li><a href="https://www.sports-reference.com/blog/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Blog</a></li>
+
+    <li><a href="https://stathead.com/?utm_source=fb&utm_medium=sr_xsite&utm_campaign=2023_01_srnav_footer">Stathead&#8239;&reg;</a></li>
+
+
+</ul>
+
+	<div id="about">
+  <a href="//www.sports-reference.com/about.html">About</a> &bull;
+  <a href="//www.sports-reference.com/termsofuse.html">Conditions &amp; Terms of Service</a> &bull;
+  <a href="//www.sports-reference.com/advertise.html">Advertise With Us</a>
+ &bull;
+  <a href="//www.sports-reference.com/jobs.html">Jobs at SR</a>
+  <br><br>
+Sports Reference Purpose: We will be the trusted source of information and tools that inspire and empower users to enjoy, understand, and share the sports they love.
+  <br><br>
+  <a href="//www.sports-reference.com/privacy.html">Privacy Policy</a> &bull;
+  <a href="//www.sports-reference.com/gambling-revenue-policy.html">Gambling Revenue Policy</a> &bull;
+  <a href="//www.sports-reference.com/accessibility-policy.html">Accessibility Policy</a> &bull;
+  <a href="//www.sports-reference.com/data_use.html">Use of Data</a>
+  </div>
+  <!-- div#about -->
+</div><!-- div#footer -->
+
+</div><!-- div#wrap -->
+
+
+
+<!-- rails -->
+
+<div class="adblock rails  left"><!-- div#fs_fs_rails_left  -->
+<div align="center" id="div-gpt-ad-160x600-1"  data-freestar-ad="">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-160x600-1');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-160x600-1'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_rails_left -->
+</div>
+<div class="adblock rails right"><!-- div#fs_fs_rails_right  -->
+<div align="center" id="div-gpt-ad-160x600-2"  data-freestar-ad="">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-160x600-2');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-160x600-2'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_rails_right -->
+</div>
+
+
+<!-- sr_gender is used in Templates/Assets/GoogleAnalytics.tt2 -->
+<script>var sr_gender = "men";</script>
+<!-- Google Analytics -->
+<!-- Google Analytics UA,  UA-1890630-23 -->
+<!-- Google Analytics GA4, G-T897NZ0GWZ -->
+<!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MC36NL2');</script> <!-- End Google Tag Manager --> <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC36NL2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+<script> var sr_cookie = vjs_readCookie('stathead_user') || ''; var sr_cookie_split = sr_cookie.split("::"); var sr_session_key = (sr_cookie_split.length > 1)?sr_cookie_split[2]:''; var sr_ad_free_key = "6"; var sr_site_id = "fb"; var sr_is_subscriber = (sr_ad_free_key && sr_session_key.vjs_isMatch(new RegExp(sr_ad_free_key + "$"))) || sr_session_key.vjs_isMatch(/1$/) || (sr_site_id === 'stathead' && sr_session_key.vjs_isMatch(/[0-7]$/)); var sr_is_user = sr_cookie !== null && sr_cookie !== ''; var sr_seen_modal = vjs_readCookie('modal_ad') !== null; var sr_device = 'unk'; if (Modernizr.phone) { sr_device = 'phone'; } else if (Modernizr.tablet) { sr_device = 'tablet'; } else if (Modernizr.laptop) { sr_device = 'laptop'; } else if (Modernizr.desktop) { sr_device = 'desktop'; } var sr_stathead_site = vjs_readCookie('stathead_site') || ''; var sr_stathead_type = vjs_readCookie('stathead_type') || ''; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); /* GA4: individual site code config, do not send a page view (double counts) */ gtag('config', 'G-T897NZ0GWZ', { 'is_sub': sr_is_subscriber, 'is_user': sr_is_user, 'page_gender': typeof(sr_gender) === 'string'? sr_gender: null, 'stathead_type': sr_stathead_type, 'stathead_site': sr_stathead_site, 'viewport_width': Modernizr.viewport_width, send_page_view: false }); /* UA: individual site code */ gtag('config', 'UA-1890630-23', { 'dimension1': sr_is_subscriber, 'dimension2': sr_is_user, 'dimension3': typeof(sr_gender) === 'string'? sr_gender: null, 'dimension4': sr_stathead_type, 'dimension5': sr_stathead_site, 'metric1': Modernizr.viewport_width, send_page_view: true }); /* GA4: all sr sites together */ /* I believe linker works as a parameter here, although there didn\'t seem to be a simple "true" value to set besides this one --NW https://developers.google.com/analytics/devguides/collection/gtagjs/cross-domain Add configs for both sets of code. */ gtag('config', 'G-80FRT7VJ60', { 'linker': { 'domains' : ['stathead.com'] }, 'is_sub': sr_is_subscriber, 'is_user': sr_is_user, 'page_gender': typeof(sr_gender) === 'string'? sr_gender: null, 'stathead_type': sr_stathead_type, 'stathead_site': sr_stathead_site, 'viewport_width': Modernizr.viewport_width }); /* UA: all sr sites together */ gtag('config', 'UA-1890630-9', { 'linker': { 'domains' : ['stathead.com'] }, 'dimension1': sr_site_id, 'dimension2': sr_is_subscriber, 'dimension3': sr_is_user, 'dimension4': sr_seen_modal, 'dimension5': sr_device, 'dimension6': 'null', 'metric1': Modernizr.viewport_width, 'dimension8': (typeof sr_test == 'undefined')?'no-test':( sr_test ? 'non-blocking':'blocking') }); /* Outbound link tracking. * new, cribbed from: https://www.axllent.org/docs/track-outbound-links-with-gtag-js/ */ function _gaLt(event) { /* if GA is blocked or not loaded, or not main|middle|touch click then don\'t track */ if (typeof gtag == "undefined" || (event.which != 1 && event.which != 2)) { return; } var el = event.srcElement || event.target; /* loop up the DOM tree through parent elements if clicked element is not a link (eg: an image inside a link) */ while ( el && (typeof el.tagName == "undefined" || el.tagName.toLowerCase() != "a" || !el.href) ) { el = el.parentNode; } /* if a link with valid href has been clicked */ if (el && el.href) { var link = el.href; /* only if it is an external link */ if (link.indexOf(location.host) == -1 && !link.match(/^javascript\:/i)) { /* is target set and _(self|parent|top) */ var target = el.target && !el.target.match(/^_(self|parent|top)/i) ? el.target : false; /* assume a target if (ctrl|shift|meta)-click */ if ( event.ctrlKey || event.shiftKey || event.metaKey || event.which == 2 ) { target = "_blank"; } /* tracker has not yet run */ var hbrun = false; /* hitBack to open link in same window after tracker */ var hitBack = function () { /* run once only */ if (hbrun) return; hbrun = true; window.location.href = link; }; if (target) { /* if target opens a new window then just track */ gtag("event", link, { event_category: "Outgoing Links", event_label: document.location.pathname + document.location.search, }); } else { /* Prevent standard click, track then open */ if (event.type == "mousedown") { var blockClick = function (event) { event.preventDefault(); /* remove click event after click */ el.removeEventListener("click", boundClick); }; /* bind the click event */ var boundClick = blockClick.bind(event); /* prevent the click */ el.addEventListener("click", boundClick); } event.preventDefault ? event.preventDefault() : (event.returnValue = !1); /* send event with callback */ gtag("event", link, { event_category: "Outgoing Links", event_label: document.location.pathname + document.location.search, event_callback: hitBack, }); /* Run hitBack again if GA takes longer than 1 second */ setTimeout(hitBack, 1000); } } } } var _w = window; /* Use "click" if touchscreen device, else "mousedown" */ var _gaLtEvt = "ontouchstart" in _w ? "click" : "mousedown"; /* Attach the event to all clicks in the document after page has loaded */ _w.addEventListener( "load", function () { document.body.addEventListener(_gaLtEvt, _gaLt, !1); }, !1 ); </script>
+<!-- End Google Analytics -->
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20503178.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7dd6e95509e52ef0","token":"e4b4f9155f05483494faa3d260e4875f","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
+</body>
+<!-- SR -->
+</html>
+
+
