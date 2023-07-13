@@ -58,7 +58,7 @@ def check_angels_score():
         # Keep track of the previous game because once we find a game that hasn't been played yet we know the previous one we just checked is the last played game
         if game_num > 1:
             previous_game = {
-                'game_num': game_num,
+                'game_num': game_num-1,
                 'home_or_away': home_or_away,
                 'runs_scored': runs_scored
             }
@@ -124,7 +124,7 @@ def check_lafc_score():
         # Keep track of the previous game because once we find a game that hasn't been played yet we know the previous one we just checked is the last played game
         if game_num > 1:
             previous_game = {
-                'game_num': game_num,
+                'game_num': game_num-1,
                 'home_or_away': home_or_away,
                 'win_or_loss': win_or_loss
             }
@@ -184,7 +184,7 @@ def check_ducks_score():
         # Keep track of the previous game because once we find a game that hasn't been played yet we know the previous one we just checked is the last played game
         if game_num > 1:
             previous_game = {
-                'game_num': game_num,
+                'game_num': game_num-1,
                 'home_or_away': home_or_away,
                 'goals_scored': goals_scored
             }
