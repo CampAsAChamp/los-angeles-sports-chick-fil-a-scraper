@@ -68,7 +68,7 @@ def check_angels_score():
         #     - Played Yet?
         #     - Home or Away
         #     - Runs Scored
-        
+
         fields = row.find_all('td')
         for field in fields:
 
@@ -89,9 +89,9 @@ def check_angels_score():
             if field['data-stat'] == 'boxscore':
                 val = field.string
                 if val == 'preview':
-                    gameHappened = False
+                    game_happened = False
                 else:
-                    gameHappened = True
+                    game_happened = True
 
             if (field['data-stat'] == 'homeORvis'):
                 val = field.string
@@ -105,7 +105,7 @@ def check_angels_score():
 
         game_num += 1
 
-        if not gameHappened:
+        if not game_happened:
             print(previous_game)
 
             if happened_yesterday and previous_game['home_or_away'] == 'home' and previous_game['runs_scored'] >= 7:
@@ -169,9 +169,9 @@ def check_lafc_score():
             if field['data-stat'] == 'result':
                 val = field.string
                 if val is None:
-                    gameHappened = False
+                    game_happened = False
                 else:
-                    gameHappened = True
+                    game_happened = True
                     win_or_loss = field.string
 
             if (field['data-stat'] == 'venue'):
@@ -179,7 +179,7 @@ def check_lafc_score():
 
         game_num += 1
 
-        if not gameHappened:
+        if not game_happened:
             print(previous_game)
 
             if happened_yesterday and previous_game['home_or_away'] == 'Home' and previous_game['win_or_loss'] == 'W':
@@ -243,9 +243,9 @@ def check_ducks_score():
             if field['data-stat'] == 'game_outcome':
                 val = field.string
                 if val is None:
-                    gameHappened = False
+                    game_happened = False
                 else:
-                    gameHappened = True
+                    game_happened = True
 
             if (field['data-stat'] == 'game_location'):
                 val = field.string
@@ -259,7 +259,7 @@ def check_ducks_score():
 
         game_num += 1
 
-        if not gameHappened:
+        if not game_happened:
             print(previous_game)
 
             if happened_yesterday and previous_game['home_or_away'] == 'home' and previous_game['goals_scored'] >= 5:
