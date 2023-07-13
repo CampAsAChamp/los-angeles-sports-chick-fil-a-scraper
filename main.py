@@ -68,8 +68,24 @@ def check_angels_score():
         #     - Played Yet?
         #     - Home or Away
         #     - Runs Scored
+        
         fields = row.find_all('td')
         for field in fields:
+
+            if field['data-stat'] == 'date_game':
+                # Need to add the current year as without it the year defaults to 1900
+                date_str = field.string + " " + str(current_year)
+                game_date = datetime.datetime.strptime(
+                    date_str, '%A, %b %d %Y').date()
+
+                # Getting only the date as we don't care about the time
+                current_date = datetime.datetime.now().date()
+
+                if (current_date - game_date == datetime.timedelta(days=1)):
+                    happened_yesterday = True
+                else:
+                    happened_yesterday = False
+
             if field['data-stat'] == 'boxscore':
                 val = field.string
                 if val == 'preview':
@@ -92,7 +108,7 @@ def check_angels_score():
         if not gameHappened:
             print(previous_game)
 
-            if previous_game['home_or_away'] == 'home' and previous_game['runs_scored'] >= 7:
+            if happened_yesterday and previous_game['home_or_away'] == 'home' and previous_game['runs_scored'] >= 7:
                 return True
             else:
                 return False
@@ -131,9 +147,23 @@ def check_lafc_score():
 
         # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
         # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
-        #     - Played Yet?
-        #     - Home or Away?
-        #     - Win or Loss?
+        #   - Played Yet?
+        #   - Home or Away?
+        #   - Win or Loss?
+
+        # Checking to see if the item exists in the HTML as for the future games it doesn't
+        if row.find('th').a:
+            date_str = row.find('th').a.string
+            game_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+
+            # Getting only the date as we don't care about the time
+            current_date = datetime.datetime.now().date()
+
+            if (current_date - game_date == datetime.timedelta(days=1)):
+                happened_yesterday = True
+            else:
+                happened_yesterday = False
+
         fields = row.find_all('td')
         for field in fields:
             if field['data-stat'] == 'result':
@@ -152,7 +182,7 @@ def check_lafc_score():
         if not gameHappened:
             print(previous_game)
 
-            if previous_game['home_or_away'] == 'Home' and previous_game['win_or_loss'] == 'W':
+            if happened_yesterday and previous_game['home_or_away'] == 'Home' and previous_game['win_or_loss'] == 'W':
                 return True
             else:
                 return False
@@ -194,6 +224,20 @@ def check_ducks_score():
         #     - Played Yet?
         #     - Home or Away
         #     - Goals Scored
+
+        # Checking to see if the item exists in the HTML as for the future games it doesn't
+        if row.find('th').a:
+            date_str = row.find('th').a.string
+            game_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+
+            # Getting only the date as we don't care about the time
+            current_date = datetime.datetime.now().date()
+
+            if (current_date - game_date == datetime.timedelta(days=1)):
+                happened_yesterday = True
+            else:
+                happened_yesterday = False
+
         fields = row.find_all('td')
         for field in fields:
             if field['data-stat'] == 'game_outcome':
@@ -218,7 +262,7 @@ def check_ducks_score():
         if not gameHappened:
             print(previous_game)
 
-            if previous_game['home_or_away'] == 'home' and previous_game['goals_scored'] >= 5:
+            if happened_yesterday and previous_game['home_or_away'] == 'home' and previous_game['goals_scored'] >= 5:
                 return True
             else:
                 return False
