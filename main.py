@@ -230,6 +230,7 @@ def send_email(subject, body):
 
     emails = TO_EMAIL.split(',')
     for email in emails:
+        email = email.strip()
         msg = Email(email, subject, body)
         messenger.send_email(msg)
 
