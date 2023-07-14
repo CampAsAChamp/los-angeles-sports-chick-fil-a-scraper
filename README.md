@@ -26,4 +26,3 @@ If you want to set up for yourself to get email alerts here are the steps you ne
 
 # TODO:
 * Make functions more modular as the 3 score checking functions have a lot of duplicate code
-* Use switch statements in the column checking instead of if statements for better readability
