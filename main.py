@@ -60,7 +60,8 @@ def check_angels_score():
             previous_game = {
                 'game_num': game_num-1,
                 'home_or_away': home_or_away,
-                'runs_scored': runs_scored
+                'runs_scored': runs_scored,
+                'happened_yesterday': happened_yesterday,
             }
 
         # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
@@ -142,7 +143,8 @@ def check_lafc_score():
             previous_game = {
                 'game_num': game_num-1,
                 'home_or_away': home_or_away,
-                'win_or_loss': win_or_loss
+                'win_or_loss': win_or_loss,
+                'happened_yesterday': happened_yesterday,
             }
 
         # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
@@ -216,7 +218,8 @@ def check_ducks_score():
             previous_game = {
                 'game_num': game_num-1,
                 'home_or_away': home_or_away,
-                'goals_scored': goals_scored
+                'goals_scored': goals_scored,
+                'happened_yesterday': happened_yesterday,
             }
 
         # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
