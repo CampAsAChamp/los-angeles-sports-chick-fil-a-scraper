@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-"""
-Module Docstring
-"""
-
 __author__ = "Nick Schneider"
 __version__ = "0.1.0"
 __license__ = "Apache"
