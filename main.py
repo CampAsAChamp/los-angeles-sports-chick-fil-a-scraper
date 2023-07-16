@@ -105,7 +105,9 @@ def check_angels_score():
         if not game_happened:
             print(previous_game)
 
-            if happened_yesterday and previous_game['home_or_away'] == 'home' and previous_game['runs_scored'] >= 7:
+            if previous_game['happened_yesterday'] and \
+                    previous_game['home_or_away'] == 'home' and \
+                    previous_game['runs_scored'] >= 7:
                 return True
             else:
                 return False
@@ -180,7 +182,9 @@ def check_lafc_score():
         if not game_happened:
             print(previous_game)
 
-            if happened_yesterday and previous_game['home_or_away'] == 'Home' and previous_game['win_or_loss'] == 'W':
+            if previous_game['happened_yesterday'] and \
+                    previous_game['home_or_away'] == 'Home' and \
+                    previous_game['win_or_loss'] == 'W':
                 return True
             else:
                 return False
@@ -261,7 +265,9 @@ def check_ducks_score():
         if not game_happened:
             print(previous_game)
 
-            if happened_yesterday and previous_game['home_or_away'] == 'home' and previous_game['goals_scored'] >= 5:
+            if previous_game['happened_yesterday'] and \
+                    previous_game['home_or_away'] == 'home' and \
+                    previous_game['goals_scored'] >= 5:
                 return True
             else:
                 return False
