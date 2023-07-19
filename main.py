@@ -37,6 +37,24 @@ CURRENT_DATETIME = datetime.datetime.now()
 SEND_EMAIL = False
 USE_LOCAL = False
 
+ANGELS = "Angels"
+LAFC = "LAFC"
+DUCKS = "Ducks"
+
+EMAIL_SUCCESS_MSG = "✔ - Email successfully sent!"
+
+
+def print_criteria_not_met(team_name):
+    print(f"✗ - {team_name} didn't meet the criteria")
+
+
+def print_not_in_season(team_name):
+    print(f"✗ - {team_name} are not in season")
+
+
+def generate_email_subject(team_name):
+    return f"{team_name} Chick Fil A Reminder"
+
 
 def fetch_score(url: str):
     """ 
@@ -287,6 +305,7 @@ def send_emails(subject, body):
         messenger.send_email(msg)
 
     messenger.close_conn()
+    print(EMAIL_SUCCESS_MSG)
 
 
 def main():
@@ -298,39 +317,33 @@ def main():
     # Only run from March - October
     if M_MARCH <= CURRENT_DATETIME.month <= M_OCTOBER:
         if check_angels_score():
-            subject = 'Angels Chick Fil A Reminder'
-            body = 'Angels won by 7 or more runs!'
-            send_emails(subject, body)
-            print("✔ - Email successfully sent!")
+            body = f'{ANGELS} won by 7 or more runs!'
+            send_emails(generate_email_subject(ANGELS), body)
         else:
-            print("✗ - Angels didn't meet the criteria")
+            print_criteria_not_met(ANGELS)
     else:
-        print("✗ - Angels are not in season")
+        print_not_in_season(ANGELS)
 
-    print()
+    print()  # For empty lines
 
     # Only run from October - April
     if CURRENT_DATETIME.month >= M_OCTOBER or CURRENT_DATETIME.month <= M_JUNE:
         if check_ducks_score():
-            subject = 'Ducks Chick Fil A Reminder'
-            body = 'Ducks won by 5 or more goals!'
-            send_emails(subject, body)
-            print("✔ - Email successfully sent!")
+            body = f'{DUCKS} won by 5 or more goals!'
+            send_emails(generate_email_subject(DUCKS), body)
         else:
-            print("✗ - Ducks score didn't meet the criteria")
+            print_criteria_not_met(DUCKS)
     else:
-        print("✗ - Ducks are not in season")
+        print_not_in_season(DUCKS)
 
-    print()
+    print()  # For empty lines
 
     # Always run because LAFC season is basically the whole year
     if check_lafc_score():
-        subject = 'LAFC Chick Fil A Reminder'
-        body = 'LAFC won at home!'
-        send_emails(subject, body)
-        print("✔ - Email successfully sent!")
+        body = f'{LAFC} won at home!'
+        send_emails(generate_email_subject(LAFC), body)
     else:
-        print("✗ - LAFC didn't meet the criteria")
+        print_criteria_not_met(LAFC)
 
 
 if __name__ == "__main__":
