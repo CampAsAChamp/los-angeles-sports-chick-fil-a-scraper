@@ -23,6 +23,3 @@ If you want to set up for yourself to get email alerts here are the steps you ne
     5. For the value use the actual value of your email addresses or app password
 4. It will now run every day, you can check the runs in the `Actions` tab in Github
     1. If the criteria is met you will receive an email for each one met so you know to check your Chick Fil A app to claim your free sandwich coupon
-
-# TODO:
-* Make functions more modular as the 3 score checking functions have a lot of duplicate code
