@@ -89,7 +89,6 @@ def check_angels_score():
         #     - Played Yet?
         #     - Home or Away
         #     - Runs Scored
-
         fields = row.find_all('td')
         for field in fields:
 
@@ -154,12 +153,6 @@ def check_lafc_score():
                 'happened_yesterday': happened_yesterday,
             }
 
-        # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
-        # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
-        #   - Played Yet?
-        #   - Home or Away?
-        #   - Win or Loss?
-
         # Checking to see if the item exists in the HTML as for the future games it doesn't
         if row.find('th').a:
             date_str = row.find('th').a.string
@@ -167,6 +160,11 @@ def check_lafc_score():
 
             happened_yesterday = check_yesterday(game_date)
 
+        # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
+        # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
+        #   - Played Yet?
+        #   - Home or Away?
+        #   - Win or Loss?
         fields = row.find_all('td')
         for field in fields:
             if field['data-stat'] == 'result':
@@ -223,12 +221,6 @@ def check_ducks_score():
                 'happened_yesterday': happened_yesterday,
             }
 
-        # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
-        # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
-        #     - Played Yet?
-        #     - Home or Away
-        #     - Goals Scored
-
         # Checking to see if the item exists in the HTML as for the future games it doesn't
         if row.find('th').a:
             date_str = row.find('th').a.string
@@ -236,6 +228,11 @@ def check_ducks_score():
 
             happened_yesterday = check_yesterday(game_date)
 
+        # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
+        # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
+        #     - Played Yet?
+        #     - Home or Away
+        #     - Goals Scored
         fields = row.find_all('td')
         for field in fields:
             if field['data-stat'] == 'game_outcome':
