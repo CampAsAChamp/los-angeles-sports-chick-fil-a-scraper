@@ -38,9 +38,10 @@ TEST = False
 
 
 def fetch_score(url: str):
+    """ 
+    Makes HTTP GET request to the URL and loads it into BS4 for further parsing 
     """
-    Makes HTTP GET request to the URL and loads it into BS4 for further parsing
-    """
+
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -48,15 +49,18 @@ def fetch_score(url: str):
 
 
 def check_yesterday(game_date):
-    """
-    Makes HTTP GET request to the URL and loads it into BS4 for further parsing
+    """ 
+    Checks to see if the day of the game was yesterday 
     """
 
     return (CURRENT_DATETIME.date() - game_date == datetime.timedelta(days=1))
 
 
 def check_angels_score():
-    """ At any home game, if the Angels score 7 or more runs, you can claim a chicken sandwich """
+    """ 
+    Checks the Los Angeles Angels score from the previous day to see if it qualifies for a free Chick Fil A sandwich.
+    At any home game, if the Angels score 7 or more runs, you can claim a chicken sandwich.
+    """
 
     url = f'https://www.baseball-reference.com/teams/LAA/{CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
     soup = fetch_score(url)
@@ -123,7 +127,10 @@ def check_angels_score():
 
 
 def check_lafc_score():
-    """ At any home game, if LAFC wins, you can claim a chicken sandwich """
+    """ 
+    Checks the Los Angeles FC score from the previous day to see if it qualifies for a free Chick Fil A sandwich.
+    At any home game, if LAFC wins, you can claim a chicken sandwich 
+    """
 
     url = f'https://fbref.com/en/squads/81d817a3/{CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
     soup = fetch_score(url)
@@ -191,7 +198,10 @@ def check_lafc_score():
 
 
 def check_ducks_score():
-    """ At any home game, if the Ducks score 5 or more goals, you can claim a chicken sandwich """
+    """ 
+    Checks the Anaheim Ducks score from the previous day to see if it qualifies for a free Chick Fil A sandwich.
+    At any home game, if the Ducks score 5 or more goals, you can claim a chicken sandwich 
+    """
 
     url = f'https://www.hockey-reference.com/teams/ANA/{CURRENT_DATETIME.year}_games.html'
     soup = fetch_score(url)
