@@ -10,11 +10,16 @@ import requests
 from bs4 import BeautifulSoup
 from PyMessenger import Email, Messenger
 
-# Global Variables
+###################
+# GLOBAL VARIABLES
+##################
+
+# Environment variables
 FROM_EMAIL = os.environ['FROM_EMAIL']
-TO_EMAIL = os.environ['TO_EMAIL']
+TO_EMAIL = os.environ['TO_EMAIL']  # Comma separate list of emails
 PASSWORD = os.environ['PASSWORD']
 
+# Month helper constants
 M_JANUARY = 1
 M_FEBRUARY = 2
 M_MARCH = 3
@@ -28,14 +33,33 @@ M_OCTOBER = 10
 M_NOVEMBER = 11
 M_DECEMBER = 12
 
+CURRENT_DATETIME = datetime.datetime.now()
+TEST = True
+
+
+def fetch_score(url: str):
+    """
+    Makes HTTP GET request to the URL and loads it into BS4 for further parsing
+    """
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    return soup
+
+
+def check_yesterday(game_date):
+    """
+    Makes HTTP GET request to the URL and loads it into BS4 for further parsing
+    """
+
+    return (CURRENT_DATETIME.date() - game_date == datetime.timedelta(days=1))
+
 
 def check_angels_score():
     """ At any home game, if the Angels score 7 or more runs, you can claim a chicken sandwich """
 
-    current_year = datetime.datetime.now().year
-    url = f'https://www.baseball-reference.com/teams/LAA/{current_year}-schedule-scores.shtml#all_results'
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    url = f'https://www.baseball-reference.com/teams/LAA/{CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
+    soup = fetch_score(url)
     # soup = BeautifulSoup(open('sample_pages/angels_scores.html'), features="html.parser")
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
@@ -71,31 +95,17 @@ def check_angels_score():
 
             if field['data-stat'] == 'date_game':
                 # Need to add the current year as without it the year defaults to 1900
-                date_str = field.string + " " + str(current_year)
+                date_str = field.string + " " + str(CURRENT_DATETIME.year)
                 game_date = datetime.datetime.strptime(
                     date_str, '%A, %b %d %Y').date()
 
-                # Getting only the date as we don't care about the time
-                current_date = datetime.datetime.now().date()
-
-                if (current_date - game_date == datetime.timedelta(days=1)):
-                    happened_yesterday = True
-                else:
-                    happened_yesterday = False
+                happened_yesterday = check_yesterday(game_date)
 
             if field['data-stat'] == 'boxscore':
-                val = field.string
-                if val == 'preview':
-                    game_happened = False
-                else:
-                    game_happened = True
+                game_happened = False if field.string == 'preview' else True
 
             if (field['data-stat'] == 'homeORvis'):
-                val = field.string
-                if val == '@':
-                    home_or_away = 'away'
-                else:
-                    home_or_away = 'home'
+                home_or_away = 'away' if field.string == '@' else 'home'
 
             if (field['data-stat'] == 'R'):
                 runs_scored = int(field.string)
@@ -116,10 +126,9 @@ def check_angels_score():
 def check_lafc_score():
     """ At any home game, if LAFC wins, you can claim a chicken sandwich """
 
-    current_year = datetime.datetime.now().year
-    url = f'https://fbref.com/en/squads/81d817a3/{current_year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    url = f'https://fbref.com/en/squads/81d817a3/{CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
+    soup = fetch_score(url)
+
     # soup = BeautifulSoup(
     # open('sample_pages/2023_lafc_scores.html'), features="html.parser")
 
@@ -141,7 +150,7 @@ def check_lafc_score():
             previous_game = {
                 'game_num': game_num-1,
                 'home_or_away': home_or_away,
-                'win_or_loss': win_or_loss,
+                'result': result,
                 'happened_yesterday': happened_yesterday,
             }
 
@@ -156,23 +165,16 @@ def check_lafc_score():
             date_str = row.find('th').a.string
             game_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
 
-            # Getting only the date as we don't care about the time
-            current_date = datetime.datetime.now().date()
-
-            if (current_date - game_date == datetime.timedelta(days=1)):
-                happened_yesterday = True
-            else:
-                happened_yesterday = False
+            happened_yesterday = check_yesterday(game_date)
 
         fields = row.find_all('td')
         for field in fields:
             if field['data-stat'] == 'result':
-                val = field.string
-                if val is None:
+                if field.string is None:
                     game_happened = False
                 else:
                     game_happened = True
-                    win_or_loss = field.string
+                    result = field.string
 
             if (field['data-stat'] == 'venue'):
                 home_or_away = field.string
@@ -184,7 +186,7 @@ def check_lafc_score():
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'Home' and \
-                    previous_game['win_or_loss'] == 'W':
+                    previous_game['result'] == 'W':
                 return True
             else:
                 return False
@@ -193,10 +195,9 @@ def check_lafc_score():
 def check_ducks_score():
     """ At any home game, if the Ducks score 5 or more goals, you can claim a chicken sandwich """
 
-    current_year = datetime.datetime.now().year
-    url = f'https://www.hockey-reference.com/teams/ANA/{current_year}_games.html'
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    url = f'https://www.hockey-reference.com/teams/ANA/{CURRENT_DATETIME.year}_games.html'
+    soup = fetch_score(url)
+
     # soup = BeautifulSoup(
     # open('sample_pages/2023_ducks_scores.html'), features="html.parser")
 
@@ -233,29 +234,15 @@ def check_ducks_score():
             date_str = row.find('th').a.string
             game_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
 
-            # Getting only the date as we don't care about the time
-            current_date = datetime.datetime.now().date()
-
-            if (current_date - game_date == datetime.timedelta(days=1)):
-                happened_yesterday = True
-            else:
-                happened_yesterday = False
+            happened_yesterday = check_yesterday(game_date)
 
         fields = row.find_all('td')
         for field in fields:
             if field['data-stat'] == 'game_outcome':
-                val = field.string
-                if val is None:
-                    game_happened = False
-                else:
-                    game_happened = True
+                game_happened = False if field.string is None else True
 
             if (field['data-stat'] == 'game_location'):
-                val = field.string
-                if val == '@':
-                    home_or_away = 'away'
-                else:
-                    home_or_away = 'home'
+                home_or_away = 'away' if field.string == '@' else 'home'
 
             if (field['data-stat'] == 'goals'):
                 goals_scored = int(field.string)
@@ -273,7 +260,10 @@ def check_ducks_score():
                 return False
 
 
-def send_email(subject, body):
+def send_emails(subject, body):
+    if TEST:
+        return
+
     messenger = Messenger(FROM_EMAIL, PASSWORD)
     messenger.open_conn()
 
@@ -292,14 +282,12 @@ def main():
     # If the season is over for one of the teams and every game has been played
     # this will scan through all the games but ultimately won't do anything because there are no future games
 
-    current_month = datetime.datetime.now().month
-
     # Only run from March - October
-    if M_MARCH <= current_month <= M_OCTOBER:
+    if M_MARCH <= CURRENT_DATETIME.month <= M_OCTOBER:
         if check_angels_score():
             subject = 'Angels Chick Fil A Reminder'
             body = 'Angels won by 7 or more runs!'
-            send_email(subject, body)
+            send_emails(subject, body)
             print("✔ - Email successfully sent!")
         else:
             print("✗ - Angels didn't meet the criteria")
@@ -309,11 +297,11 @@ def main():
     print()
 
     # Only run from October - April
-    if current_month >= M_OCTOBER or current_month <= M_JUNE:
+    if CURRENT_DATETIME.month >= M_OCTOBER or CURRENT_DATETIME.month <= M_JUNE:
         if check_ducks_score():
             subject = 'Ducks Chick Fil A Reminder'
             body = 'Ducks won by 5 or more goals!'
-            send_email(subject, body)
+            send_emails(subject, body)
             print("✔ - Email successfully sent!")
         else:
             print("✗ - Ducks score didn't meet the criteria")
@@ -326,7 +314,7 @@ def main():
     if check_lafc_score():
         subject = 'LAFC Chick Fil A Reminder'
         body = 'LAFC won at home!'
-        send_email(subject, body)
+        send_emails(subject, body)
         print("✔ - Email successfully sent!")
     else:
         print("✗ - LAFC didn't meet the criteria")
