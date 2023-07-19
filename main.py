@@ -35,6 +35,7 @@ M_DECEMBER = 12
 
 CURRENT_DATETIME = datetime.datetime.now()
 SEND_EMAIL = False
+USE_LOCAL = False
 
 
 def fetch_score(url: str):
@@ -62,9 +63,12 @@ def check_angels_score():
     At any home game, if the Angels score 7 or more runs, you can claim a chicken sandwich.
     """
 
-    url = f'https://www.baseball-reference.com/teams/LAA/{CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
-    soup = fetch_score(url)
-    # soup = BeautifulSoup(open('sample_pages/angels_scores.html'), features="html.parser")
+    if USE_LOCAL:
+        soup = BeautifulSoup(
+            open('sample_pages/2023_angels_scores.html'), features="html.parser")
+    else:
+        url = f'https://www.baseball-reference.com/teams/LAA/{CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
+        soup = fetch_score(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
@@ -132,11 +136,12 @@ def check_lafc_score():
     At any home game, if LAFC wins, you can claim a chicken sandwich 
     """
 
-    url = f'https://fbref.com/en/squads/81d817a3/{CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
-    soup = fetch_score(url)
-
-    # soup = BeautifulSoup(
-    # open('sample_pages/2023_lafc_scores.html'), features="html.parser")
+    if USE_LOCAL:
+        soup = BeautifulSoup(
+            open('sample_pages/2023_lafc_scores.html'), features="html.parser")
+    else:
+        url = f'https://fbref.com/en/squads/81d817a3/{CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
+        soup = fetch_score(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
@@ -203,11 +208,12 @@ def check_ducks_score():
     At any home game, if the Ducks score 5 or more goals, you can claim a chicken sandwich 
     """
 
-    url = f'https://www.hockey-reference.com/teams/ANA/{CURRENT_DATETIME.year}_games.html'
-    soup = fetch_score(url)
-
-    # soup = BeautifulSoup(
-    # open('sample_pages/2023_ducks_scores.html'), features="html.parser")
+    if USE_LOCAL:
+        soup = BeautifulSoup(
+            open('sample_pages/2023_ducks_scores.html'), features="html.parser")
+    else:
+        url = f'https://www.hockey-reference.com/teams/ANA/{CURRENT_DATETIME.year}_games.html'
+        soup = fetch_score(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
