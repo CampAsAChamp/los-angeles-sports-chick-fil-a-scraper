@@ -34,7 +34,7 @@ M_NOVEMBER = 11
 M_DECEMBER = 12
 
 CURRENT_DATETIME = datetime.datetime.now()
-TEST = True
+TEST = False
 
 
 def fetch_score(url: str):
