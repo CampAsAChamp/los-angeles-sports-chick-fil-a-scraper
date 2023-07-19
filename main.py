@@ -34,7 +34,7 @@ M_NOVEMBER = 11
 M_DECEMBER = 12
 
 CURRENT_DATETIME = datetime.datetime.now()
-SEND_EMAIL = False
+SEND_EMAIL = True
 USE_LOCAL = False
 
 ANGELS = "Angels"
@@ -292,7 +292,7 @@ def check_ducks_score():
 
 
 def send_emails(subject, body):
-    if SEND_EMAIL:
+    if not SEND_EMAIL:
         return
 
     messenger = Messenger(FROM_EMAIL, PASSWORD)
