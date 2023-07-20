@@ -20,6 +20,13 @@ If you want to set up for yourself to get email alerts here are the steps you ne
     2. Click `New Repository Secret`
     3. Add a separate one for each of the three keys listed above and paste the actual value that belong
     4. For name use the key list above (`FROM_EMAIL`, `TO_EMAIL`, `PASSWORD`)
+        1. `TO_EMAIL` is a comma separated list of emails, so you can send email alerts to multiple people, or just keep it to one. 
+           
+                TO_EMAIL = "person1@gmail.com"
+                OR
+                TO_EMAIL = "person1@gmail.com, person2@gmail.com"
+       
+           
     5. For the value use the actual value of your email addresses or app password
 4. It will now run every day, you can check the runs in the `Actions` tab in Github
     1. If the criteria is met you will receive an email for each one met so you know to check your Chick Fil A app to claim your free sandwich coupon
