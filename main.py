@@ -34,7 +34,7 @@ M_NOVEMBER = 11
 M_DECEMBER = 12
 
 CURRENT_DATETIME = datetime.datetime.now()
-SEND_EMAIL = False
+SEND_EMAIL = True
 USE_LOCAL = False
 
 ANGELS = "Angels"
