@@ -34,7 +34,7 @@ M_NOVEMBER = 11
 M_DECEMBER = 12
 
 CURRENT_DATETIME = datetime.datetime.now()
-SEND_EMAIL = True
+SEND_EMAIL = False
 USE_LOCAL = False
 
 ANGELS = "Angels"
@@ -119,10 +119,9 @@ def check_angels_score():
         for field in fields:
 
             if field['data-stat'] == 'date_game':
-                # Need to add the current year as without it the year defaults to 1900
-                date_str = field.string + " " + str(CURRENT_DATETIME.year)
+                date_str = field['csk']
                 game_date = datetime.datetime.strptime(
-                    date_str, '%A, %b %d %Y').date()
+                    date_str, '%Y-%m-%d').date()
 
                 happened_yesterday = check_yesterday(game_date)
 
