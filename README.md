@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]()
 
 The Los Angeles sports teams have agreements with Chick Fil A for free sandwiches if one of the following criteria is met
 - Angeles score 7 or more runs at home
