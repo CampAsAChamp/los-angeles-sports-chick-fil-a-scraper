@@ -7,7 +7,7 @@ __license__ = "Apache"
 import datetime
 from bs4 import BeautifulSoup
 
-from messenger import Email, Messenger
+import messenger
 import constants
 import helpers
 import globals
@@ -233,15 +233,15 @@ def check_ducks_score():
 
 def send_emails(subject: str, body: str, email_addresses: list[str]):
     if env.SHOULD_SEND_EMAIL:
-        messenger = Messenger(env.FROM_EMAIL, env.PASSWORD)
-        messenger.open_conn()
+        mess = messenger.Messenger(env.FROM_EMAIL, env.PASSWORD)
+        mess.open_conn()
 
         for email in email_addresses:
             email = email.strip()
-            msg = Email(email, subject, body)
-            messenger.send_email(msg)
+            msg = mess.Email(email, subject, body)
+            mess.send_email(msg)
 
-        messenger.close_conn()
+        mess.close_conn()
         print(constants.EMAIL_SUCCESS_MSG)
 
 
