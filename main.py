@@ -56,7 +56,7 @@ def generate_email_subject(team_name):
     return f"{team_name} Chick Fil A Reminder"
 
 
-def fetch_score(url: str):
+def fetch_page(url: str):
     """ 
     Makes HTTP GET request to the URL and loads it into BS4 for further parsing 
     """
@@ -86,7 +86,7 @@ def check_angels_score():
             open('sample_pages/2023_angels_scores.html'), features="html.parser")
     else:
         url = f'https://www.baseball-reference.com/teams/LAA/{CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
-        soup = fetch_score(url)
+        soup = fetch_page(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
@@ -158,7 +158,7 @@ def check_lafc_score():
             open('sample_pages/2023_lafc_scores.html'), features="html.parser")
     else:
         url = f'https://fbref.com/en/squads/81d817a3/{CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
-        soup = fetch_score(url)
+        soup = fetch_page(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
@@ -230,7 +230,7 @@ def check_ducks_score():
             open('sample_pages/2023_ducks_scores.html'), features="html.parser")
     else:
         url = f'https://www.hockey-reference.com/teams/ANA/{CURRENT_DATETIME.year}_games.html'
-        soup = fetch_score(url)
+        soup = fetch_page(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
