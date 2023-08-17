@@ -47,19 +47,19 @@ def color_text(text: str, color: str):
     if color == constants.BLACK:
         color = constants.BLACK_CODE
     elif color == constants.RED:
-        color = constants.RED_BLACK_CODE
+        color = constants.RED_CODE
     elif color == constants.GREEN:
-        color = constants.GREEN_BLACK_CODE
+        color = constants.GREEN_CODE
     elif color == constants.YELLOW:
-        color = constants.YELLOW_BLACK_CODE
+        color = constants.YELLOW_CODE
     elif color == constants.BLUE:
-        color = constants.BLUE_BLACK_CODE
+        color = constants.BLUE_CODE
     elif color == constants.MAGENTA:
-        color = constants.MAGENTA_BLACK_CODE
+        color = constants.MAGENTA_CODE
     elif color == constants.CYAN:
-        color = constants.CYAN_BLACK_CODE
+        color = constants.CYAN_CODE
     elif color == constants.WHITE:
-        color = constants.WHITE_BLACK_CODE
+        color = constants.WHITE_CODE
     else:
         return text
 
