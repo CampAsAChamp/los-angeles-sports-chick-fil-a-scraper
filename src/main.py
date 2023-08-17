@@ -8,6 +8,7 @@ import datetime
 
 from bs4 import BeautifulSoup
 
+import colors
 import constants
 import env
 import globals
@@ -78,7 +79,7 @@ def check_angels_score():
 
         if not game_happened:
 
-            helpers.color_print_game(previous_game, constants.RED)
+            helpers.color_print_game(previous_game, colors.RED)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'home' and \
