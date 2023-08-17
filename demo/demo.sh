@@ -146,52 +146,5 @@ code .
 
 open https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper
 
-# # Start the instances
-# cd $SCRIPT_SOURCE
-# gumspin globe "We're now going to start the application and Redis..."
-
-# gumspin monkey "Waiting for the Redis instance and the application to start up..."
-# cowecho "... and done!"
-
-# sleep 5
-# clear
-
-# gumspin dot "We're now going to demo the application"
-# pytest
-# cowecho "... and done!"
-
-# sleep 5
-# clear
-
-# cowecho "Rad! We just did a simple application demo that was self-driven. What tools did we use here?"
-# sleep 3
-# clear
-
-# cat >/tmp/open-links.py <<EOF
-# import time
-# from playwright.sync_api import sync_playwright
-
-# with sync_playwright() as playwright:
-#     browser = playwright.chromium.launch(headless=False)
-#     context = browser.new_context()
-#     page = context.new_page()
-#     page.goto("https://github.com/charmbracelet/gum")
-#     time.sleep(5)
-#     page.goto("https://en.wikipedia.org/wiki/Cowsay")
-#     time.sleep(5)
-#     page.goto("https://github.com/busyloop/lolcat")
-#     time.sleep(5)
-#     page.goto("https://playwright.dev/")
-#     time.sleep(5)
-#     page.goto("https://github.com/sharkdp/bat")
-#     time.sleep(5)
-#     page.goto("https://the.exa.website/")
-#     time.sleep(5)
-#     browser.close()
-# EOF
-# python3 /tmp/open-links.py
-# rm /tmp/open-links.py
-# clear
-
 gumbox "Thank you for attending! Any questions?"
 PROMPT=$(guminput "Press any button to continue...")
