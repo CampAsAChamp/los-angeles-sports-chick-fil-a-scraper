@@ -69,7 +69,7 @@ function main() {
 gumbox "Hello! Welcome to $(gumtext 'The Self-Driven Demo about my Los Angeles Chick Fil A Scraper!')"
 PROMPT=$(guminput "Press any button to continue...")
 
-echo -e "$(gumtext "LET'S DO IT!")"
+    echo -e "$(gumtext "Let's Do It!")"
 
 sleep 2
 clear
