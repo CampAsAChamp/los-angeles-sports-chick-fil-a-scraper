@@ -92,83 +92,104 @@ function guminput() {
 # PROMPT=$(guminput "Press any button to continue...")
 # clear
 
-gumbox "I picked the $(gumtext 'Sports Reference') website for a few reasons"
-sleep 4
+# gumbox "I picked the $(gumtext 'Sports Reference') website for a few reasons"
+# sleep 4
+# echo -e "$(gumtext "+ Free (unlike any of the APIs)")"
+# sleep 2
+# echo -e "$(gumtext "+ The website is for information first, style is less important")"
+# sleep 2
+# echo -e "$(gumtext "+ Relatively light on CSS")"
+# sleep 2
+# echo -e "$(gumtext "+ Layout changes are very rare so my scraper won't break often and needs less maintence")"
+# sleep 2
+# echo
+# echo
 
-echo -e "$(gumtext "+ Free (unlike any of the APIs)")"
-sleep 2
-echo -e "$(gumtext "+ The website is for information first, style is less important")"
-sleep 2
-echo -e "$(gumtext "+ Relatively light on CSS")"
-sleep 2
-echo -e "$(gumtext "+ Layout changes are very rare so my scraper won't break often and needs less maintence")"
-sleep 2
+# imgcat imgs/Angels_Schedule_Example.png
+# sleep 10
+# clear
 
-imgcat imgs/Angels_Schedule_Example.png
-sleep 10
-clear
+# echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
+# exa --git-ignore -T --color=always --group-directories-first --icons
+# PROMPT=$(guminput "Press any button to continue...")
+# clear
 
-echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
-exa --git-ignore -T --color=always --group-directories-first --icons
+# echo -e "$(gumtext "The application is a Python app whose main logic is this 👇")"
+# sleep 2
+# imgcat imgs/main.png
+# sleep 10
+# PROMPT=$(guminput "Press any button to continue...")
+# clear
 
+# echo -e "$(gumtext "It sends emails using the built in SMTP library 👇")"
+# sleep 2
+# imgcat imgs/messenger.png
+# sleep 10
+# PROMPT=$(guminput "Press any button to continue...")
+# clear
+
+echo -e "$(gumtext "The dependencies for the app are as follows 👇")"
+bat requirements.txt
 PROMPT=$(guminput "Press any button to continue...")
 clear
 
-echo -e "$(gumtext "The application is a Flask app that looks like this 👇")"
-sleep 2
-bat src/main.py
-echo -e "$(gumtext "The dependencies for the app are as follows 👇")"
-bat requirements.txt
-
-sleep 5
-clear
-
-# Start the instances
-cd $SCRIPT_SOURCE
-gumspin globe "We're now going to start the application and Redis..."
-
-gumspin monkey "Waiting for the Redis instance and the application to start up..."
-cowecho "... and done!"
-
-sleep 5
-clear
-
 gumspin dot "We're now going to demo the application"
-pytest
-cowecho "... and done!"
-
+./src/main.py
+# python src/main.py
 sleep 5
+
+echo -e "$(gumtext "Then the final step is to set it up to run automatically on a schedule using GitHub Actions 👇")"
+sleep 4
+bat .github/workflows/github-actions.yaml
+PROMPT=$(guminput "Press any button to continue...")
 clear
 
-cowecho "Rad! We just did a simple application demo that was self-driven. What tools did we use here?"
-sleep 3
-clear
+# # Start the instances
+# cd $SCRIPT_SOURCE
+# gumspin globe "We're now going to start the application and Redis..."
 
-cat >/tmp/open-links.py <<EOF
-import time
-from playwright.sync_api import sync_playwright
+# gumspin monkey "Waiting for the Redis instance and the application to start up..."
+# cowecho "... and done!"
 
-with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(headless=False)
-    context = browser.new_context()
-    page = context.new_page()
-    page.goto("https://github.com/charmbracelet/gum")
-    time.sleep(5)
-    page.goto("https://en.wikipedia.org/wiki/Cowsay")
-    time.sleep(5)
-    page.goto("https://github.com/busyloop/lolcat")
-    time.sleep(5)
-    page.goto("https://playwright.dev/")
-    time.sleep(5)
-    page.goto("https://github.com/sharkdp/bat")
-    time.sleep(5)
-    page.goto("https://the.exa.website/")
-    time.sleep(5)
-    browser.close()
-EOF
-python3 /tmp/open-links.py
-rm /tmp/open-links.py
-clear
+# sleep 5
+# clear
+
+# gumspin dot "We're now going to demo the application"
+# pytest
+# cowecho "... and done!"
+
+# sleep 5
+# clear
+
+# cowecho "Rad! We just did a simple application demo that was self-driven. What tools did we use here?"
+# sleep 3
+# clear
+
+# cat >/tmp/open-links.py <<EOF
+# import time
+# from playwright.sync_api import sync_playwright
+
+# with sync_playwright() as playwright:
+#     browser = playwright.chromium.launch(headless=False)
+#     context = browser.new_context()
+#     page = context.new_page()
+#     page.goto("https://github.com/charmbracelet/gum")
+#     time.sleep(5)
+#     page.goto("https://en.wikipedia.org/wiki/Cowsay")
+#     time.sleep(5)
+#     page.goto("https://github.com/busyloop/lolcat")
+#     time.sleep(5)
+#     page.goto("https://playwright.dev/")
+#     time.sleep(5)
+#     page.goto("https://github.com/sharkdp/bat")
+#     time.sleep(5)
+#     page.goto("https://the.exa.website/")
+#     time.sleep(5)
+#     browser.close()
+# EOF
+# python3 /tmp/open-links.py
+# rm /tmp/open-links.py
+# clear
 
 gumbox "Thank you for attending! Any questions?"
 PROMPT=$(guminput "Press any button to continue...")
