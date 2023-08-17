@@ -62,7 +62,7 @@ function gumtext() {
 function gumspin() {
     local type="$1"
     local input="$2"
-    gum spin -s $type --title "${input}" -- sleep 8
+    gum spin -s $type --title "${input}" -- sleep 5
 }
 
 function guminput() {
@@ -71,62 +71,59 @@ function guminput() {
 }
 
 # Introduction
-# gumbox "Hello! Welcome to $(gumtext 'The Self-Driven Demo about my Los Angeles Chick Fil A Scraper!')"
-# PROMPT=$(guminput "Press any button to continue...")
+gumbox "Hello! Welcome to $(gumtext 'The Self-Driven Demo about my Los Angeles Chick Fil A Scraper!')"
+PROMPT=$(guminput "Press any button to continue...")
 
-# echo -e "$(gumtext "LET'S DO IT!")"
+echo -e "$(gumtext "LET'S DO IT!")"
 
-# sleep 2
-# clear
+sleep 2
+clear
 
-# cowecho "In this demo, we have a simple Python application that scrapes the Sports Reference website to see if the any of the games last night match the criteria for free Chick Fil A:"
-# sleep 10
+cowecho "In this demo, we have a simple Python application that scrapes the Sports Reference website to see if the any of the games last night match the criteria for free Chick Fil A:"
+cowecho "- Angels score 7 or more runs at home\n
+- Ducks score 5 or more goals at home\n
+- LAFC wins at home"
+sleep 10
 
-# cowecho "- Angels score 7 or more runs at home\n
-# - Ducks score 5 or more goals at home\n
-# - LAFC wins at home"
-# sleep 5
+cowecho "It uses GitHub Actions to run automatically every day, but today we will be running it manually on my local machine"
 
-# cowecho "It uses GitHub Actions to run automatically every day, but today we will be running it manually on my local machine"
+PROMPT=$(guminput "Press any button to continue...")
+clear
 
-# PROMPT=$(guminput "Press any button to continue...")
-# clear
+gumbox "I picked the $(gumtext 'Sports Reference') website for a few reasons"
+sleep 4
+echo -e "$(gumtext "+ Free (unlike any of the APIs)")"
+sleep 4
+echo -e "$(gumtext "+ The website is for information first, style is less important")"
+sleep 4
+echo -e "$(gumtext "+ Relatively light on CSS")"
+sleep 4
+echo -e "$(gumtext "+ Layout changes are very rare so my scraper won't break often and needs less maintence")"
+sleep 4
+echo
+echo
 
-# gumbox "I picked the $(gumtext 'Sports Reference') website for a few reasons"
-# sleep 4
-# echo -e "$(gumtext "+ Free (unlike any of the APIs)")"
-# sleep 2
-# echo -e "$(gumtext "+ The website is for information first, style is less important")"
-# sleep 2
-# echo -e "$(gumtext "+ Relatively light on CSS")"
-# sleep 2
-# echo -e "$(gumtext "+ Layout changes are very rare so my scraper won't break often and needs less maintence")"
-# sleep 2
-# echo
-# echo
+imgcat demo/Angels_Schedule_Example.png
+PROMPT=$(guminput "Press any button to continue...")
+clear
 
-# imgcat imgs/Angels_Schedule_Example.png
-# sleep 10
-# clear
+echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
+exa --git-ignore -T --color=always --group-directories-first --icons
+PROMPT=$(guminput "Press any button to continue...")
+clear
 
-# echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
-# exa --git-ignore -T --color=always --group-directories-first --icons
-# PROMPT=$(guminput "Press any button to continue...")
-# clear
+echo -e "$(gumtext "The application is a Python app whose main logic is this 👇")"
+sleep 2
+bat demo/example_main.py
+PROMPT=$(guminput "Press any button to continue...")
+clear
 
-# echo -e "$(gumtext "The application is a Python app whose main logic is this 👇")"
-# sleep 2
-# imgcat imgs/main.png
-# sleep 10
-# PROMPT=$(guminput "Press any button to continue...")
-# clear
-
-# echo -e "$(gumtext "It sends emails using the built in SMTP library 👇")"
-# sleep 2
-# imgcat imgs/messenger.png
-# sleep 10
-# PROMPT=$(guminput "Press any button to continue...")
-# clear
+echo -e "$(gumtext "It sends emails using the built in SMTP library 👇")"
+sleep 2
+bat demo/example_messenger.py
+sleep 10
+PROMPT=$(guminput "Press any button to continue...")
+clear
 
 echo -e "$(gumtext "The dependencies for the app are as follows 👇")"
 bat requirements.txt
@@ -134,15 +131,19 @@ PROMPT=$(guminput "Press any button to continue...")
 clear
 
 gumspin dot "We're now going to demo the application"
-./src/main.py
-# python src/main.py
-sleep 5
+python src/main.py
+PROMPT=$(guminput "Press any button to continue...")
+clear
 
 echo -e "$(gumtext "Then the final step is to set it up to run automatically on a schedule using GitHub Actions 👇")"
 sleep 4
 bat .github/workflows/github-actions.yaml
 PROMPT=$(guminput "Press any button to continue...")
 clear
+
+code .
+
+open https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper
 
 # # Start the instances
 # cd $SCRIPT_SOURCE
