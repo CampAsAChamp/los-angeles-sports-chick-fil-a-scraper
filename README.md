@@ -130,11 +130,6 @@ If you want to set up for yourself to get email alerts here are the steps you ne
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
