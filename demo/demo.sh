@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
-# Check if pr-reqs are installed, prior to running the demo
+function check_pre_reqs() {
+    # Check if pre-reqs are installed, prior to running the demo
 if ! which gum >/dev/null; then
     echo "You need 'gum' to run this demo. Installation instructions here: https://github.com/charmbracelet/gum#installation"
     exit 1
@@ -30,15 +31,7 @@ if ! which pytest >/dev/null; then
     echo "You need 'pytest' to run this demo. Installation instructions here: https://docs.pytest.org/en/7.4.x/"
     exit 1
 fi
-
-# if ! which playwright > /dev/null; then
-#     echo "You need 'playwright' to run this demo. Installation instructions here: https://playwright.dev/"
-#     exit 1
-# fi
-
-# Set variables
-SCRIPT_SOURCE=$(dirname "${BASH_SOURCE[0]}")
-export APP_URL="http://localhost:8000"
+}
 
 function cowecho() {
     local input="$1"
@@ -69,6 +62,8 @@ function guminput() {
     local input="$1"
     gum input --placeholder "${input}"
 }
+
+function main() {
 
 # Introduction
 gumbox "Hello! Welcome to $(gumtext 'The Self-Driven Demo about my Los Angeles Chick Fil A Scraper!')"
@@ -159,3 +154,8 @@ PROMPT=$(guminput "Press any button to continue...")
 code .
 
 open https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper
+
+}
+
+check_pre_reqs
+main
