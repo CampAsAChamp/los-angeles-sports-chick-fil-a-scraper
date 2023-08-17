@@ -100,8 +100,7 @@ This repo/service checks all of these criteria each day at 8 AM PT (3 PM UTC) us
     ```
 6. Run in VS Code by going to the "Run and Debug" tab on the side bar and clicking the green plus ▶️
 
-### Set up to run automatically
-# Set up for yourself
+# Set up to run automatically for yourself
 If you want to set up for yourself to get email alerts here are the steps you need to follow:
 
 **NOTE**: I've only tested this on Gmail accounts
