@@ -77,7 +77,8 @@ def check_angels_score():
         game_num += 1
 
         if not game_happened:
-            print(previous_game)
+
+            helpers.color_print_game(previous_game)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'home' and \
