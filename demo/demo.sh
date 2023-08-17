@@ -142,9 +142,20 @@ bat .github/workflows/github-actions.yaml
 PROMPT=$(guminput "Press any button to continue...")
 clear
 
-code .
-
-open https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper
+cowecho "Initially I just made this for myself, but my family and friends started getting jealous and wanted in"
+sleep 5
+cowecho "Now my email list is up to 11 people!"
+sleep 5
+cowecho "Each Chick Fil A sandwich is \$5.75 at my local Chick Fil A"
+sleep 5
+cowecho "Since I've started on June 30th there have been 8 days where Chick Fil A was free"
+sleep 5
+cowecho "In total we have saved (\$5.75 x 11 people x 8 days) = \$506 in just 2 months"
+PROMPT=$(guminput "Press any button to continue...")
+clear
 
 gumbox "Thank you for attending! Any questions?"
 PROMPT=$(guminput "Press any button to continue...")
+code .
+
+open https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper
