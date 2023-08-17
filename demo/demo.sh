@@ -100,6 +100,8 @@ echo -e "$(gumtext "+ Relatively light on CSS")"
 sleep 4
 echo -e "$(gumtext "+ Layout changes are very rare so my scraper won't break often and needs less maintence")"
 sleep 4
+echo -e "$(gumtext "+ Available for all major sports")"
+sleep 4
 echo
 echo
 
