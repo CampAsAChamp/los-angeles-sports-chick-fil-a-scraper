@@ -7,7 +7,7 @@ __license__ = "Apache"
 import datetime
 from bs4 import BeautifulSoup
 
-from PyMessenger import Email, Messenger
+from messenger import Email, Messenger
 import constants
 import helpers
 import globals
