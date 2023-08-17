@@ -21,9 +21,7 @@ requests==2.31.0
 six==1.16.0
 soupsieve==2.4.1
 stevedore==3.5.0
-tabulate @ file:///private/tmp/python-tabulate-20221231-6141-6zmrv5/tabulate-0.9.0
 toml==0.10.2
-typing_extensions @ file:///private/tmp/python-typing-extensions-20230702-5533-jv3t41/typing_extensions-4.7.1/dist/typing_extensions-4.7.1-py3-none-any.whl
 urllib3==2.0.4
 virtualenv==20.14.0
 virtualenv-clone==0.5.7
