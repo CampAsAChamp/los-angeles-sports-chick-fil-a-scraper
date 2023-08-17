@@ -2,7 +2,7 @@ import bs4
 import requests
 
 # Fetch the page
-url = f'https://www.baseball-reference.com/teams/LAA/{globals.CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
+url = f'https://www.baseball-reference.com/teams/LAA/{CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
 response = requests.get(url)
 soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
