@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+###########################
+# HELPER FUNCTIONS
+###########################
+
 function check_pre_reqs() {
     # Check if pre-reqs are installed, prior to running the demo
     if ! which gum >/dev/null; then
