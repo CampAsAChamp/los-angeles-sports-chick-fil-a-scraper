@@ -108,7 +108,7 @@ PROMPT=$(guminput "Press any button to continue...")
 clear
 
 echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
-exa --git-ignore -T --color=always --group-directories-first --icons
+exa src/ --git-ignore -T --color=always --group-directories-first --icons
 PROMPT=$(guminput "Press any button to continue...")
 clear
 
@@ -121,7 +121,6 @@ clear
 echo -e "$(gumtext "It sends emails using the built in SMTP library 👇")"
 sleep 2
 bat demo/example_messenger.py
-sleep 10
 PROMPT=$(guminput "Press any button to continue...")
 clear
 
