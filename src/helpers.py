@@ -2,8 +2,7 @@ import os
 import requests
 import datetime
 from bs4 import BeautifulSoup
-
-CURRENT_DATETIME = datetime.datetime.now()
+import globals
 
 
 def readBoolEnvVar(key: str, default_value: bool):
@@ -38,4 +37,4 @@ def check_yesterday(game_date: datetime) -> bool:
     Checks to see if the day of the game was yesterday 
     """
 
-    return (CURRENT_DATETIME.date() - game_date == datetime.timedelta(days=1))
+    return (globals.CURRENT_DATETIME.date() - game_date == datetime.timedelta(days=1))

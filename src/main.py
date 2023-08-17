@@ -5,20 +5,13 @@ __version__ = "0.1.0"
 __license__ = "Apache"
 
 import datetime
-import os
 from bs4 import BeautifulSoup
 
 from PyMessenger import Email, Messenger
 import constants
 import helpers
-
-
-# Environment variables
-FROM_EMAIL = os.getenv('FROM_EMAIL')
-TO_EMAIL = os.getenv('TO_EMAIL')  # Comma separate list of emails
-PASSWORD = os.getenv('PASSWORD')
-SHOULD_SEND_EMAIL = helpers.readBoolEnvVar('SHOULD_SEND_EMAIL', True)
-USE_LOCAL = helpers.readBoolEnvVar('USE_LOCAL', False)
+import globals
+import env
 
 
 def check_angels_score():
@@ -26,11 +19,11 @@ def check_angels_score():
     Checks the Los Angeles Angels score from the previous day to see if it qualifies for a free Chick Fil A sandwich.
     At any home game, if the Angels score 7 or more runs, you can claim a chicken sandwich.
     """
-    if USE_LOCAL:
+    if env.USE_LOCAL:
         soup = BeautifulSoup(
             open('sample_pages/2023_angels_scores.html'), features="html.parser")
     else:
-        url = f'https://www.baseball-reference.com/teams/LAA/{helpers.CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
+        url = f'https://www.baseball-reference.com/teams/LAA/{globals.CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
         soup = helpers.fetch_soup(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
@@ -99,11 +92,11 @@ def check_lafc_score():
     At any home game, if LAFC wins, you can claim a chicken sandwich 
     """
 
-    if USE_LOCAL:
+    if env.USE_LOCAL:
         soup = BeautifulSoup(
             open('sample_pages/2023_lafc_scores.html'), features="html.parser")
     else:
-        url = f'https://fbref.com/en/squads/81d817a3/{helpers.CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
+        url = f'https://fbref.com/en/squads/81d817a3/{globals.CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
         soup = helpers.fetch_soup(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
@@ -172,11 +165,11 @@ def check_ducks_score():
     At any home game, if the Ducks score 5 or more goals, you can claim a chicken sandwich 
     """
 
-    if USE_LOCAL:
+    if env.USE_LOCAL:
         soup = BeautifulSoup(
             open('sample_pages/2023_ducks_scores.html'), features="html.parser")
     else:
-        url = f'https://www.hockey-reference.com/teams/ANA/{helpers.CURRENT_DATETIME.year}_games.html'
+        url = f'https://www.hockey-reference.com/teams/ANA/{globals.CURRENT_DATETIME.year}_games.html'
         soup = helpers.fetch_soup(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
@@ -239,8 +232,8 @@ def check_ducks_score():
 
 
 def send_emails(subject: str, body: str, email_addresses: list[str]):
-    if SHOULD_SEND_EMAIL:
-        messenger = Messenger(FROM_EMAIL, PASSWORD)
+    if env.SHOULD_SEND_EMAIL:
+        messenger = Messenger(env.FROM_EMAIL, env.PASSWORD)
         messenger.open_conn()
 
         for email in email_addresses:
@@ -259,11 +252,11 @@ def main():
     # this will scan through all the games but ultimately won't do anything because there are no future games
 
     # Only run from March - October
-    if constants.M_MARCH <= helpers.CURRENT_DATETIME.month <= constants.M_OCTOBER:
+    if constants.M_MARCH <= globals.CURRENT_DATETIME.month <= constants.M_OCTOBER:
         if check_angels_score():
             body = f'{constants.ANGELS} won by 7 or more runs!'
             send_emails(helpers.generate_email_subject(
-                constants.ANGELS), body, TO_EMAIL.split(','))
+                constants.ANGELS), body, env.TO_EMAIL.split(','))
         else:
             helpers.print_criteria_not_met(constants.ANGELS)
     else:
@@ -272,11 +265,11 @@ def main():
     print()  # For empty lines
 
     # Only run from October - April
-    if helpers.CURRENT_DATETIME.month >= constants.M_OCTOBER or helpers.CURRENT_DATETIME.month <= constants.M_JUNE:
+    if globals.CURRENT_DATETIME.month >= constants.M_OCTOBER or globals.CURRENT_DATETIME.month <= constants.M_JUNE:
         if check_ducks_score():
             body = f'{constants.DUCKS} won by 5 or more goals!'
             send_emails(helpers.generate_email_subject(
-                constants.DUCKS), body, TO_EMAIL.split(','))
+                constants.DUCKS), body, env.TO_EMAIL.split(','))
         else:
             helpers.print_criteria_not_met(constants.DUCKS)
     else:
@@ -288,7 +281,7 @@ def main():
     if check_lafc_score():
         body = f'{constants.LAFC} won at home!'
         send_emails(helpers.generate_email_subject(
-            constants.LAFC), body, TO_EMAIL.split(','))
+            constants.LAFC), body, env.TO_EMAIL.split(','))
     else:
         helpers.print_criteria_not_met(constants.LAFC)
 
