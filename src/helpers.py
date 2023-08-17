@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import globals
 
 
-def readBoolEnvVar(key: str, default_value: bool):
+def readBoolEnvVar(key: str, default_value: str):
     return os.getenv(key, default_value).lower() in ('true', 't', '1')
 
 
