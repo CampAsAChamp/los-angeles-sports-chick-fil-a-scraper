@@ -79,7 +79,7 @@ def check_angels_score():
 
         if not game_happened:
 
-            helpers.color_print_game(previous_game, colors.RED)
+            helpers.color_print_game(previous_game, colors.YELLOW)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'home' and \
@@ -152,7 +152,7 @@ def check_lafc_score():
         game_num += 1
 
         if not game_happened:
-            print(previous_game)
+            helpers.color_print_game(previous_game, colors.YELLOW)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'Home' and \
@@ -224,7 +224,7 @@ def check_ducks_score():
         game_num += 1
 
         if not game_happened:
-            print(previous_game)
+            helpers.color_print_game(previous_game, colors.GREEN)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'home' and \

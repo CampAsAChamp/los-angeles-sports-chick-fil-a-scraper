@@ -1,3 +1,5 @@
+import colors
+
 # Month helper constants
 M_JANUARY = 1
 M_FEBRUARY = 2
@@ -16,4 +18,6 @@ ANGELS = "Angels"
 LAFC = "LAFC"
 DUCKS = "Ducks"
 
-EMAIL_SUCCESS_MSG = "✔ - Email successfully sent!"
+GREEN_CHECK = colors.color_text('✔', colors.GREEN)
+RED_X = colors.color_text('✗', colors.RED)
+EMAIL_SUCCESS_MSG = GREEN_CHECK + '- Email successfully sent!'

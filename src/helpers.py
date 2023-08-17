@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import colors
+import constants
 import globals
 
 
@@ -13,11 +14,11 @@ def readBoolEnvVar(key: str, default_value: str):
 
 
 def print_criteria_not_met(team_name: str):
-    print(f"✗ - {team_name} didn't meet the criteria")
+    print(f"{constants.RED_X} - {team_name} didn't meet the criteria")
 
 
 def print_not_in_season(team_name: str):
-    print(f"✗ - {team_name} are not in season")
+    print(f"{constants.RED_X} - {team_name} are not in season")
 
 
 def generate_email_subject(team_name: str) -> str:
@@ -44,6 +45,10 @@ def check_yesterday(game_date: datetime) -> bool:
 
 
 def color_print_game(game: dict, color: str):
+    """ 
+    Prints the game dictionary with the keys colored
+    """
+
     for key, val in game.items():
         print(colors.color_text(key, color), ":", val, end=", ")
 
