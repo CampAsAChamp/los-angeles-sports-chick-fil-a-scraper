@@ -100,7 +100,7 @@ This repo/service checks all of these criteria each day at 8 AM PT (3 PM UTC) us
     SHOULD_SEND_EMAIL=True
     USE_LOCAL=False
     ```
-    1. The `USE_LOCAL` environment variable is if you want to use the local HTML pages, instead of fetching the actual live page.
+    1. The `USE_LOCAL` environment variable is if you want to use the local HTML pages inside the repo (in the `/sample_pages/` directory), instead of fetching the actual live page.
 6. Run in VS Code by going to the "Run and Debug" tab on the side bar and clicking the green plus ▶️
 
 # Set up to run automatically for yourself
