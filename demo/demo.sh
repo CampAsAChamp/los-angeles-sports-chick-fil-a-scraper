@@ -154,7 +154,7 @@ cowecho "In total we have saved (\$5.75 x 11 people x 8 days) = \$506 in just 2 
 PROMPT=$(guminput "Press any button to continue...")
 clear
 
-gumbox "Thank you for attending! Any questions?"
+gumbox "Thank you for watching! Any questions?"
 PROMPT=$(guminput "Press any button to continue...")
 code .
 
