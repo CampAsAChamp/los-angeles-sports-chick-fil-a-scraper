@@ -1,4 +1,5 @@
 import os
+
 import helpers
 
 FROM_EMAIL = os.getenv('FROM_EMAIL')

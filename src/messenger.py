@@ -73,9 +73,9 @@
     Verizon                      smtp.verizon.net (port 465)
 '''
 import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from dataclasses import dataclass
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 '''
     Message Types
