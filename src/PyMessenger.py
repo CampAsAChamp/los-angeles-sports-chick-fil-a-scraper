@@ -125,7 +125,7 @@ class Messenger:
         # CLOSE CONNECTION TO SMTP SERVICE
         self.conn.close()
 
-    def send_sms(self, msg, one_time=False):
+    def send_sms(self, msg: str, one_time=False):
         if one_time:
             self.open_conn()
 
@@ -141,7 +141,7 @@ class Messenger:
         if one_time:
             self.close_conn()
 
-    def send_email(self, msg, one_time=False):
+    def send_email(self, msg: str, one_time=False):
         if one_time:
             self.open_conn()
 
