@@ -71,25 +71,41 @@ function guminput() {
 }
 
 # Introduction
-gumbox "Hello! Welcome to $(gumtext 'The Self-Driven Demo about my Los Angeles Chick Fil A Scraper!')"
-PROMPT=$(guminput "Press any button to continue...")
+# gumbox "Hello! Welcome to $(gumtext 'The Self-Driven Demo about my Los Angeles Chick Fil A Scraper!')"
+# PROMPT=$(guminput "Press any button to continue...")
 
-echo -e "$(gumtext "LET'S DO IT!")"
+# echo -e "$(gumtext "LET'S DO IT!")"
 
+# sleep 2
+# clear
+
+# cowecho "In this demo, we have a simple Python application that scrapes the Sports Reference website to see if the any of the games last night match the criteria for free Chick Fil A:"
+# sleep 10
+
+# cowecho "- Angels score 7 or more runs at home\n
+# - Ducks score 5 or more goals at home\n
+# - LAFC wins at home"
+# sleep 5
+
+# cowecho "It uses GitHub Actions to run automatically every day, but today we will be running it manually on my local machine"
+
+# PROMPT=$(guminput "Press any button to continue...")
+# clear
+
+gumbox "I picked the $(gumtext 'Sports Reference') website for a few reasons"
+sleep 4
+
+echo -e "$(gumtext "+ Free (unlike any of the APIs)")"
 sleep 2
-clear
+echo -e "$(gumtext "+ The website is for information first, style is less important")"
+sleep 2
+echo -e "$(gumtext "+ Relatively light on CSS")"
+sleep 2
+echo -e "$(gumtext "+ Layout changes are very rare so my scraper won't break often and needs less maintence")"
+sleep 2
 
-cowecho "In this demo, we have a simple Python application that scrapes the Sports Reference website to see if the previous game matches any of the criteria for free Chick Fil A"
+imgcat imgs/Angels_Schedule_Example.png
 sleep 10
-
-cowecho "- Angels score 7 or more runs at home\n
-- Ducks score 5 or more goals at home\n
-- LAFC wins at home"
-sleep 5
-
-cowecho "It uses GitHub Actions to run automatically every day, but today we will be running it manually on my local machine"
-
-PROMPT=$(guminput "Press any button to continue...")
 clear
 
 echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
@@ -110,9 +126,7 @@ clear
 # Start the instances
 cd $SCRIPT_SOURCE
 gumspin globe "We're now going to start the application and Redis..."
-docker-compose stop && docker-compose down
-docker volume prune -f
-docker-compose up -d
+
 gumspin monkey "Waiting for the Redis instance and the application to start up..."
 cowecho "... and done!"
 
