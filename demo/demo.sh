@@ -75,10 +75,11 @@ sleep 2
 clear
 
 cowecho "In this demo, we have a simple Python application that scrapes the Sports Reference website to see if the any of the games last night match the criteria for free Chick Fil A:"
-cowecho "- Angels score 7 or more runs at home\n
-- Ducks score 5 or more goals at home\n
-- LAFC wins at home"
-sleep 10
+    sleep 2
+    cowecho "* Angels score 7 or more runs at home\n
+    * Ducks score 5 or more goals at home\n
+    * LAFC wins at home"
+    sleep 7
 
 cowecho "It uses GitHub Actions to run automatically every day, but today we will be running it manually on my local machine"
 
