@@ -1,8 +1,13 @@
+import os
 import requests
 import datetime
 from bs4 import BeautifulSoup
 
 CURRENT_DATETIME = datetime.datetime.now()
+
+
+def readBoolEnvVar(key: str, default_value: bool):
+    return os.getenv(key, default_value).lower() in ('true', 't', '1')
 
 
 def print_criteria_not_met(team_name: str):
