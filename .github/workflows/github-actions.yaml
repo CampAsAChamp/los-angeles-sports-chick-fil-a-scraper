@@ -3,12 +3,14 @@ name: Run Python Script
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 15 * * *" # 8 AM PST/PDT, 3 PM UTC == 15:00 UTC
+    - cron: "0 15 * * *" # 8 AM PST/PDT -> 3 PM UTC == 15:00 UTC
     
 env:
   FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
   TO_EMAIL: ${{ secrets.TO_EMAIL }}
   PASSWORD: ${{ secrets.PASSWORD }}
+  USE_LOCAL: ${{ secrets.USE_LOCAL }}
+  SHOULD_SEND_EMAIL: ${{ secrets.SHOULD_SEND_EMAIL }}
 
 jobs:
   run-python:
