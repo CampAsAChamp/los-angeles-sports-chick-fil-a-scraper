@@ -14,11 +14,11 @@ import helpers
 
 
 # Environment variables
-FROM_EMAIL = os.environ['FROM_EMAIL']
-TO_EMAIL = os.environ['TO_EMAIL']  # Comma separate list of emails
-PASSWORD = os.environ['PASSWORD']
-SHOULD_SEND_EMAIL = os.environ['SHOULD_SEND_EMAIL']  # Should be True
-USE_LOCAL = os.environ['USE_LOCAL']  # Should be False
+FROM_EMAIL = os.getenv('FROM_EMAIL')
+TO_EMAIL = os.getenv('TO_EMAIL')  # Comma separate list of emails
+PASSWORD = os.getenv('PASSWORD')
+SHOULD_SEND_EMAIL = helpers.readBoolEnvVar('SHOULD_SEND_EMAIL', True)
+USE_LOCAL = helpers.readBoolEnvVar('USE_LOCAL', False)
 
 
 def check_angels_score():
@@ -26,7 +26,6 @@ def check_angels_score():
     Checks the Los Angeles Angels score from the previous day to see if it qualifies for a free Chick Fil A sandwich.
     At any home game, if the Angels score 7 or more runs, you can claim a chicken sandwich.
     """
-
     if USE_LOCAL:
         soup = BeautifulSoup(
             open('sample_pages/2023_angels_scores.html'), features="html.parser")
