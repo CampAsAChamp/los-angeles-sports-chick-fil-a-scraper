@@ -111,8 +111,11 @@ function main() {
     PROMPT=$(guminput "Press any button to continue...")
     clear
 
-    open https://www.baseball-reference.com/teams/LAA/2023-schedule-scores.shtml#all_results
+    echo -e "$(gumtext "Let's see what the website looks like and how we're going to accomplish what we want 👇")"
+    sleep 5
+    open https://www.baseball-reference.com/teams/LAA/2023-schedule-scores.shtml
     PROMPT=$(guminput "Press any button to continue...")
+    clear
 
     echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
     exa src/ --git-ignore -T --color=always --group-directories-first --icons
@@ -144,7 +147,7 @@ function main() {
     gumspin points 10 "Now we'll demo the application using a local version of the HTML file adjusted so the criteria of one team will be met" 5
     source setenv.sh >/dev/null
     python src/main.py
-    source unsetenv.sh
+    source unsetenv.sh >/dev/null
     PROMPT=$(guminput "Press any button to continue...")
     clear
 
@@ -171,7 +174,6 @@ function main() {
     code .
 
     open https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper
-
 }
 
 check_pre_reqs
