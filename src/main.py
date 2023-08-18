@@ -241,7 +241,7 @@ def send_emails(subject: str, body: str, email_addresses: list[str]):
 
         for email in email_addresses:
             email = email.strip()
-            msg = mess.Email(email, subject, body)
+            msg = messenger.Email(email, subject, body)
             mess.send_email(msg)
 
         mess.close_conn()
