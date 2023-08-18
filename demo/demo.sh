@@ -58,8 +58,9 @@ function gumtext() {
 
 function gumspin() {
     local type="$1"
-    local input="$2"
-    gum spin -s $type --title "${input}" -- sleep 5
+    local length="$2"
+    local input="$3"
+    gum spin -s $type --title "${input}" -- sleep $length
 }
 
 function guminput() {
@@ -135,8 +136,15 @@ function main() {
     PROMPT=$(guminput "Press any button to continue...")
     clear
 
-    gumspin dot "We're now going to demo the application"
+    gumspin dot 5 "We're now going to demo the application"
     python src/main.py
+    PROMPT=$(guminput "Press any button to continue...")
+    clear
+
+    gumspin points 10 "Now we'll demo the application using a local version of the HTML file adjusted so the criteria of one team will be met" 5
+    source setenv.sh >/dev/null
+    python src/main.py
+    source unsetenv.sh
     PROMPT=$(guminput "Press any button to continue...")
     clear
 
