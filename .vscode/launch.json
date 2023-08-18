@@ -5,13 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            "name": "Run with Request",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/src/main.py",
             "console": "integratedTerminal",
             "envFile": "${workspaceFolder}/env/app.env",
             "justMyCode": true
-        }
+        },
+        {
+            "name": "Run Demo (Local File)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/env/demo.env",
+            "justMyCode": true
+        },
     ]
 }
