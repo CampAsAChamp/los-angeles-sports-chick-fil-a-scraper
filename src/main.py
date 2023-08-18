@@ -12,7 +12,7 @@ import colors
 import constants
 import env
 import globals
-import helpers
+import util
 import messenger
 
 
@@ -26,7 +26,7 @@ def check_angels_score():
             open('sample_pages/2023_angels_scores_hit.html'), features="html.parser")
     else:
         url = f'https://www.baseball-reference.com/teams/LAA/{globals.CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
-        soup = helpers.fetch_soup(url)
+        soup = util.fetch_soup(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
@@ -64,7 +64,7 @@ def check_angels_score():
                 game_date = datetime.datetime.strptime(
                     date_str, '%Y-%m-%d').date()
 
-                happened_yesterday = helpers.check_yesterday(game_date)
+                happened_yesterday = util.check_yesterday(game_date)
 
             if field['data-stat'] == 'boxscore':
                 game_happened = False if field.string == 'preview' else True
@@ -79,7 +79,7 @@ def check_angels_score():
 
         if not game_happened:
 
-            helpers.color_print_game(previous_game, colors.YELLOW)
+            util.color_print_game(previous_game, colors.YELLOW)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'home' and \
@@ -100,7 +100,7 @@ def check_lafc_score():
             open('sample_pages/2023_lafc_scores.html'), features="html.parser")
     else:
         url = f'https://fbref.com/en/squads/81d817a3/{globals.CURRENT_DATETIME.year}/matchlogs/c22/schedule/Los-Angeles-FC-Scores-and-Fixtures-Major-League-Soccer'
-        soup = helpers.fetch_soup(url)
+        soup = util.fetch_soup(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
@@ -130,7 +130,7 @@ def check_lafc_score():
             date_str = row.find('th').a.string
             game_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
 
-            happened_yesterday = helpers.check_yesterday(game_date)
+            happened_yesterday = util.check_yesterday(game_date)
 
         # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
         # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
@@ -152,7 +152,7 @@ def check_lafc_score():
         game_num += 1
 
         if not game_happened:
-            helpers.color_print_game(previous_game, colors.YELLOW)
+            util.color_print_game(previous_game, colors.YELLOW)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'Home' and \
@@ -173,7 +173,7 @@ def check_ducks_score():
             open('sample_pages/2023_ducks_scores.html'), features="html.parser")
     else:
         url = f'https://www.hockey-reference.com/teams/ANA/{globals.CURRENT_DATETIME.year}_games.html'
-        soup = helpers.fetch_soup(url)
+        soup = util.fetch_soup(url)
 
     # The scores are duplicated on the page (once in the banner and once on the main page)
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
@@ -203,7 +203,7 @@ def check_ducks_score():
             date_str = row.find('th').a.string
             game_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
 
-            happened_yesterday = helpers.check_yesterday(game_date)
+            happened_yesterday = util.check_yesterday(game_date)
 
         # Each row has multiple <td> columns with the different stats (Date, Opponent, Runs Scored, Runs Allowed, etc...)
         # Search through all those fields and extract the columns that we want, parsing the data to be easiest to work with
@@ -224,7 +224,7 @@ def check_ducks_score():
         game_num += 1
 
         if not game_happened:
-            helpers.color_print_game(previous_game, colors.GREEN)
+            util.color_print_game(previous_game, colors.GREEN)
 
             if previous_game['happened_yesterday'] and \
                     previous_game['home_or_away'] == 'home' and \
@@ -258,12 +258,12 @@ def main():
     if constants.M_MARCH <= globals.CURRENT_DATETIME.month <= constants.M_OCTOBER:
         if check_angels_score():
             body = f'{constants.ANGELS} won by 7 or more runs!'
-            send_emails(helpers.generate_email_subject(
+            send_emails(util.generate_email_subject(
                 constants.ANGELS), body, env.TO_EMAIL.split(','))
         else:
-            helpers.print_criteria_not_met(constants.ANGELS)
+            util.print_criteria_not_met(constants.ANGELS)
     else:
-        helpers.print_not_in_season(constants.ANGELS)
+        util.print_not_in_season(constants.ANGELS)
 
     print()  # For empty lines
 
@@ -271,22 +271,22 @@ def main():
     if globals.CURRENT_DATETIME.month >= constants.M_OCTOBER or globals.CURRENT_DATETIME.month <= constants.M_JUNE:
         if check_ducks_score():
             body = f'{constants.DUCKS} won by 5 or more goals!'
-            send_emails(helpers.generate_email_subject(
+            send_emails(util.generate_email_subject(
                 constants.DUCKS), body, env.TO_EMAIL.split(','))
         else:
-            helpers.print_criteria_not_met(constants.DUCKS)
+            util.print_criteria_not_met(constants.DUCKS)
     else:
-        helpers.print_not_in_season(constants.DUCKS)
+        util.print_not_in_season(constants.DUCKS)
 
     print()  # For empty lines
 
     # Always run because LAFC season is basically the whole year
     if check_lafc_score():
         body = f'{constants.LAFC} won at home!'
-        send_emails(helpers.generate_email_subject(
+        send_emails(util.generate_email_subject(
             constants.LAFC), body, env.TO_EMAIL.split(','))
     else:
-        helpers.print_criteria_not_met(constants.LAFC)
+        util.print_criteria_not_met(constants.LAFC)
 
 
 if __name__ == "__main__":
