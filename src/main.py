@@ -23,7 +23,7 @@ def check_angels_score():
     """
     if env.USE_LOCAL:
         soup = BeautifulSoup(
-            open('sample_pages/2023_angels_scores.html'), features="html.parser")
+            open('sample_pages/2023_angels_scores_hit.html'), features="html.parser")
     else:
         url = f'https://www.baseball-reference.com/teams/LAA/{globals.CURRENT_DATETIME.year}-schedule-scores.shtml#all_results'
         soup = helpers.fetch_soup(url)
