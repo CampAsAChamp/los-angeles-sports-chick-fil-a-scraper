@@ -9,7 +9,8 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/src/main.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
             "envFile": "${workspaceFolder}/env/app.env",
             "justMyCode": true
         },
@@ -18,7 +19,8 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/src/main.py",
-            "console": "integratedTerminal",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
             "envFile": "${workspaceFolder}/env/demo.env",
             "justMyCode": true
         },
