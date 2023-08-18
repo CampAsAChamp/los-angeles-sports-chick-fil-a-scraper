@@ -105,6 +105,7 @@ function main() {
     echo
     echo
 
+    echo -e "$(gumtext "Here is what the website looks like, and the table we're after 👇")"
     imgcat demo/Angels_Schedule_Example.png
     PROMPT=$(guminput "Press any button to continue...")
     clear
