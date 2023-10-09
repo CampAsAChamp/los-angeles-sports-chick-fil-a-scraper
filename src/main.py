@@ -107,6 +107,11 @@ def check_lafc_score():
     table = soup.find(id='all_matchlogs').tbody
     rows = table.find_all('tr')
 
+    home_or_away = ""
+    result = ""
+    happened_yesterday = ""
+    game_date = ""
+
     # Search for the last played game by checking each row to see if that row/game has been played or not
     # If it hasn't it will say preview in the main box and that is our trigger to know we need to stop
     game_num = 1
@@ -179,6 +184,11 @@ def check_ducks_score():
     # so in order to prevent duplicated work we have to narrow our search down to just the main content (table body or tbody), and not include the banner
     table = soup.find(id='all_games').tbody
     rows = table.find_all('tr')
+
+    home_or_away = ""
+    goals_scored = ""
+    happened_yesterday = ""
+    game_date = ""
 
     # Search for the last played game by checking each row to see if that row/game has been played or not
     # If it hasn't it will say preview in the main box and that is our trigger to know we need to stop
