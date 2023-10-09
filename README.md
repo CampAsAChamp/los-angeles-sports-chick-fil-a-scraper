@@ -151,6 +151,8 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## TODO
+- Change logic to use numerical for loop to be able to get previous game easier (current_index - 1)
 
 <!-- LICENSE -->
 ## License
