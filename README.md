@@ -16,17 +16,17 @@
     <img src="imgs/Chick Fil A Logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Los Angeles Chick Fil A Scrapper</h3>
+  <h3 align="center">Los Angeles Sports Chick Fil A Scrapper</h3>
 
   <p align="center">
     Checks all of the Los Angeles sports teams scores each morning to see if any of them qualify for free Chick Fil A sandwiches and sends me an email as a reminder to check my app to claim the coupon
     <br />
     <br />
-    <a href="https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper">View Demo</a>
+    <a href="https://github.com/CampAsAChamp/los-angeles-sports-chick-fil-a-scraper">View Demo</a>
     ·
-    <a href="https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper/issues">Report Bug</a>
+    <a href="https://github.com/CampAsAChamp/los-angeles-sports-chick-fil-a-scraper/issues">Report Bug</a>
     ·
-    <a href="https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper/issues">Request Feature</a>
+    <a href="https://github.com/CampAsAChamp/los-angeles-sports-chick-fil-a-scraper/issues">Request Feature</a>
   </p>
 </div>
 
@@ -71,7 +71,7 @@ This repo/service checks all of these criteria each day at 8 AM PT (3 PM UTC) us
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/CampAsAChamp/los-angeles-chick-fil-a-scraper.git
+    git clone https://github.com/CampAsAChamp/los-angeles-sports-chick-fil-a-scraper.git
     ```
 2. Create virtual environment
     ```sh
