@@ -52,6 +52,8 @@ This repo/service checks all of these criteria each day at 8 AM PT (3 PM UTC) us
 
 ### Built With
 
+[![My Skills](https://skillicons.dev/icons?i=python,githubactions)](https://skillicons.dev)
+
 * [Python 3](https://python.org)
 * [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/)
 * [GitHub Actions](https://github.com/features/actions)
